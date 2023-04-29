@@ -1,0 +1,108 @@
+.header-title {
+    font-weight: 800;
+    font-size: 28px;
+    color: #FF6400;
+    margin: 0 0 20px;
+}
+
+.description-title {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+    line-height: 1.43;
+    margin-bottom: 40px;
+    padding-right: 30px;
+}
+
+.smal-link{
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 14px;
+    padding: 12px 25px;
+    border-radius: 25px;
+}
+
+.big-link{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 20px;
+    background: #FF6400;
+    border-radius: 25px;
+    font-size: 14px;
+    padding: 15px 45px;
+    box-shadow: 0 10px 10px -10px rgba(255, 107, 0, .51);
+    display: inline-block;
+}
+
+.cards-title{
+    font-weight: 800;
+    font-size: 24px;
+    color: #000;
+    line-height: 30px;
+}
+
+.cards-description{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.tab-menu-button{
+    line-height: 14px;
+    font-size: 14px;
+    color: #a1a1a1;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-left: 5px;
+    display: inline-block;
+    padding: 16px 40px;
+    border-radius: 25px;
+    border: 2px solid #969696;
+}
+
+.tab-active {
+
+    display: inline-block;
+    padding: 16px 40px;
+    margin-right: 10px;
+    font-family: CocoSharp, Arial;
+    font-weight: 700;
+    font-size: 12px;
+    color: #FF6400;
+    border-radius: 25px;
+    border: 2px solid #FF6400;
+    position: relative;
+
+    &::before {
+
+        position: absolute;
+        bottom: -4px;
+        transform: rotateZ(-45deg) translate(-50%);
+        width: 16px;
+        height: 16px;
+        border-left: 2px solid #FF6400;
+        border-bottom: 2px solid #FF6400;
+        content: '';
+        left: 50%;
+        background: #fafafa;
+
+    }
+}
+.feature_value{
+    font-weight: 700;
+    font-size: 20px;
+    color: #000;
+    line-height: normal;
+    margin-bottom: 10px;
+    
+}
+.feature_description{
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(0,0,0,.8);
+    line-height: normal;
+    margin-bottom: 20px;
+}

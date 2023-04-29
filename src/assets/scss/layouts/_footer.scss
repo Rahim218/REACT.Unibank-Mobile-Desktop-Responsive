@@ -1,0 +1,135 @@
+@import '../abstracts/variables';
+
+.Footer {
+    padding: 75px 0 60px;
+    .footer-menu {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+
+        .footer-menu-head {
+            a {
+                line-height: 54px;
+                font-family: CocoSharp, Arial;
+                font-size: 14px;
+                color: #000;
+                font-weight: 700;
+            }
+
+        }
+
+        .footer-menu-body {
+            a {
+                font-size: 12px;
+                color: #000;
+                line-height: 35px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .footer-int-platform {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 50px 0 20px;
+
+        #one,
+        #two {
+            background-color: $orange;
+            width: 25px;
+            height: 25px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            i {
+
+                color: white;
+                font-size: 14px;
+            }
+        }
+
+        #other {
+            background-color: #a1a1a1;
+            width: 25px;
+            height: 25px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            i {
+                color: #fff;
+                font-size: 14px;
+            }
+        }
+
+    }
+
+    .footer-brand {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .right-side {
+            display: flex;
+            align-items: baseline;
+            gap: 20px;
+            justify-content: flex-end;
+
+            .other-img {
+                width: 90px;
+                height: 55px;
+            }
+
+            .small-img {
+                width: 90px;
+                height: 45px;
+
+            }
+        }
+
+        .left-side {
+            p {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 12px;
+            }
+
+            span {
+                font-size: 12px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width:576px){
+    .Footer{
+        padding-top: 0px;
+        padding-bottom: 10px;
+        .footer-menu{
+            display: none !important;
+        }
+        .footer-int-platform{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 30px !important;
+            padding-bottom: 5px ;
+        }
+        .footer-brand{
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 30px;
+            text-align: center;
+            .right-side{
+                img{
+                    width: 80% !important
+                }
+            };
+        }
+    }
+}

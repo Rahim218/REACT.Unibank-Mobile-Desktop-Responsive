@@ -1,0 +1,158 @@
+@import '../abstracts/variables';
+@import '../abstracts/extend';
+
+
+
+.slide-item {
+    background-color: #ff6400;
+    height: 450px;
+    border-radius: 10px;
+    position: relative;
+
+
+    .rowlist {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .image {
+
+        img {
+            width: 35%;
+            position: absolute;
+            bottom: 0;
+            left: 65px;
+            margin: 0;
+            filter: drop-shadow(-70px 20px 40px rgba(0, 0, 0, .24));
+
+        }
+    }
+
+    .slide-content {
+        margin: 120px 0;
+
+
+        h2 {
+            font-weight: 800;
+            font-size: 34px;
+            color: #fff;
+            margin-bottom: 20px;
+            line-height: normal;
+            width: 90%;
+        }
+
+
+
+        p {
+            width: 460px;
+            margin-top: 10px;
+            font-weight: 400;
+            font-size: 14px;
+            color: #fff;
+            margin-bottom: 40px;
+            line-height: 25px;
+
+
+        }
+
+
+        a {
+            @extend .smal-link
+        }
+    }
+
+
+}
+
+.carousel .carousel-indicators button {
+    background-color: #ff6400;
+    border: none;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    
+}
+
+.my-carousel .carousel-indicators {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:576px) {
+
+
+    .slide-item {
+        img {
+            width: 55% !important;
+            position: absolute;
+            bottom: 0px !important;
+            left: 80px !important;
+
+
+        }
+    }
+
+    .rowlist {
+        text-align: center;
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        align-items: center !important;
+    }
+
+    .slide-content {
+        margin: 30px 0 !important;
+        display: flex;
+        flex-direction: column;
+
+        a {
+
+            margin-right: 5px;
+            line-height: unset !important;
+            display: inline-flex;
+            padding: 10px 25px !important;
+            border: 1px solid #fff !important;
+            font-weight: bold !important;
+            color: #fff !important;
+        }
+
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-size: 22px !important;
+            line-height: normal !important;
+            font-weight: 800 !important;
+            margin-bottom: 10px !important;
+            width: unset !important;
+        }
+
+        p {
+            font-size: 12px !important;
+            font-weight: 400 !important;
+            line-height: 18px !important;
+            margin-bottom: 20px !important;
+            text-align: center !important;
+            width: 300px !important;
+
+        }
+    }
+
+}

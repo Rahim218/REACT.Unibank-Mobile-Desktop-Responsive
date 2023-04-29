@@ -1,0 +1,784 @@
+@import "../abstracts/extend";
+
+.currency-header {
+    line-height: 18px;
+    font-family: CocoSharp, Arial;
+    font-weight: 700;
+    font-size: 18px;
+    color: #000;
+
+}
+
+.update-time {
+    display: inline-block;
+    line-height: 12px;
+    font-size: 12px;
+    color: rgba(50, 50, 50, .5);
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+
+.card {
+    padding: 40px 50px;
+    text-align: center;
+    background: #FAFAFA;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+
+    h2 {
+        line-height: 18px;
+        font-size: 18px;
+        color: #000;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 52px;
+        line-height: normal;
+        color: #FF6400;
+        margin-bottom: 20px;
+        margin-top: 15px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    p {
+        line-height: 14px;
+        font-weight: 400;
+        color: #000;
+        margin-top: -20px;
+        margin-bottom: 45px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    a {
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+        line-height: 20px;
+        background: #FF6400;
+        border-radius: 25px;
+        font-size: 14px;
+        padding: 15px 45px;
+        box-shadow: 0 10px 10px -10px rgba(255, 107, 0, .51);
+        display: inline-block;
+    }
+}
+
+
+.cards {
+   .zz{
+    padding: 40px 0 25px;
+   }
+}
+
+.UCard {
+
+
+    .Ucard-content {
+        background: #fafafa;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        height: 400px;
+        padding: 35px 0 20px;
+
+
+    }
+
+    .ucard-image {
+        position: relative;
+        width: 100%;
+
+        img {
+            position: absolute;
+            width: 95%;
+            top: -280px;
+        }
+    }
+
+    .ucard-title {
+        h1 {
+            @extend .header-title
+        }
+
+        ;
+
+        p {
+            @extend .description-title;
+            width: 85%;
+        }
+
+        .ucard-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .child1 {
+                @extend .smal-link;
+                background-color: #FF6400;
+                color: white;
+            }
+
+            a {
+                color: #969696;
+                border-radius: 25px;
+                border: 1px solid rgba(0, 0, 0, .1);
+                padding: 12px 30px;
+                font-size: 14px;
+                font-weight: 700;
+
+            }
+        }
+    }
+}
+
+.Ubank {
+
+
+    .ubank-content {
+        background-color: #fafafa;
+        border-radius: 10px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 20px;
+        padding-left: 70px;
+
+        .ubank-title {
+
+            h1 {
+                @extend .header-title;
+            }
+
+            p {
+                @extend .description-title;
+            }
+
+            .mobile-market {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                img {
+                    width: 30%;
+                }
+            }
+
+            a {
+                @extend .big-link;
+                margin-top: 30px;
+            }
+        }
+
+        .ubank-image {
+
+            position: relative;
+            height: 400px;
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 490px;
+                top: -95px;
+                right: 0;
+            }
+        }
+    }
+}
+
+.Currency {
+    padding: 20px 0;
+
+    h1 {
+        @extend .header-title;
+        padding: 40px 70px;
+    }
+
+    .currency-content {
+        background-color: #fafafa;
+        padding: 1px 0;
+        border-radius: 10px;
+
+        .cash {
+            padding: 0px 70px 40px;
+
+
+            .cash-table {
+                table {
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                    width: 100%;
+
+                    thead {
+                        font-size: 14px;
+                        color: #ACB3B8;
+                        line-height: 18px;
+                        text-align: left;
+
+
+                        tr {
+
+                            th {
+
+                                border-bottom: 1px solid #D6D9DB;
+                                padding-bottom: 21px;
+                                width: 33.3333333%;
+                                font-size: 12px;
+                                font-weight: 400 !important;
+                                padding: 10px 0;
+
+                            }
+                        }
+                    }
+
+                    tbody {
+                        line-height: 14px;
+                        font-family: CocoSharp, Arial;
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: #000;
+
+                        tr {
+                            td {
+                                width: 33.3333333%;
+                                padding: 14px 0;
+                                white-space: nowrap;
+                                color: #323232;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .calculator {
+            i {
+                color: #FF6400;
+            }
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 150px;
+            width: 90%;
+            margin-bottom: 40px;
+            margin-right: auto;
+            margin-left: auto;
+
+
+
+            background: #fff;
+            box-shadow: 0 10px 25px -10px rgba(0, 0, 0, .1);
+            padding: 50px 62px;
+            border-radius: 10px;
+
+            .update-time {
+                margin-bottom: 0;
+            }
+
+            .exchange-currency {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .exchange-to,
+                .exchange-from {
+                    overflow: hidden;
+                    padding: 20px 20px;
+                    border-radius: 5px;
+                    border: 1px solid rgba(50, 50, 50, .1);
+                    margin-bottom: 10px;
+                    width: 280px;
+                    display: flex;
+                    align-items: center;
+
+                    input {
+                        border: none;
+                        outline: none;
+                    }
+
+                    select {
+                        border: none;
+                        outline: none;
+                    }
+
+                }
+            }
+
+        }
+    }
+
+
+}
+
+.Information {
+
+    .news {
+        text-align: center;
+        margin-top: 15px;
+
+        .all-news {
+            @extend .big-link;
+            padding: 15px 25px !important;
+        }
+    }
+
+    .information-content {
+
+        .information-box {
+            width: 100%;
+            padding: 30px;
+            border-radius: 10px;
+            transition: .3s;
+            background-color: #fafafa;
+
+            &:hover {
+                background-color: #FF6400;
+                cursor: pointer;
+
+                h4 {
+                    color: white;
+                }
+
+                p {
+                    color: white;
+                }
+
+                span {
+                    color: white;
+                }
+            }
+
+            h4 {
+                font-weight: 700;
+                font-size: 16px;
+                color: #FF6400;
+                text-decoration: none;
+                display: block;
+                overflow: hidden;
+                line-height: normal;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-weight: 200;
+                font-size: 14px;
+                color: #000;
+                line-height: 23px;
+                overflow: hidden;
+                opacity: 0.7;
+            }
+
+            span {
+                line-height: 12px;
+                font-family: CocoSharp, Arial;
+                font-weight: 400;
+                font-size: 12px;
+                color: rgba(50, 50, 50, .5);
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+.Servis {
+    padding: 15px 0;
+
+    .servis-content {
+
+        border-radius: 10px;
+
+        .left-con {
+            background-color: #fafafa;
+            padding: 45px 65px;
+            display: flex;
+            align-items: center;
+            height: 320px;
+            border-radius: 10px;
+
+
+            .left-con-title {
+                h1 {
+                    @extend .header-title;
+                    line-height: 40px;
+                }
+
+                p {
+                    @extend .description-title;
+                    font-weight: 400 !important;
+                }
+
+                a {
+                    @extend .big-link
+                }
+            }
+
+            .left-con-image {
+
+                img {
+                    width: 220px;
+                }
+            }
+        }
+
+        .right-con {
+            padding: 45px 65px;
+            height: 320px;
+            border-radius: 10px;
+            background-color: #fafafa;
+            position: relative;
+
+            img {
+                position: absolute;
+                width: 80%;
+                top: 0;
+                right: 0;
+            }
+
+            h1 {
+                @extend .header-title;
+                line-height: 38px;
+            }
+
+            p {
+                @extend .description-title;
+                width: 80%;
+                font-weight: 400 !important;
+            }
+
+            a {
+                @extend .big-link
+            }
+
+
+
+        }
+
+    }
+}
+
+
+
+
+@media (max-width:576px) {
+    
+    .card {
+        width: 100% !important;
+        padding: 0 5px !important;
+        margin-bottom: 10px !important;
+        height: 180px;
+
+        h2 {
+            font-size: 14px !important;
+            line-height: 18px !important;
+            margin-top: 10px;
+        }
+
+        h1 {
+            font-size: 32px !important;
+            margin-top: 10px !important;
+        }
+
+        p {
+            font-size: 10px !important;
+            margin-bottom: 20px !important;
+        }
+
+        a {
+            padding: 10px 20px !important;
+            width: 90px;
+            font-size: 12px !important;
+            margin: 0 auto;
+        }
+    }
+
+    .UCard {
+        .Ucard-content {
+            height: 590px !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+            .ucard-image {
+                position: relative;
+
+                img {
+                    position: absolute;
+                    top: 0;
+                }
+            }
+
+            .ucard-title {
+                padding-right: 20px;
+                padding-left: 30px;
+                margin-bottom: 20px;
+
+                h1 {
+                    font-size: 20px;
+                    line-height: normal;
+                    margin-bottom: 10px;
+                    font-weight: 800;
+                }
+
+                p {
+                    width: 350px;
+                    font-size: 12px;
+                }
+
+                .ucard-links {
+                    display: flex;
+                    flex-direction: column;
+
+                    .child1 {
+                        width: 100%;
+                        text-align: center;
+                    }
+
+                    .link-same {
+                        display: inline-block !important;
+                        display: flex !important;
+                        align-items: center !important;
+                        gap: 20px;
+                    }
+
+                }
+
+            }
+        }
+    }
+
+    .Ubank {
+        .ubank-content {
+            display: flex;
+            flex-wrap: wrap;
+
+            padding: 20px;
+
+            .ubank-title {
+                display: flex;
+                flex-direction: column;
+
+                h1 {
+                    font-size: 20px !important;
+                    line-height: normal !important;
+                    margin-bottom: 10px !important;
+                    font-weight: 800 !important;
+                }
+
+                p {
+                    margin-top: 20px;
+                    margin-bottom: 0 !important;
+                    font-size: 12px !important;
+                    line-height: normal !important;
+                    padding-right: 10px !important;
+                    order: 1;
+
+                }
+
+                a {
+                    order: 1;
+                    display: inline-block !important;
+                    width: 48%;
+                    text-align: center !important;
+                }
+            }
+
+            .ubank-image {
+                position: relative;
+                height: 310px !important;
+
+                img {
+                    position: absolute;
+                    top: 15px !important;
+
+                    height: auto;
+                }
+            }
+        }
+
+    }
+
+    .Currency {
+        h1 {
+            font-size: 20px !important;
+            line-height: normal !important;
+            margin-bottom: 15px !important;
+            padding: 20px 35px 0 !important;
+        }
+
+        .currency-title {
+            display: none !important;
+
+        }
+
+        .media-tab-menu {
+            display: block !important;
+
+            .cash {
+                padding: 20px 30px !important;
+
+                .cash-table {
+                    margin-top: 40px;
+                }
+            }
+
+
+        }
+
+        .calculator {
+            i {
+                display: none;
+            }
+
+            display: flex !important;
+            flex-direction: column !important;
+            height: 290px !important;
+            padding: 50px 30px !important;
+
+            .calculator-title {
+                margin-right: 80px;
+
+                p {
+                    margin-bottom: 7px !important;
+                }
+            }
+
+            .exchange-currency {
+                display: flex !important;
+                flex-direction: column !important;
+                margin-top: 20px;
+            }
+        }
+
+        .tab-title-nonactive {
+
+            display: inline-block;
+            padding: 10px 20px;
+            margin-right: 10px;
+            font-family: CocoSharp, Arial;
+            font-weight: 700;
+            font-size: 12px;
+            color: #a1a1a1;
+            border-radius: 20px;
+            border: 2px solid #a1a1a1;
+        }
+
+        .tab-title-active {
+
+            display: inline-block;
+            padding: 10px 20px;
+            margin-right: 10px;
+            font-family: CocoSharp, Arial;
+            font-weight: 700;
+            font-size: 12px;
+            color: #FF6400;
+            border-radius: 20px;
+            border: 2px solid #FF6400;
+            position: relative;
+
+            &::before {
+
+                position: absolute;
+                bottom: -4px;
+                transform: rotateZ(-45deg) translate(-50%);
+                width: 16px;
+                height: 16px;
+                border-left: 2px solid #FF6400;
+                border-bottom: 2px solid #FF6400;
+                content: '';
+                left: 50%;
+                background: #fafafa;
+
+            }
+        }
+    }
+
+
+    .nav-tabs {
+        border: none;
+        margin: 20px 40px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .nav-tabs .nav-link {
+        border: none;
+        padding: 0;
+
+    }
+
+    .Servis {
+
+
+
+        .left-con {
+            background-color: #fafafa !important;
+            height: 270px !important;
+            padding: 14px 20px !important;
+            width: 100% !important;
+            margin: 0;
+
+            .left-con-title {
+
+                h1 {
+                    font-size: 20px !important;
+                    line-height: 28px !important;
+
+                }
+                p{
+                    font-size: 12px;
+                    width: 120%;
+                    margin-bottom: 20px !important;
+                    font-weight: 400 !important;
+                    opacity: 0.7;
+                }
+                a{
+                    padding: 13px 35px !important;
+                    font-size: 12px !important;
+                }
+
+            }
+            .left-con-image{
+                img{
+                    width: 150px !important;
+                    margin-top: 50px;
+                    padding-right: 40px !important;
+                }
+            }
+        }
+
+        .right-con{
+            padding: 14px 20px !important;
+            height: 270px !important;
+
+            h1{
+                font-size: 20px !important;
+                line-height: 28px !important;
+            }
+            p{
+                font-size: 12px !important;
+                width: 100% !important;
+            }
+            a{
+                padding: 13px 35px !important;
+                font-size: 12px !important;
+            }
+        }
+    }
+
+
+
+
+
+}

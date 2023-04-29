@@ -1,0 +1,3283 @@
+#top-header {
+  padding: 15px 0;
+  background-color: #FAFAFA;
+}
+#top-header #bar {
+  display: none;
+}
+#top-header .ham-menu {
+  width: 50px;
+  height: 45px;
+  border-radius: 100px;
+  padding: 10px 10px;
+  background-color: #f5f5f6;
+  text-align: center;
+}
+#top-header .logo img {
+  width: 42%;
+}
+#top-header .nav a {
+  color: #323232;
+  font-size: 12px;
+  font-weight: 400;
+}
+#top-header .type .active {
+  border: 1px solid #ff6400;
+  color: #ff6400;
+  padding: 6px 20px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #fff;
+  outline: 0;
+  box-shadow: 0 2px 14px -8px rgba(0, 0, 0, 0.3);
+}
+#top-header .type .nonactive {
+  outline: 0;
+  background-color: #fff;
+  color: #323232;
+  font-size: 12px;
+  font-weight: 400;
+  border: 2px solid #fff;
+  padding: 6px 20px;
+  box-shadow: 0 2px 14px -8px rgba(0, 0, 0, 0.3);
+}
+#top-header .lang a {
+  font-weight: 600;
+  font-size: 12px;
+  box-shadow: 0 2px 14px -8px rgba(0, 0, 0, 0.3);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #323232;
+  padding: 6px 12px;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 5px;
+}
+#top-header .theme a {
+  padding: 4px 10px;
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 0 2px 14px -8px rgba(0, 0, 0, 0.3);
+  background-color: #323232;
+  margin-right: 10px;
+}
+#top-header .theme a i {
+  color: #fff;
+  font-size: 14px;
+}
+#top-header .search a {
+  cursor: pointer;
+  box-shadow: 0 2px 14px -8px rgba(0, 0, 0, 0.3);
+  width: 35px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  background: #fff;
+  border-radius: 5px;
+}
+#top-header .search a i {
+  color: #323232;
+  font-size: 12px;
+}
+
+#bottom-header {
+  padding: 25px 0;
+}
+#bottom-header nav p a {
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+}
+#bottom-header .botom-right i {
+  color: #ff6400;
+  font-size: 18px;
+}
+#bottom-header .botom-right span {
+  color: #000;
+  font-weight: bold;
+  font-size: 14px;
+}
+#bottom-header .botom-right .cart-count {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  background-color: #ff6400;
+  padding: 1px 8px;
+  border-radius: 50px;
+  font-size: 11px;
+  box-shadow: 0 2px 14px -8px rgba(0, 0, 0, 0.3);
+}
+#bottom-header .botom-right .basket {
+  position: relative;
+  padding: 8px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+#bottom-header .botom-right .contact,
+#bottom-header .botom-right .internet {
+  height: 45px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  line-height: 20px;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 25px;
+}
+
+#side-bar {
+  background-color: #f5f5f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  gap: 15px;
+  left: 0px;
+  top: 65px;
+  width: 100%;
+  padding: 15px 0;
+}
+#side-bar .type .active {
+  border: 1px solid #ff6400;
+  color: #ff6400;
+  padding: 6px 20px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #fff;
+  outline: 0;
+  box-shadow: 0 2px 14px -8px rgba(0, 0, 0, 0.3);
+}
+#side-bar .type .nonactive {
+  outline: 0;
+  background-color: #fff;
+  color: #323232;
+  font-size: 12px;
+  font-weight: 400;
+  border: 2px solid #fff;
+  padding: 6px 20px;
+  box-shadow: 0 2px 14px -8px rgba(0, 0, 0, 0.3);
+}
+#side-bar .lang-drop a {
+  font-weight: 600;
+  font-size: 12px;
+  box-shadow: 0 2px 14px -8px rgba(0, 0, 0, 0.3);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #323232;
+  padding: 6px 12px;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 5px;
+}
+#side-bar .theme-drop a {
+  padding: 4px 10px;
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 0 2px 14px -8px rgba(0, 0, 0, 0.3);
+  background-color: #323232;
+  margin-right: 10px;
+}
+#side-bar .theme-drop a i {
+  color: #fff;
+  font-size: 14px;
+}
+#side-bar .search-drop a {
+  cursor: pointer;
+  box-shadow: 0 2px 14px -8px rgba(0, 0, 0, 0.3);
+  width: 35px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  background: #fff;
+  border-radius: 5px;
+}
+#side-bar .search-drop a i {
+  color: #323232;
+  font-size: 12px;
+}
+#side-bar .nav-drop p a {
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+}
+#side-bar .nav-2-drop a {
+  color: #323232;
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+@media (max-width: 576px) {
+  .UCard {
+    display: none !important;
+  }
+  .Servis {
+    display: none !important;
+  }
+  #top-header {
+    background-color: #fff;
+    position: relative;
+  }
+  #top-header .top-header-right {
+    display: none;
+  }
+  #top-header .media-phone {
+    display: inline-block !important;
+  }
+  #top-header .media-phone i {
+    color: #ff6400;
+    font-size: 18px;
+  }
+  #top-header .media-phone .contact {
+    width: 85px;
+    height: 45px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    line-height: 20px;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 25px;
+    color: #000;
+  }
+  .box {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+  .box .nav {
+    display: none !important;
+  }
+  .box .logo img {
+    width: 60% !important;
+  }
+  .top-box {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between;
+  }
+  .media-header {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+  #bottom-header {
+    display: none !important;
+  }
+  #bar {
+    display: inline-block !important;
+  }
+  #options {
+    display: none;
+  }
+  #media-lang {
+    display: none;
+  }
+  #side-bar {
+    z-index: 111 !important;
+  }
+}
+@media (min-width: 576px) {
+  #side-bar {
+    display: none !important;
+  }
+}
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+.header-title, .servicenetwork h1, .ourvalues h1, .about h1, .humanresource h1, .shopping-cart .block-heading h1,
+.shopping-cart .block-heading h2,
+.shopping-cart .block-heading h3, .debetcards h1, .bankcards h1, .outside, .Servis .servis-content .right-con h1, .Servis .servis-content .left-con .left-con-title h1, .Currency h1, .Ubank .ubank-content .ubank-title h1, .UCard .ucard-title h1 {
+  font-weight: 800;
+  font-size: 28px;
+  color: #FF6400;
+  margin: 0 0 20px;
+}
+
+.description-title, .Servis .servis-content .right-con p, .Servis .servis-content .left-con .left-con-title p, .Ubank .ubank-content .ubank-title p, .UCard .ucard-title p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  line-height: 1.43;
+  margin-bottom: 40px;
+  padding-right: 30px;
+}
+
+.smal-link, .UCard .ucard-title .ucard-links .child1, .slide-item .slide-content a {
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 14px;
+  padding: 12px 25px;
+  border-radius: 25px;
+}
+
+.big-link, .vacany-box .right-info, .check, .debetcards .debetcard-content .card-box .card-content button, .bankcards .bankcard-content button, .Servis .servis-content .right-con a, .Servis .servis-content .left-con .left-con-title a, .Information .news .all-news, .Ubank .ubank-content .ubank-title a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 20px;
+  background: #FF6400;
+  border-radius: 25px;
+  font-size: 14px;
+  padding: 15px 45px;
+  box-shadow: 0 10px 10px -10px rgba(255, 107, 0, 0.51);
+  display: inline-block;
+}
+
+.cards-title, .product-info span, .product-name a, .debetcards .debetcard-content .card-box .card-content h2, .bankcards .bankcard-content .bankcard-title h2 {
+  font-weight: 800;
+  font-size: 24px;
+  color: #000;
+  line-height: 30px;
+}
+
+.cards-description, .debetcards .debetcard-content .card-box .card-content p, .bankcards .bankcard-content .bankcard-title p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+.tab-menu-button, .servicenetwork .tab-links .noactive, .humanresource .tab-links .noactive {
+  line-height: 14px;
+  font-size: 14px;
+  color: #a1a1a1;
+  text-decoration: none;
+  margin-right: 5px;
+  margin-left: 5px;
+  display: inline-block;
+  padding: 16px 40px;
+  border-radius: 25px;
+  border: 2px solid #969696;
+}
+
+.tab-active, .servicenetwork .tab-links .active, .humanresource .tab-links .active {
+  display: inline-block;
+  padding: 16px 40px;
+  margin-right: 10px;
+  font-family: CocoSharp, Arial;
+  font-weight: 700;
+  font-size: 12px;
+  color: #FF6400;
+  border-radius: 25px;
+  border: 2px solid #FF6400;
+  position: relative;
+}
+.tab-active::before, .servicenetwork .tab-links .active::before, .humanresource .tab-links .active::before {
+  position: absolute;
+  bottom: -4px;
+  transform: rotateZ(-45deg) translate(-50%);
+  width: 16px;
+  height: 16px;
+  border-left: 2px solid #FF6400;
+  border-bottom: 2px solid #FF6400;
+  content: "";
+  left: 50%;
+  background: #fafafa;
+}
+
+.feature_value, .login .internet-banking .login-info .login-info-header h2, .servicenetwork .branches .branches-card-box .branches-left-con h2, .ourvalues .values-box h2, .personal .personal-box .personal-content h2, .commoninfo .commoninfo-cards .info-card .info-card-content h1 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.feature_description, .servicenetwork .branches .branches-card-box .branches-right-con .branch-info span, .servicenetwork .branches .branches-card-box .branches-right-con .branch-clock span, .servicenetwork .branches .branches-card-box .branches-left-con p, .ourvalues .values-box p, .working .card-head-descrpi, .about p, .personal .personal-box .personal-content p, .commoninfo .commoninfo-cards .info-card .info-card-content p {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.slide-item {
+  background-color: #ff6400;
+  height: 450px;
+  border-radius: 10px;
+  position: relative;
+}
+.slide-item .rowlist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide-item .image img {
+  width: 35%;
+  position: absolute;
+  bottom: 0;
+  left: 65px;
+  margin: 0;
+  filter: drop-shadow(-70px 20px 40px rgba(0, 0, 0, 0.24));
+}
+.slide-item .slide-content {
+  margin: 120px 0;
+}
+.slide-item .slide-content h2 {
+  font-weight: 800;
+  font-size: 34px;
+  color: #fff;
+  margin-bottom: 20px;
+  line-height: normal;
+  width: 90%;
+}
+.slide-item .slide-content p {
+  width: 460px;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 40px;
+  line-height: 25px;
+}
+.carousel .carousel-indicators button {
+  background-color: #ff6400;
+  border: none;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+}
+
+.my-carousel .carousel-indicators {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+@media (max-width: 576px) {
+  .slide-item img {
+    width: 55% !important;
+    position: absolute;
+    bottom: 0px !important;
+    left: 80px !important;
+  }
+  .rowlist {
+    text-align: center;
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    align-items: center !important;
+  }
+  .slide-content {
+    margin: 30px 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .slide-content a {
+    margin-right: 5px;
+    line-height: unset !important;
+    display: inline-flex;
+    padding: 10px 25px !important;
+    border: 1px solid #fff !important;
+    font-weight: bold !important;
+    color: #fff !important;
+  }
+  .slide-content h2 {
+    font-size: 22px !important;
+    line-height: normal !important;
+    font-weight: 800 !important;
+    margin-bottom: 10px !important;
+    width: unset !important;
+  }
+  .slide-content p {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    line-height: 18px !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+    width: 300px !important;
+  }
+}
+.header-title, .servicenetwork h1, .ourvalues h1, .about h1, .humanresource h1, .shopping-cart .block-heading h1,
+.shopping-cart .block-heading h2,
+.shopping-cart .block-heading h3, .debetcards h1, .bankcards h1, .outside, .Servis .servis-content .right-con h1, .Servis .servis-content .left-con .left-con-title h1, .Currency h1, .Ubank .ubank-content .ubank-title h1, .UCard .ucard-title h1 {
+  font-weight: 800;
+  font-size: 28px;
+  color: #FF6400;
+  margin: 0 0 20px;
+}
+
+.description-title, .Servis .servis-content .right-con p, .Servis .servis-content .left-con .left-con-title p, .Ubank .ubank-content .ubank-title p, .UCard .ucard-title p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  line-height: 1.43;
+  margin-bottom: 40px;
+  padding-right: 30px;
+}
+
+.smal-link, .UCard .ucard-title .ucard-links .child1, .slide-item .slide-content a {
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 14px;
+  padding: 12px 25px;
+  border-radius: 25px;
+}
+
+.big-link, .vacany-box .right-info, .check, .debetcards .debetcard-content .card-box .card-content button, .bankcards .bankcard-content button, .Servis .servis-content .right-con a, .Servis .servis-content .left-con .left-con-title a, .Information .news .all-news, .Ubank .ubank-content .ubank-title a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 20px;
+  background: #FF6400;
+  border-radius: 25px;
+  font-size: 14px;
+  padding: 15px 45px;
+  box-shadow: 0 10px 10px -10px rgba(255, 107, 0, 0.51);
+  display: inline-block;
+}
+
+.cards-title, .product-info span, .product-name a, .debetcards .debetcard-content .card-box .card-content h2, .bankcards .bankcard-content .bankcard-title h2 {
+  font-weight: 800;
+  font-size: 24px;
+  color: #000;
+  line-height: 30px;
+}
+
+.cards-description, .debetcards .debetcard-content .card-box .card-content p, .bankcards .bankcard-content .bankcard-title p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+.tab-menu-button, .servicenetwork .tab-links .noactive, .humanresource .tab-links .noactive {
+  line-height: 14px;
+  font-size: 14px;
+  color: #a1a1a1;
+  text-decoration: none;
+  margin-right: 5px;
+  margin-left: 5px;
+  display: inline-block;
+  padding: 16px 40px;
+  border-radius: 25px;
+  border: 2px solid #969696;
+}
+
+.tab-active, .servicenetwork .tab-links .active, .humanresource .tab-links .active {
+  display: inline-block;
+  padding: 16px 40px;
+  margin-right: 10px;
+  font-family: CocoSharp, Arial;
+  font-weight: 700;
+  font-size: 12px;
+  color: #FF6400;
+  border-radius: 25px;
+  border: 2px solid #FF6400;
+  position: relative;
+}
+.tab-active::before, .servicenetwork .tab-links .active::before, .humanresource .tab-links .active::before {
+  position: absolute;
+  bottom: -4px;
+  transform: rotateZ(-45deg) translate(-50%);
+  width: 16px;
+  height: 16px;
+  border-left: 2px solid #FF6400;
+  border-bottom: 2px solid #FF6400;
+  content: "";
+  left: 50%;
+  background: #fafafa;
+}
+
+.feature_value, .login .internet-banking .login-info .login-info-header h2, .servicenetwork .branches .branches-card-box .branches-left-con h2, .ourvalues .values-box h2, .personal .personal-box .personal-content h2, .commoninfo .commoninfo-cards .info-card .info-card-content h1 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.feature_description, .servicenetwork .branches .branches-card-box .branches-right-con .branch-info span, .servicenetwork .branches .branches-card-box .branches-right-con .branch-clock span, .servicenetwork .branches .branches-card-box .branches-left-con p, .ourvalues .values-box p, .working .card-head-descrpi, .about p, .personal .personal-box .personal-content p, .commoninfo .commoninfo-cards .info-card .info-card-content p {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.currency-header {
+  line-height: 18px;
+  font-family: CocoSharp, Arial;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+}
+
+.update-time {
+  display: inline-block;
+  line-height: 12px;
+  font-size: 12px;
+  color: rgba(50, 50, 50, 0.5);
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.card {
+  padding: 40px 50px;
+  text-align: center;
+  background: #FAFAFA;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+}
+.card h2 {
+  line-height: 18px;
+  font-size: 18px;
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+}
+.card h1 {
+  font-size: 52px;
+  line-height: normal;
+  color: #FF6400;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+.card p {
+  line-height: 14px;
+  font-weight: 400;
+  color: #000;
+  margin-top: -20px;
+  margin-bottom: 45px;
+  font-size: 14px;
+  text-align: center;
+}
+.card a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 20px;
+  background: #FF6400;
+  border-radius: 25px;
+  font-size: 14px;
+  padding: 15px 45px;
+  box-shadow: 0 10px 10px -10px rgba(255, 107, 0, 0.51);
+  display: inline-block;
+}
+
+.cards .zz {
+  padding: 40px 0 25px;
+}
+
+.UCard .Ucard-content {
+  background: #fafafa;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  height: 400px;
+  padding: 35px 0 20px;
+}
+.UCard .ucard-image {
+  position: relative;
+  width: 100%;
+}
+.UCard .ucard-image img {
+  position: absolute;
+  width: 95%;
+  top: -280px;
+}
+.UCard .ucard-title p {
+  width: 85%;
+}
+.UCard .ucard-title .ucard-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.UCard .ucard-title .ucard-links .child1 {
+  background-color: #FF6400;
+  color: white;
+}
+.UCard .ucard-title .ucard-links a {
+  color: #969696;
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 12px 30px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.Ubank .ubank-content {
+  background-color: #fafafa;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20px;
+  padding-left: 70px;
+}
+.Ubank .ubank-content .ubank-title .mobile-market {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.Ubank .ubank-content .ubank-title .mobile-market img {
+  width: 30%;
+}
+.Ubank .ubank-content .ubank-title a {
+  margin-top: 30px;
+}
+.Ubank .ubank-content .ubank-image {
+  position: relative;
+  height: 400px;
+}
+.Ubank .ubank-content .ubank-image img {
+  position: absolute;
+  width: 100%;
+  height: 490px;
+  top: -95px;
+  right: 0;
+}
+
+.Currency {
+  padding: 20px 0;
+}
+.Currency h1 {
+  padding: 40px 70px;
+}
+.Currency .currency-content {
+  background-color: #fafafa;
+  padding: 1px 0;
+  border-radius: 10px;
+}
+.Currency .currency-content .cash {
+  padding: 0px 70px 40px;
+}
+.Currency .currency-content .cash .cash-table table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+.Currency .currency-content .cash .cash-table table thead {
+  font-size: 14px;
+  color: #ACB3B8;
+  line-height: 18px;
+  text-align: left;
+}
+.Currency .currency-content .cash .cash-table table thead tr th {
+  border-bottom: 1px solid #D6D9DB;
+  padding-bottom: 21px;
+  width: 33.3333333%;
+  font-size: 12px;
+  font-weight: 400 !important;
+  padding: 10px 0;
+}
+.Currency .currency-content .cash .cash-table table tbody {
+  line-height: 14px;
+  font-family: CocoSharp, Arial;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+}
+.Currency .currency-content .cash .cash-table table tbody tr td {
+  width: 33.3333333%;
+  padding: 14px 0;
+  white-space: nowrap;
+  color: #323232;
+  font-weight: 700;
+}
+.Currency .currency-content .calculator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  width: 90%;
+  margin-bottom: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  background: #fff;
+  box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.1);
+  padding: 50px 62px;
+  border-radius: 10px;
+}
+.Currency .currency-content .calculator i {
+  color: #FF6400;
+}
+.Currency .currency-content .calculator .update-time {
+  margin-bottom: 0;
+}
+.Currency .currency-content .calculator .exchange-currency {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Currency .currency-content .calculator .exchange-currency .exchange-to,
+.Currency .currency-content .calculator .exchange-currency .exchange-from {
+  overflow: hidden;
+  padding: 20px 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(50, 50, 50, 0.1);
+  margin-bottom: 10px;
+  width: 280px;
+  display: flex;
+  align-items: center;
+}
+.Currency .currency-content .calculator .exchange-currency .exchange-to input,
+.Currency .currency-content .calculator .exchange-currency .exchange-from input {
+  border: none;
+  outline: none;
+}
+.Currency .currency-content .calculator .exchange-currency .exchange-to select,
+.Currency .currency-content .calculator .exchange-currency .exchange-from select {
+  border: none;
+  outline: none;
+}
+
+.Information .news {
+  text-align: center;
+  margin-top: 15px;
+}
+.Information .news .all-news {
+  padding: 15px 25px !important;
+}
+.Information .information-content .information-box {
+  width: 100%;
+  padding: 30px;
+  border-radius: 10px;
+  transition: 0.3s;
+  background-color: #fafafa;
+}
+.Information .information-content .information-box:hover {
+  background-color: #FF6400;
+  cursor: pointer;
+}
+.Information .information-content .information-box:hover h4 {
+  color: white;
+}
+.Information .information-content .information-box:hover p {
+  color: white;
+}
+.Information .information-content .information-box:hover span {
+  color: white;
+}
+.Information .information-content .information-box h4 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #FF6400;
+  text-decoration: none;
+  display: block;
+  overflow: hidden;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+.Information .information-content .information-box p {
+  font-weight: 200;
+  font-size: 14px;
+  color: #000;
+  line-height: 23px;
+  overflow: hidden;
+  opacity: 0.7;
+}
+.Information .information-content .information-box span {
+  line-height: 12px;
+  font-family: CocoSharp, Arial;
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(50, 50, 50, 0.5);
+  margin-top: 15px;
+}
+
+.Servis {
+  padding: 15px 0;
+}
+.Servis .servis-content {
+  border-radius: 10px;
+}
+.Servis .servis-content .left-con {
+  background-color: #fafafa;
+  padding: 45px 65px;
+  display: flex;
+  align-items: center;
+  height: 320px;
+  border-radius: 10px;
+}
+.Servis .servis-content .left-con .left-con-title h1 {
+  line-height: 40px;
+}
+.Servis .servis-content .left-con .left-con-title p {
+  font-weight: 400 !important;
+}
+.Servis .servis-content .left-con .left-con-image img {
+  width: 220px;
+}
+.Servis .servis-content .right-con {
+  padding: 45px 65px;
+  height: 320px;
+  border-radius: 10px;
+  background-color: #fafafa;
+  position: relative;
+}
+.Servis .servis-content .right-con img {
+  position: absolute;
+  width: 80%;
+  top: 0;
+  right: 0;
+}
+.Servis .servis-content .right-con h1 {
+  line-height: 38px;
+}
+.Servis .servis-content .right-con p {
+  width: 80%;
+  font-weight: 400 !important;
+}
+@media (max-width: 576px) {
+  .card {
+    width: 100% !important;
+    padding: 0 5px !important;
+    margin-bottom: 10px !important;
+    height: 180px;
+  }
+  .card h2 {
+    font-size: 14px !important;
+    line-height: 18px !important;
+    margin-top: 10px;
+  }
+  .card h1 {
+    font-size: 32px !important;
+    margin-top: 10px !important;
+  }
+  .card p {
+    font-size: 10px !important;
+    margin-bottom: 20px !important;
+  }
+  .card a {
+    padding: 10px 20px !important;
+    width: 90px;
+    font-size: 12px !important;
+    margin: 0 auto;
+  }
+  .UCard .Ucard-content {
+    height: 590px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .UCard .Ucard-content .ucard-image {
+    position: relative;
+  }
+  .UCard .Ucard-content .ucard-image img {
+    position: absolute;
+    top: 0;
+  }
+  .UCard .Ucard-content .ucard-title {
+    padding-right: 20px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+  }
+  .UCard .Ucard-content .ucard-title h1 {
+    font-size: 20px;
+    line-height: normal;
+    margin-bottom: 10px;
+    font-weight: 800;
+  }
+  .UCard .Ucard-content .ucard-title p {
+    width: 350px;
+    font-size: 12px;
+  }
+  .UCard .Ucard-content .ucard-title .ucard-links {
+    display: flex;
+    flex-direction: column;
+  }
+  .UCard .Ucard-content .ucard-title .ucard-links .child1 {
+    width: 100%;
+    text-align: center;
+  }
+  .UCard .Ucard-content .ucard-title .ucard-links .link-same {
+    display: inline-block !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 20px;
+  }
+  .Ubank .ubank-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  .Ubank .ubank-content .ubank-title {
+    display: flex;
+    flex-direction: column;
+  }
+  .Ubank .ubank-content .ubank-title h1 {
+    font-size: 20px !important;
+    line-height: normal !important;
+    margin-bottom: 10px !important;
+    font-weight: 800 !important;
+  }
+  .Ubank .ubank-content .ubank-title p {
+    margin-top: 20px;
+    margin-bottom: 0 !important;
+    font-size: 12px !important;
+    line-height: normal !important;
+    padding-right: 10px !important;
+    order: 1;
+  }
+  .Ubank .ubank-content .ubank-title a {
+    order: 1;
+    display: inline-block !important;
+    width: 48%;
+    text-align: center !important;
+  }
+  .Ubank .ubank-content .ubank-image {
+    position: relative;
+    height: 310px !important;
+  }
+  .Ubank .ubank-content .ubank-image img {
+    position: absolute;
+    top: 15px !important;
+    height: auto;
+  }
+  .Currency h1 {
+    font-size: 20px !important;
+    line-height: normal !important;
+    margin-bottom: 15px !important;
+    padding: 20px 35px 0 !important;
+  }
+  .Currency .currency-title {
+    display: none !important;
+  }
+  .Currency .media-tab-menu {
+    display: block !important;
+  }
+  .Currency .media-tab-menu .cash {
+    padding: 20px 30px !important;
+  }
+  .Currency .media-tab-menu .cash .cash-table {
+    margin-top: 40px;
+  }
+  .Currency .calculator {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 290px !important;
+    padding: 50px 30px !important;
+  }
+  .Currency .calculator i {
+    display: none;
+  }
+  .Currency .calculator .calculator-title {
+    margin-right: 80px;
+  }
+  .Currency .calculator .calculator-title p {
+    margin-bottom: 7px !important;
+  }
+  .Currency .calculator .exchange-currency {
+    display: flex !important;
+    flex-direction: column !important;
+    margin-top: 20px;
+  }
+  .Currency .tab-title-nonactive {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-family: CocoSharp, Arial;
+    font-weight: 700;
+    font-size: 12px;
+    color: #a1a1a1;
+    border-radius: 20px;
+    border: 2px solid #a1a1a1;
+  }
+  .Currency .tab-title-active {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-family: CocoSharp, Arial;
+    font-weight: 700;
+    font-size: 12px;
+    color: #FF6400;
+    border-radius: 20px;
+    border: 2px solid #FF6400;
+    position: relative;
+  }
+  .Currency .tab-title-active::before {
+    position: absolute;
+    bottom: -4px;
+    transform: rotateZ(-45deg) translate(-50%);
+    width: 16px;
+    height: 16px;
+    border-left: 2px solid #FF6400;
+    border-bottom: 2px solid #FF6400;
+    content: "";
+    left: 50%;
+    background: #fafafa;
+  }
+  .nav-tabs {
+    border: none;
+    margin: 20px 40px;
+    display: flex;
+    align-items: center;
+  }
+  .nav-tabs .nav-link {
+    border: none;
+    padding: 0;
+  }
+  .Servis .left-con {
+    background-color: #fafafa !important;
+    height: 270px !important;
+    padding: 14px 20px !important;
+    width: 100% !important;
+    margin: 0;
+  }
+  .Servis .left-con .left-con-title h1 {
+    font-size: 20px !important;
+    line-height: 28px !important;
+  }
+  .Servis .left-con .left-con-title p {
+    font-size: 12px;
+    width: 120%;
+    margin-bottom: 20px !important;
+    font-weight: 400 !important;
+    opacity: 0.7;
+  }
+  .Servis .left-con .left-con-title a {
+    padding: 13px 35px !important;
+    font-size: 12px !important;
+  }
+  .Servis .left-con .left-con-image img {
+    width: 150px !important;
+    margin-top: 50px;
+    padding-right: 40px !important;
+  }
+  .Servis .right-con {
+    padding: 14px 20px !important;
+    height: 270px !important;
+  }
+  .Servis .right-con h1 {
+    font-size: 20px !important;
+    line-height: 28px !important;
+  }
+  .Servis .right-con p {
+    font-size: 12px !important;
+    width: 100% !important;
+  }
+  .Servis .right-con a {
+    padding: 13px 35px !important;
+    font-size: 12px !important;
+  }
+}
+.header-title, .servicenetwork h1, .ourvalues h1, .about h1, .humanresource h1, .shopping-cart .block-heading h1,
+.shopping-cart .block-heading h2,
+.shopping-cart .block-heading h3, .debetcards h1, .bankcards h1, .outside, .UCard .ucard-title h1, .Ubank .ubank-content .ubank-title h1, .Currency h1, .Servis .servis-content .left-con .left-con-title h1, .Servis .servis-content .right-con h1 {
+  font-weight: 800;
+  font-size: 28px;
+  color: #FF6400;
+  margin: 0 0 20px;
+}
+
+.description-title, .UCard .ucard-title p, .Ubank .ubank-content .ubank-title p, .Servis .servis-content .left-con .left-con-title p, .Servis .servis-content .right-con p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  line-height: 1.43;
+  margin-bottom: 40px;
+  padding-right: 30px;
+}
+
+.smal-link, .slide-item .slide-content a, .UCard .ucard-title .ucard-links .child1 {
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 14px;
+  padding: 12px 25px;
+  border-radius: 25px;
+}
+
+.big-link, .vacany-box .right-info, .check, .debetcards .debetcard-content .card-box .card-content button, .bankcards .bankcard-content button, .Ubank .ubank-content .ubank-title a, .Information .news .all-news, .Servis .servis-content .left-con .left-con-title a, .Servis .servis-content .right-con a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 20px;
+  background: #FF6400;
+  border-radius: 25px;
+  font-size: 14px;
+  padding: 15px 45px;
+  box-shadow: 0 10px 10px -10px rgba(255, 107, 0, 0.51);
+  display: inline-block;
+}
+
+.cards-title, .product-info span, .product-name a, .debetcards .debetcard-content .card-box .card-content h2, .bankcards .bankcard-content .bankcard-title h2 {
+  font-weight: 800;
+  font-size: 24px;
+  color: #000;
+  line-height: 30px;
+}
+
+.cards-description, .debetcards .debetcard-content .card-box .card-content p, .bankcards .bankcard-content .bankcard-title p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+.tab-menu-button, .servicenetwork .tab-links .noactive, .humanresource .tab-links .noactive {
+  line-height: 14px;
+  font-size: 14px;
+  color: #a1a1a1;
+  text-decoration: none;
+  margin-right: 5px;
+  margin-left: 5px;
+  display: inline-block;
+  padding: 16px 40px;
+  border-radius: 25px;
+  border: 2px solid #969696;
+}
+
+.tab-active, .servicenetwork .tab-links .active, .humanresource .tab-links .active {
+  display: inline-block;
+  padding: 16px 40px;
+  margin-right: 10px;
+  font-family: CocoSharp, Arial;
+  font-weight: 700;
+  font-size: 12px;
+  color: #FF6400;
+  border-radius: 25px;
+  border: 2px solid #FF6400;
+  position: relative;
+}
+.tab-active::before, .servicenetwork .tab-links .active::before, .humanresource .tab-links .active::before {
+  position: absolute;
+  bottom: -4px;
+  transform: rotateZ(-45deg) translate(-50%);
+  width: 16px;
+  height: 16px;
+  border-left: 2px solid #FF6400;
+  border-bottom: 2px solid #FF6400;
+  content: "";
+  left: 50%;
+  background: #fafafa;
+}
+
+.feature_value, .login .internet-banking .login-info .login-info-header h2, .servicenetwork .branches .branches-card-box .branches-left-con h2, .ourvalues .values-box h2, .personal .personal-box .personal-content h2, .commoninfo .commoninfo-cards .info-card .info-card-content h1 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.feature_description, .servicenetwork .branches .branches-card-box .branches-right-con .branch-info span, .servicenetwork .branches .branches-card-box .branches-right-con .branch-clock span, .servicenetwork .branches .branches-card-box .branches-left-con p, .ourvalues .values-box p, .working .card-head-descrpi, .about p, .personal .personal-box .personal-content p, .commoninfo .commoninfo-cards .info-card .info-card-content p {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.Footer {
+  padding: 75px 0 60px;
+}
+.Footer .footer-menu {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.Footer .footer-menu .footer-menu-head a {
+  line-height: 54px;
+  font-family: CocoSharp, Arial;
+  font-size: 14px;
+  color: #000;
+  font-weight: 700;
+}
+.Footer .footer-menu .footer-menu-body a {
+  font-size: 12px;
+  color: #000;
+  line-height: 35px;
+  font-weight: 400;
+}
+.Footer .footer-int-platform {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 0 20px;
+}
+.Footer .footer-int-platform #one,
+.Footer .footer-int-platform #two {
+  background-color: #ff6400;
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Footer .footer-int-platform #one i,
+.Footer .footer-int-platform #two i {
+  color: white;
+  font-size: 14px;
+}
+.Footer .footer-int-platform #other {
+  background-color: #a1a1a1;
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Footer .footer-int-platform #other i {
+  color: #fff;
+  font-size: 14px;
+}
+.Footer .footer-brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Footer .footer-brand .right-side {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  justify-content: flex-end;
+}
+.Footer .footer-brand .right-side .other-img {
+  width: 90px;
+  height: 55px;
+}
+.Footer .footer-brand .right-side .small-img {
+  width: 90px;
+  height: 45px;
+}
+.Footer .footer-brand .left-side p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
+.Footer .footer-brand .left-side span {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+@media (max-width: 576px) {
+  .Footer {
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+  .Footer .footer-menu {
+    display: none !important;
+  }
+  .Footer .footer-int-platform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px !important;
+    padding-bottom: 5px;
+  }
+  .Footer .footer-brand {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+    text-align: center;
+  }
+  .Footer .footer-brand .right-side img {
+    width: 80% !important;
+  }
+}
+.header-title, .servicenetwork h1, .ourvalues h1, .about h1, .humanresource h1, .shopping-cart .block-heading h1,
+.shopping-cart .block-heading h2,
+.shopping-cart .block-heading h3, .debetcards h1, .bankcards h1, .outside, .UCard .ucard-title h1, .Ubank .ubank-content .ubank-title h1, .Currency h1, .Servis .servis-content .left-con .left-con-title h1, .Servis .servis-content .right-con h1 {
+  font-weight: 800;
+  font-size: 28px;
+  color: #FF6400;
+  margin: 0 0 20px;
+}
+
+.description-title, .UCard .ucard-title p, .Ubank .ubank-content .ubank-title p, .Servis .servis-content .left-con .left-con-title p, .Servis .servis-content .right-con p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  line-height: 1.43;
+  margin-bottom: 40px;
+  padding-right: 30px;
+}
+
+.smal-link, .slide-item .slide-content a, .UCard .ucard-title .ucard-links .child1 {
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 14px;
+  padding: 12px 25px;
+  border-radius: 25px;
+}
+
+.big-link, .vacany-box .right-info, .check, .debetcards .debetcard-content .card-box .card-content button, .bankcards .bankcard-content button, .Ubank .ubank-content .ubank-title a, .Information .news .all-news, .Servis .servis-content .left-con .left-con-title a, .Servis .servis-content .right-con a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 20px;
+  background: #FF6400;
+  border-radius: 25px;
+  font-size: 14px;
+  padding: 15px 45px;
+  box-shadow: 0 10px 10px -10px rgba(255, 107, 0, 0.51);
+  display: inline-block;
+}
+
+.cards-title, .product-info span, .product-name a, .debetcards .debetcard-content .card-box .card-content h2, .bankcards .bankcard-content .bankcard-title h2 {
+  font-weight: 800;
+  font-size: 24px;
+  color: #000;
+  line-height: 30px;
+}
+
+.cards-description, .debetcards .debetcard-content .card-box .card-content p, .bankcards .bankcard-content .bankcard-title p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+.tab-menu-button, .servicenetwork .tab-links .noactive, .humanresource .tab-links .noactive {
+  line-height: 14px;
+  font-size: 14px;
+  color: #a1a1a1;
+  text-decoration: none;
+  margin-right: 5px;
+  margin-left: 5px;
+  display: inline-block;
+  padding: 16px 40px;
+  border-radius: 25px;
+  border: 2px solid #969696;
+}
+
+.tab-active, .servicenetwork .tab-links .active, .humanresource .tab-links .active {
+  display: inline-block;
+  padding: 16px 40px;
+  margin-right: 10px;
+  font-family: CocoSharp, Arial;
+  font-weight: 700;
+  font-size: 12px;
+  color: #FF6400;
+  border-radius: 25px;
+  border: 2px solid #FF6400;
+  position: relative;
+}
+.tab-active::before, .servicenetwork .tab-links .active::before, .humanresource .tab-links .active::before {
+  position: absolute;
+  bottom: -4px;
+  transform: rotateZ(-45deg) translate(-50%);
+  width: 16px;
+  height: 16px;
+  border-left: 2px solid #FF6400;
+  border-bottom: 2px solid #FF6400;
+  content: "";
+  left: 50%;
+  background: #fafafa;
+}
+
+.feature_value, .login .internet-banking .login-info .login-info-header h2, .servicenetwork .branches .branches-card-box .branches-left-con h2, .ourvalues .values-box h2, .personal .personal-box .personal-content h2, .commoninfo .commoninfo-cards .info-card .info-card-content h1 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.feature_description, .servicenetwork .branches .branches-card-box .branches-right-con .branch-info span, .servicenetwork .branches .branches-card-box .branches-right-con .branch-clock span, .servicenetwork .branches .branches-card-box .branches-left-con p, .ourvalues .values-box p, .working .card-head-descrpi, .about p, .personal .personal-box .personal-content p, .commoninfo .commoninfo-cards .info-card .info-card-content p {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.outside {
+  padding-top: 50px;
+}
+
+.bankcards .bankcard-content {
+  position: relative;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  border-radius: 10px;
+  padding: 50px 65px;
+  margin-top: 30px;
+}
+.bankcards .bankcard-content .bankcard-image img {
+  width: 95%;
+}
+.bankcards .bankcard-content button {
+  position: absolute;
+  border: none;
+  top: 70px;
+  right: 70px;
+}
+.bankcards .bankcard-content .bankcard-title .bankcard-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bankcards .bankcard-content .bankcard-title .bankcard-info .info-currency,
+.bankcards .bankcard-content .bankcard-title .bankcard-info .info-percent,
+.bankcards .bankcard-content .bankcard-title .bankcard-info .info-cash {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+}
+.bankcards .bankcard-content .bankcard-title .bankcard-info .info-currency i,
+.bankcards .bankcard-content .bankcard-title .bankcard-info .info-percent i,
+.bankcards .bankcard-content .bankcard-title .bankcard-info .info-cash i {
+  color: #ff6b00;
+  font-size: 25px;
+  margin-top: 10px;
+}
+.bankcards .bankcard-content .bankcard-title .bankcard-info .info-currency p,
+.bankcards .bankcard-content .bankcard-title .bankcard-info .info-percent p,
+.bankcards .bankcard-content .bankcard-title .bankcard-info .info-cash p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  text-align: left;
+}
+
+.debetcards {
+  padding: 50px 0;
+}
+.debetcards .debetcard-content .card-box {
+  padding: 45px 65px;
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+.debetcards .debetcard-content .card-box .card-photo {
+  width: 100%;
+}
+.debetcards .debetcard-content .card-box .card-photo img {
+  width: 70%;
+  border-radius: 15px;
+  box-shadow: -15px 15px 30px 0 rgba(0, 0, 0, 0.24);
+}
+.debetcards .debetcard-content .card-box .card-content {
+  margin-top: 35px;
+}
+.debetcards .debetcard-content .card-box .card-content button {
+  border: none;
+}
+
+@media (max-width: 576px) {
+  .bankcards .bankcard-content {
+    position: relative;
+    display: flex !important;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 30px 40px !important;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .bankcards .bankcard-content .bankcard-title .bankcard-info .info-cash,
+  .bankcards .bankcard-content .bankcard-title .bankcard-info .info-currency,
+  .bankcards .bankcard-content .bankcard-title .bankcard-info .info-percent {
+    display: flex;
+    flex-direction: column;
+  }
+  .bankcards .bankcard-content .bankcard-title .bankcard-info .info-cash p,
+  .bankcards .bankcard-content .bankcard-title .bankcard-info .info-currency p,
+  .bankcards .bankcard-content .bankcard-title .bankcard-info .info-percent p {
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+  }
+  .bankcards .bankcard-content button {
+    position: absolute;
+    top: 490px;
+    right: 120px;
+  }
+  .debetcard-content .card-box {
+    padding: 25px 40px !important;
+    margin-top: 10px !important;
+    align-items: center !important;
+  }
+  .debetcard-content .card-box .card-photo img {
+    width: 100% !important;
+  }
+  .debetcard-content .card-box .card-content {
+    text-align: center !important;
+  }
+}
+.header-title, .servicenetwork h1, .ourvalues h1, .about h1, .humanresource h1, .shopping-cart .block-heading h1,
+.shopping-cart .block-heading h2,
+.shopping-cart .block-heading h3, .UCard .ucard-title h1, .Ubank .ubank-content .ubank-title h1, .Currency h1, .Servis .servis-content .left-con .left-con-title h1, .Servis .servis-content .right-con h1, .outside, .bankcards h1, .debetcards h1 {
+  font-weight: 800;
+  font-size: 28px;
+  color: #FF6400;
+  margin: 0 0 20px;
+}
+
+.description-title, .UCard .ucard-title p, .Ubank .ubank-content .ubank-title p, .Servis .servis-content .left-con .left-con-title p, .Servis .servis-content .right-con p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  line-height: 1.43;
+  margin-bottom: 40px;
+  padding-right: 30px;
+}
+
+.smal-link, .slide-item .slide-content a, .UCard .ucard-title .ucard-links .child1 {
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 14px;
+  padding: 12px 25px;
+  border-radius: 25px;
+}
+
+.big-link, .vacany-box .right-info, .check, .Ubank .ubank-content .ubank-title a, .Information .news .all-news, .Servis .servis-content .left-con .left-con-title a, .Servis .servis-content .right-con a, .bankcards .bankcard-content button, .debetcards .debetcard-content .card-box .card-content button {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 20px;
+  background: #FF6400;
+  border-radius: 25px;
+  font-size: 14px;
+  padding: 15px 45px;
+  box-shadow: 0 10px 10px -10px rgba(255, 107, 0, 0.51);
+  display: inline-block;
+}
+
+.cards-title, .product-info span, .product-name a, .bankcards .bankcard-content .bankcard-title h2, .debetcards .debetcard-content .card-box .card-content h2 {
+  font-weight: 800;
+  font-size: 24px;
+  color: #000;
+  line-height: 30px;
+}
+
+.cards-description, .bankcards .bankcard-content .bankcard-title p, .debetcards .debetcard-content .card-box .card-content p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+.tab-menu-button, .servicenetwork .tab-links .noactive, .humanresource .tab-links .noactive {
+  line-height: 14px;
+  font-size: 14px;
+  color: #a1a1a1;
+  text-decoration: none;
+  margin-right: 5px;
+  margin-left: 5px;
+  display: inline-block;
+  padding: 16px 40px;
+  border-radius: 25px;
+  border: 2px solid #969696;
+}
+
+.tab-active, .servicenetwork .tab-links .active, .humanresource .tab-links .active {
+  display: inline-block;
+  padding: 16px 40px;
+  margin-right: 10px;
+  font-family: CocoSharp, Arial;
+  font-weight: 700;
+  font-size: 12px;
+  color: #FF6400;
+  border-radius: 25px;
+  border: 2px solid #FF6400;
+  position: relative;
+}
+.tab-active::before, .servicenetwork .tab-links .active::before, .humanresource .tab-links .active::before {
+  position: absolute;
+  bottom: -4px;
+  transform: rotateZ(-45deg) translate(-50%);
+  width: 16px;
+  height: 16px;
+  border-left: 2px solid #FF6400;
+  border-bottom: 2px solid #FF6400;
+  content: "";
+  left: 50%;
+  background: #fafafa;
+}
+
+.feature_value, .login .internet-banking .login-info .login-info-header h2, .servicenetwork .branches .branches-card-box .branches-left-con h2, .ourvalues .values-box h2, .personal .personal-box .personal-content h2, .commoninfo .commoninfo-cards .info-card .info-card-content h1 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.feature_description, .servicenetwork .branches .branches-card-box .branches-right-con .branch-info span, .servicenetwork .branches .branches-card-box .branches-right-con .branch-clock span, .servicenetwork .branches .branches-card-box .branches-left-con p, .ourvalues .values-box p, .working .card-head-descrpi, .about p, .personal .personal-box .personal-content p, .commoninfo .commoninfo-cards .info-card .info-card-content p {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.shopping-cart {
+  background-color: #fff !important;
+  padding-bottom: 50px;
+}
+
+.shopping-cart.dark {
+  background-color: #f6f6f6;
+}
+
+.shopping-cart .content {
+  box-shadow: inset -6px -1px 15px rgba(0, 0, 0, 0.075);
+  background-color: #fafafa;
+  border-radius: 10px;
+}
+
+.shopping-cart .block-heading {
+  padding-top: 50px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.shopping-cart .block-heading p {
+  text-align: center;
+  max-width: 420px;
+  margin: auto;
+  opacity: 0.7;
+}
+
+.shopping-cart .dark .block-heading p {
+  opacity: 0.8;
+}
+
+.shopping-cart .items {
+  margin: auto;
+}
+
+.shopping-cart .items .product {
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.shopping-cart .items .product .info {
+  padding-top: 0px;
+  text-align: center;
+}
+
+.shopping-cart .items .product .info .product-name {
+  font-weight: 600;
+}
+
+.shopping-cart .items .product .info .product-name .product-info {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.shopping-cart .items .product .info .product-name .product-info .value {
+  font-weight: 400;
+}
+
+.shopping-cart .items .product .info .quantity .quantity-input {
+  margin: auto;
+  width: 80px;
+}
+
+.shopping-cart .items .product .info .price {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.shopping-cart .summary {
+  border-top: 2px solid #ff6400;
+  background-color: #fafafa;
+  height: 100%;
+  padding: 30px;
+}
+
+.shopping-cart .summary h3 {
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 600;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.shopping-cart .summary .summary-item:not(:last-of-type) {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shopping-cart .summary .text {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.shopping-cart .summary .price {
+  font-size: 1em;
+  float: right;
+}
+
+.shopping-cart .summary button {
+  margin-top: 20px;
+}
+
+.card-url {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.price i {
+  color: #ff6400;
+}
+
+.product-info span {
+  font-size: 20px !important;
+  font-weight: 500 !important;
+}
+
+.check {
+  border: none;
+  margin-top: 20px !important;
+}
+
+@media (min-width: 768px) {
+  .shopping-cart .items .product .info {
+    padding-top: 25px;
+    text-align: left;
+  }
+  .shopping-cart .items .product .info .price {
+    font-weight: bold;
+    font-size: 22px;
+    top: 17px;
+  }
+  .shopping-cart .items .product .info .quantity {
+    text-align: center;
+  }
+  .shopping-cart .items .product .info .quantity .quantity-input {
+    padding: 4px 10px;
+    text-align: center;
+  }
+}
+.header-title, .servicenetwork h1, .ourvalues h1, .about h1, .humanresource h1, .UCard .ucard-title h1, .Ubank .ubank-content .ubank-title h1, .Currency h1, .Servis .servis-content .left-con .left-con-title h1, .Servis .servis-content .right-con h1, .outside, .bankcards h1, .debetcards h1, .shopping-cart .block-heading h1,
+.shopping-cart .block-heading h2,
+.shopping-cart .block-heading h3 {
+  font-weight: 800;
+  font-size: 28px;
+  color: #FF6400;
+  margin: 0 0 20px;
+}
+
+.description-title, .UCard .ucard-title p, .Ubank .ubank-content .ubank-title p, .Servis .servis-content .left-con .left-con-title p, .Servis .servis-content .right-con p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  line-height: 1.43;
+  margin-bottom: 40px;
+  padding-right: 30px;
+}
+
+.smal-link, .slide-item .slide-content a, .UCard .ucard-title .ucard-links .child1 {
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 14px;
+  padding: 12px 25px;
+  border-radius: 25px;
+}
+
+.big-link, .vacany-box .right-info, .Ubank .ubank-content .ubank-title a, .Information .news .all-news, .Servis .servis-content .left-con .left-con-title a, .Servis .servis-content .right-con a, .bankcards .bankcard-content button, .debetcards .debetcard-content .card-box .card-content button, .check {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 20px;
+  background: #FF6400;
+  border-radius: 25px;
+  font-size: 14px;
+  padding: 15px 45px;
+  box-shadow: 0 10px 10px -10px rgba(255, 107, 0, 0.51);
+  display: inline-block;
+}
+
+.cards-title, .bankcards .bankcard-content .bankcard-title h2, .debetcards .debetcard-content .card-box .card-content h2, .product-name a, .product-info span {
+  font-weight: 800;
+  font-size: 24px;
+  color: #000;
+  line-height: 30px;
+}
+
+.cards-description, .bankcards .bankcard-content .bankcard-title p, .debetcards .debetcard-content .card-box .card-content p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+.tab-menu-button, .servicenetwork .tab-links .noactive, .humanresource .tab-links .noactive {
+  line-height: 14px;
+  font-size: 14px;
+  color: #a1a1a1;
+  text-decoration: none;
+  margin-right: 5px;
+  margin-left: 5px;
+  display: inline-block;
+  padding: 16px 40px;
+  border-radius: 25px;
+  border: 2px solid #969696;
+}
+
+.tab-active, .servicenetwork .tab-links .active, .humanresource .tab-links .active {
+  display: inline-block;
+  padding: 16px 40px;
+  margin-right: 10px;
+  font-family: CocoSharp, Arial;
+  font-weight: 700;
+  font-size: 12px;
+  color: #FF6400;
+  border-radius: 25px;
+  border: 2px solid #FF6400;
+  position: relative;
+}
+.tab-active::before, .servicenetwork .tab-links .active::before, .humanresource .tab-links .active::before {
+  position: absolute;
+  bottom: -4px;
+  transform: rotateZ(-45deg) translate(-50%);
+  width: 16px;
+  height: 16px;
+  border-left: 2px solid #FF6400;
+  border-bottom: 2px solid #FF6400;
+  content: "";
+  left: 50%;
+  background: #fafafa;
+}
+
+.feature_value, .login .internet-banking .login-info .login-info-header h2, .servicenetwork .branches .branches-card-box .branches-left-con h2, .ourvalues .values-box h2, .personal .personal-box .personal-content h2, .commoninfo .commoninfo-cards .info-card .info-card-content h1 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.feature_description, .servicenetwork .branches .branches-card-box .branches-right-con .branch-info span, .servicenetwork .branches .branches-card-box .branches-right-con .branch-clock span, .servicenetwork .branches .branches-card-box .branches-left-con p, .ourvalues .values-box p, .working .card-head-descrpi, .about p, .personal .personal-box .personal-content p, .commoninfo .commoninfo-cards .info-card .info-card-content p {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.showcontent {
+  display: block;
+}
+
+.content {
+  display: none;
+}
+
+.measure-card-image img {
+  width: 80%;
+}
+
+.bg-custom {
+  color: #000 !important;
+}
+
+.working-title {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 800;
+  color: #000;
+}
+
+.measure-card-content {
+  text-align: center;
+  margin-top: 10px;
+}
+.measure-card-content h3 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+  width: 80%;
+  text-align: center;
+  margin: 0;
+}
+.measure-card-content span {
+  font-weight: 400;
+  font-size: 14px;
+  color: #ACB3B8;
+  margin-right: 60px;
+}
+
+.humanresource .tab-links {
+  display: flex;
+  align-items: center;
+}
+.humanresource .tab-links .noactive {
+  cursor: pointer;
+}
+.humanresource .tab-links .active {
+  cursor: pointer;
+}
+
+.commoninfo .video {
+  background-image: url("https://unibank.az/uploads/menus/o_1cnj0q0r11k96193k1rgp1tp1icca.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.commoninfo .video i {
+  font-size: 40px;
+  color: #fff;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.commoninfo .video-click {
+  background-image: url("https://unibank.az/uploads/menus/o_1cnj0q0r11k96193k1rgp1tp1icca.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 45vh;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.commoninfo .video-click i {
+  font-size: 40px;
+  color: #fff;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.commoninfo .commoninfo-cards {
+  padding: 25px 0;
+}
+.commoninfo .commoninfo-cards .info-card {
+  text-align: center;
+  background: #FAFAFA;
+  border-radius: 10px;
+  padding: 45px 50px;
+  height: 100%;
+  height: 350px;
+  width: 100%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.commoninfo .commoninfo-cards .info-card:hover {
+  background-color: #ff6400;
+}
+.commoninfo .commoninfo-cards .info-card:hover h1,
+.commoninfo .commoninfo-cards .info-card:hover p {
+  color: #fff;
+}
+.commoninfo .commoninfo-cards .info-card .image img {
+  width: 25%;
+  border-radius: 10px;
+}
+.commoninfo .commoninfo-cards .info-card .info-card-content h1 {
+  margin-top: 20px;
+}
+.commoninfo .commoninfo-cards .info-card .info-card-content p {
+  margin-top: 20px;
+}
+
+.personal .personal-box {
+  align-items: flex-start;
+  padding: 45px 65px;
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+.personal .personal-box .image img {
+  width: 25%;
+  border-radius: 50px;
+}
+.personal .personal-box .personal-content {
+  margin-top: 15px;
+}
+.personal .personal-box .personal-content h2 {
+  margin-bottom: 4px !important;
+}
+.personal .personal-box .personal-content span {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: normal;
+  margin-bottom: 15px;
+}
+
+.about {
+  margin-top: 30px;
+  background-color: #fafafa;
+  padding: 45px 65px;
+}
+.direction {
+  padding: 30px 0;
+}
+.direction .direction-box {
+  background-color: #ff6400;
+  padding: 35px 45px;
+  height: 200px;
+  border-radius: 10px;
+  text-align: center;
+}
+.direction .direction-box p {
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.43;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.direction .direction-box img {
+  width: 40%;
+}
+
+.vacany-box {
+  padding: 40px 65px 20px;
+  background: #FAFAFA;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+.vacany-box .left-info h1 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+.vacany-box .left-info p {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.67;
+  font-weight: 400;
+}
+.vacany-box .right-info a {
+  color: #fff;
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+}
+.vacany-box .right-info a span {
+  color: #fff;
+}
+.vacany-box .right-info a i {
+  font-size: 15px;
+}
+
+.card-head {
+  border-radius: 10px;
+  height: 45vh;
+  background-image: radial-gradient(circle at 49% 20%, rgba(221, 221, 221, 0.44), rgba(255, 255, 255, 0) 100%), linear-gradient(to bottom, #ff6b00, #ff6b00), linear-gradient(to bottom, #5a6771, #5a6771) !important;
+  background-blend-mode: overlay, normal, darken;
+  position: relative;
+  margin-bottom: 20px;
+}
+.card-head .card-head-image img {
+  width: 24%;
+  position: absolute;
+  bottom: 0;
+  left: 60px;
+}
+.card-head .card-head-content {
+  margin-left: 20px;
+}
+.card-head .card-head-content h1 {
+  font-weight: 800;
+  font-size: 34px;
+  text-align: left;
+  line-height: normal;
+  color: #fff;
+}
+.card-head .card-head-content p {
+  font-size: 14px;
+  line-height: 1.43;
+  margin: 10px auto 0;
+  color: #fff;
+  font-weight: 400;
+}
+
+.working {
+  padding: 40px 0;
+}
+.working .working-images {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.working .working-images img {
+  width: 100%;
+}
+.working .working-title {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 800;
+  color: #000;
+}
+.working .info-people {
+  text-align: center;
+  margin-top: 50px;
+}
+.working .info-people h1 {
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 800;
+  color: #000;
+}
+.working .info-people .info-personal {
+  margin-bottom: 50px;
+}
+.working .info-people .info-personal img {
+  width: 13%;
+  border-radius: 100px;
+  margin-top: 30px;
+}
+.working .info-people .info-personal h2 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  line-height: normal;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.working .info-people .info-personal span {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: normal;
+}
+.working .info-people .info-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.prosses {
+  margin-top: 50px;
+}
+.prosses .personal-image {
+  width: 27% !important;
+}
+.prosses .des {
+  margin-top: 50px;
+}
+.prosses .des p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  line-height: 23px;
+}
+.prosses .prosses-cards-first .prosses-first-box {
+  padding: 35px 30px;
+  background: #FAFAFA;
+  height: 300px;
+  border-radius: 10px;
+  text-align: center;
+}
+.prosses .prosses-cards-first .prosses-first-box .prosses-first-image img {
+  width: 25%;
+}
+.prosses .prosses-cards-first .prosses-first-box .prosses-first-content h2 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.prosses .prosses-cards-first .prosses-first-box .prosses-first-content a {
+  padding: 16px 25px;
+  font-size: 14px;
+  background-color: #ff6400;
+  color: #fff;
+  border-radius: 35px;
+  display: inline-block;
+  margin-top: 20px;
+}
+.prosses .prosses-long-cards {
+  margin-top: 20px;
+}
+.prosses .prosses-long-cards .prosses-long-box .prosses-long-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+.prosses .prosses-long-cards .prosses-long-box .prosses-long-content {
+  margin-top: 15px;
+}
+.prosses .prosses-long-cards .prosses-long-box .prosses-long-content h2 {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+  line-height: 1.43;
+}
+.prosses .prosses-long-cards .prosses-long-box .prosses-long-content p {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.training {
+  margin-top: 40px;
+}
+
+.ourvalues {
+  margin-top: 30px;
+}
+@media (max-width: 576px) {
+  .tab-links {
+    display: flex !important;
+    overflow-y: auto;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+  .tab-links p {
+    display: inline-block;
+    padding: 10px 20px !important;
+    margin-right: 10px !important;
+    font-weight: 700;
+    font-size: 12px !important;
+    line-height: normal !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+  }
+  .tab-links::-webkit-scrollbar-track {
+    background-color: #fff !important;
+  }
+  .tab-links::-webkit-scrollbar-thumb {
+    background-color: #ff6400 !important;
+  }
+  .tab-links::-webkit-scrollbar {
+    width: 0px;
+    height: 6px;
+  }
+  .info-card {
+    padding: 15px 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    height: auto !important;
+  }
+  .info-card .image {
+    width: 20% !important;
+  }
+  .info-card .image img {
+    width: 50% !important;
+  }
+  .info-card .info-card-content {
+    width: 70%;
+  }
+  .info-card .info-card-content h1 {
+    line-height: 14px !important;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    height: auto;
+    margin-top: 0 !important;
+    margin-bottom: 5px !important;
+    text-align: left;
+  }
+  .info-card .info-card-content p {
+    line-height: 12px !important;
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    text-align: left;
+    margin-bottom: 5px !important;
+    padding-right: 30px !important;
+    height: auto;
+    width: 300px !important;
+    margin-top: 5px !important;
+  }
+  .personal-box {
+    padding: 25px 30px !important;
+  }
+  .personal-box h2 {
+    line-height: 14px !important;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    text-align: left !important;
+  }
+  .personal-box span {
+    line-height: 10px !important;
+    font-weight: 400 !important;
+    font-size: 10px !important;
+    text-align: left !important;
+    margin-bottom: 6px !important;
+  }
+  .personal-box p {
+    text-align: left !important;
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    line-height: normal !important;
+    margin-top: 6px !important;
+    margin: 0 !important;
+  }
+  .about {
+    padding: 25px 30px !important;
+  }
+  .about h1 {
+    font-size: 20px !important;
+    line-height: normal !important;
+  }
+  .about p {
+    font-size: 12px !important;
+    line-height: normal !important;
+  }
+  .direction {
+    padding: 0 !important;
+  }
+  .direction .direction-content .direction-box {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px;
+    height: 80px;
+    padding: 20px 30px !important;
+  }
+  .direction .direction-content .direction-box p {
+    line-height: normal !important;
+    margin: 0 !important;
+    text-align: left !important;
+  }
+  .direction .direction-content .direction-box img {
+    width: 15% !important;
+  }
+  .ourvalues h1 {
+    font-size: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  .ourvalues .values-box h2 {
+    font-size: 14px !important;
+    margin-bottom: 5px !important;
+    line-height: 14px !important;
+  }
+  .ourvalues .values-box p {
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    line-height: 14px !important;
+  }
+  .vacany-box {
+    padding: 20px 20px 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .vacany-box .left-info h1 {
+    font-size: 14px !important;
+    line-height: 16px !important;
+  }
+  .vacany-box .left-info p {
+    font-size: 10px;
+    line-height: 10px;
+    margin-bottom: 10px !important;
+  }
+  .vacany-box .right-info a {
+    padding: 0px 0px !important;
+  }
+  .card-head {
+    border-radius: 10px;
+    height: 35vh;
+    background-image: radial-gradient(circle at 49% 20%, rgba(221, 221, 221, 0.44), rgba(255, 255, 255, 0) 100%), linear-gradient(to bottom, #ff6b00, #ff6b00), linear-gradient(to bottom, #5a6771, #5a6771) !important;
+    background-blend-mode: overlay, normal, darken;
+    background-color: #ff6400 !important;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .card-head .card-head-image img {
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.3;
+  }
+  .card-head .card-head-content {
+    margin-left: 0px !important;
+    margin-bottom: 70px;
+  }
+  .card-head .card-head-content h1 {
+    font-weight: 800;
+    font-size: 22px !important;
+    text-align: center;
+    color: #fff;
+    line-height: 0px !important;
+  }
+  .card-head .card-head-content p {
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+    margin: 10px auto 0;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+  }
+  .working {
+    padding: 40px 0;
+  }
+  .working .card-head-descrpi {
+    font-size: 13px !important;
+    font-weight: 500;
+  }
+  .measure-card-image {
+    text-align: center;
+  }
+  .measure-card-image img {
+    width: 55% !important;
+  }
+  .measure-card-content {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .measure-card-content h3 {
+    font-size: 14px !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+  span {
+    font-weight: 400;
+    font-size: 12px !important;
+    color: #ACB3B8;
+    margin-right: 20px !important;
+  }
+  .info-people {
+    margin-top: 20px !important;
+  }
+  .info-people h1 {
+    font-size: 22px !important;
+    line-height: 32px;
+    font-weight: 800;
+    color: #000;
+  }
+  .info-people .info-personal {
+    margin-bottom: 30px !important;
+  }
+  .info-people .info-personal img {
+    width: 17% !important;
+    border-radius: 100px;
+    margin-top: 15px;
+    opacity: 0.3;
+  }
+  .info-people .info-personal h2 {
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 14px !important;
+    opacity: 0.3;
+  }
+  .info-people .info-personal span {
+    font-weight: 400 !important;
+    font-size: 10px !important;
+    line-height: 10px !important;
+    opacity: 0.3;
+  }
+  .info-people .info-description {
+    font-weight: 400;
+    font-size: 12px !important;
+    line-height: 18px !important;
+  }
+  .des {
+    margin-top: 30px !important;
+  }
+  .des p {
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    line-height: 14px !important;
+  }
+  .prosses .personal-image {
+    width: 45% !important;
+  }
+  .prosses-cards-first .prosses-first-box .prosses-first-image img {
+    width: 20% !important;
+  }
+  .prosses-cards-first .prosses-first-box .prosses-first-content h2 {
+    font-size: 20px;
+    margin-top: 10px !important;
+    font-weight: 400;
+    width: 55%;
+    margin: 0 auto;
+    text-align: center !important;
+  }
+  .prosses-cards-first .prosses-first-box .prosses-first-content a {
+    padding: 14px 20px !important;
+    font-size: 13px !important;
+    background-color: #ff6400;
+    color: #fff;
+    border-radius: 35px;
+    display: inline-block;
+    margin-top: 15px !important;
+  }
+  .prosses-long-content {
+    margin-top: 15px;
+  }
+  .prosses-long-content p {
+    font-size: 12px !important;
+    line-height: 18px !important;
+    font-weight: 500 !important;
+  }
+}
+.header-title, .servicenetwork h1, .UCard .ucard-title h1, .Ubank .ubank-content .ubank-title h1, .Currency h1, .Servis .servis-content .left-con .left-con-title h1, .Servis .servis-content .right-con h1, .outside, .bankcards h1, .debetcards h1, .shopping-cart .block-heading h1,
+.shopping-cart .block-heading h2,
+.shopping-cart .block-heading h3, .humanresource h1, .about h1, .ourvalues h1 {
+  font-weight: 800;
+  font-size: 28px;
+  color: #FF6400;
+  margin: 0 0 20px;
+}
+
+.description-title, .UCard .ucard-title p, .Ubank .ubank-content .ubank-title p, .Servis .servis-content .left-con .left-con-title p, .Servis .servis-content .right-con p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  line-height: 1.43;
+  margin-bottom: 40px;
+  padding-right: 30px;
+}
+
+.smal-link, .slide-item .slide-content a, .UCard .ucard-title .ucard-links .child1 {
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 14px;
+  padding: 12px 25px;
+  border-radius: 25px;
+}
+
+.big-link, .Ubank .ubank-content .ubank-title a, .Information .news .all-news, .Servis .servis-content .left-con .left-con-title a, .Servis .servis-content .right-con a, .bankcards .bankcard-content button, .debetcards .debetcard-content .card-box .card-content button, .check, .vacany-box .right-info {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 20px;
+  background: #FF6400;
+  border-radius: 25px;
+  font-size: 14px;
+  padding: 15px 45px;
+  box-shadow: 0 10px 10px -10px rgba(255, 107, 0, 0.51);
+  display: inline-block;
+}
+
+.cards-title, .bankcards .bankcard-content .bankcard-title h2, .debetcards .debetcard-content .card-box .card-content h2, .product-name a, .product-info span {
+  font-weight: 800;
+  font-size: 24px;
+  color: #000;
+  line-height: 30px;
+}
+
+.cards-description, .bankcards .bankcard-content .bankcard-title p, .debetcards .debetcard-content .card-box .card-content p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+.tab-menu-button, .servicenetwork .tab-links .noactive, .humanresource .tab-links .noactive {
+  line-height: 14px;
+  font-size: 14px;
+  color: #a1a1a1;
+  text-decoration: none;
+  margin-right: 5px;
+  margin-left: 5px;
+  display: inline-block;
+  padding: 16px 40px;
+  border-radius: 25px;
+  border: 2px solid #969696;
+}
+
+.tab-active, .servicenetwork .tab-links .active, .humanresource .tab-links .active {
+  display: inline-block;
+  padding: 16px 40px;
+  margin-right: 10px;
+  font-family: CocoSharp, Arial;
+  font-weight: 700;
+  font-size: 12px;
+  color: #FF6400;
+  border-radius: 25px;
+  border: 2px solid #FF6400;
+  position: relative;
+}
+.tab-active::before, .servicenetwork .tab-links .active::before, .humanresource .tab-links .active::before {
+  position: absolute;
+  bottom: -4px;
+  transform: rotateZ(-45deg) translate(-50%);
+  width: 16px;
+  height: 16px;
+  border-left: 2px solid #FF6400;
+  border-bottom: 2px solid #FF6400;
+  content: "";
+  left: 50%;
+  background: #fafafa;
+}
+
+.feature_value, .login .internet-banking .login-info .login-info-header h2, .servicenetwork .branches .branches-card-box .branches-left-con h2, .commoninfo .commoninfo-cards .info-card .info-card-content h1, .personal .personal-box .personal-content h2, .ourvalues .values-box h2 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.feature_description, .servicenetwork .branches .branches-card-box .branches-right-con .branch-info span, .servicenetwork .branches .branches-card-box .branches-right-con .branch-clock span, .servicenetwork .branches .branches-card-box .branches-left-con p, .commoninfo .commoninfo-cards .info-card .info-card-content p, .personal .personal-box .personal-content p, .about p, .working .card-head-descrpi, .ourvalues .values-box p {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.servicenetwork .branches {
+  margin-top: 30px;
+}
+.servicenetwork .branches .branches-card-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 65px;
+  transition: 0.5s;
+  border-radius: 10px;
+  background-color: #fafafa;
+  cursor: pointer;
+}
+.servicenetwork .branches .branches-card-box:hover {
+  background-color: #FF6400;
+}
+.servicenetwork .branches .branches-card-box:hover h2 {
+  color: #fff;
+}
+.servicenetwork .branches .branches-card-box:hover p {
+  color: #fff;
+}
+.servicenetwork .branches .branches-card-box:hover i {
+  color: #fff !important;
+}
+.servicenetwork .branches .branches-card-box:hover span {
+  color: #fff !important;
+}
+.servicenetwork .branches .branches-card-box .branches-left-con h2 {
+  margin-bottom: 0px;
+}
+.servicenetwork .branches .branches-card-box .branches-left-con p {
+  font-size: 15px;
+  font-weight: 400;
+}
+.servicenetwork .branches .branches-card-box .branches-right-con .branch-clock {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.servicenetwork .branches .branches-card-box .branches-right-con .branch-clock i {
+  font-size: 35px;
+  color: #ff6400;
+}
+.servicenetwork .branches .branches-card-box .branches-right-con .branch-clock span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+.servicenetwork .branches .branches-card-box .branches-right-con .branch-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.servicenetwork .branches .branches-card-box .branches-right-con .branch-info i {
+  font-size: 35px;
+  color: #ff6400;
+}
+.servicenetwork .branches .branches-card-box .branches-right-con .branch-info span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  opacity: 0.8;
+}
+.servicenetwork .tab-links {
+  display: flex;
+  align-items: center;
+}
+.servicenetwork .tab-links .noactive {
+  cursor: pointer;
+}
+.servicenetwork .tab-links .active {
+  cursor: pointer;
+}
+.servicenetwork .warn {
+  font-weight: 400;
+  line-height: 16px;
+  background: #FF6400;
+  padding: 20px 65px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.servicenetwork .warn img {
+  font-size: 10%;
+}
+.servicenetwork .warn p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+.servicenetwork .allbranch {
+  margin-top: 50px;
+}
+.servicenetwork .saturdaybranch {
+  margin-top: 50px;
+}
+
+@media (max-width: 576px) {
+  .branches-card-box {
+    padding: 20px 40px !important;
+  }
+  .branches-card-box:hover {
+    background-color: #FF6400;
+  }
+  .branches-card-box:hover h2 {
+    color: #fff;
+  }
+  .branches-card-box:hover p {
+    color: #fff;
+  }
+  .branches-card-box:hover i {
+    color: #fff !important;
+  }
+  .branches-card-box:hover span {
+    color: #fff !important;
+  }
+  .branches-card-box .branches-left-con h2 {
+    font-size: 14px !important;
+  }
+  .branches-card-box .branches-left-con p {
+    font-size: 12px !important;
+  }
+  .branches-card-box .branches-right-con .branch-clock {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .branches-card-box .branches-right-con .branch-clock i {
+    font-size: 25px !important;
+    color: #ff6400;
+  }
+  .branches-card-box .branches-right-con .branch-clock span {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+  }
+  .branches-card-box .branches-right-con .branch-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .branches-card-box .branches-right-con .branch-info i {
+    font-size: 25px !important;
+    color: #ff6400;
+  }
+  .branches-card-box .branches-right-con .branch-info span {
+    font-size: 12px !important;
+  }
+}
+.header-title, .UCard .ucard-title h1, .Ubank .ubank-content .ubank-title h1, .Currency h1, .Servis .servis-content .left-con .left-con-title h1, .Servis .servis-content .right-con h1, .outside, .bankcards h1, .debetcards h1, .shopping-cart .block-heading h1,
+.shopping-cart .block-heading h2,
+.shopping-cart .block-heading h3, .humanresource h1, .about h1, .ourvalues h1, .servicenetwork h1 {
+  font-weight: 800;
+  font-size: 28px;
+  color: #FF6400;
+  margin: 0 0 20px;
+}
+
+.description-title, .UCard .ucard-title p, .Ubank .ubank-content .ubank-title p, .Servis .servis-content .left-con .left-con-title p, .Servis .servis-content .right-con p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  line-height: 1.43;
+  margin-bottom: 40px;
+  padding-right: 30px;
+}
+
+.smal-link, .slide-item .slide-content a, .UCard .ucard-title .ucard-links .child1 {
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 14px;
+  padding: 12px 25px;
+  border-radius: 25px;
+}
+
+.big-link, .Ubank .ubank-content .ubank-title a, .Information .news .all-news, .Servis .servis-content .left-con .left-con-title a, .Servis .servis-content .right-con a, .bankcards .bankcard-content button, .debetcards .debetcard-content .card-box .card-content button, .check, .vacany-box .right-info {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 20px;
+  background: #FF6400;
+  border-radius: 25px;
+  font-size: 14px;
+  padding: 15px 45px;
+  box-shadow: 0 10px 10px -10px rgba(255, 107, 0, 0.51);
+  display: inline-block;
+}
+
+.cards-title, .bankcards .bankcard-content .bankcard-title h2, .debetcards .debetcard-content .card-box .card-content h2, .product-name a, .product-info span {
+  font-weight: 800;
+  font-size: 24px;
+  color: #000;
+  line-height: 30px;
+}
+
+.cards-description, .bankcards .bankcard-content .bankcard-title p, .debetcards .debetcard-content .card-box .card-content p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+.tab-menu-button, .humanresource .tab-links .noactive, .servicenetwork .tab-links .noactive {
+  line-height: 14px;
+  font-size: 14px;
+  color: #a1a1a1;
+  text-decoration: none;
+  margin-right: 5px;
+  margin-left: 5px;
+  display: inline-block;
+  padding: 16px 40px;
+  border-radius: 25px;
+  border: 2px solid #969696;
+}
+
+.tab-active, .humanresource .tab-links .active, .servicenetwork .tab-links .active {
+  display: inline-block;
+  padding: 16px 40px;
+  margin-right: 10px;
+  font-family: CocoSharp, Arial;
+  font-weight: 700;
+  font-size: 12px;
+  color: #FF6400;
+  border-radius: 25px;
+  border: 2px solid #FF6400;
+  position: relative;
+}
+.tab-active::before, .humanresource .tab-links .active::before, .servicenetwork .tab-links .active::before {
+  position: absolute;
+  bottom: -4px;
+  transform: rotateZ(-45deg) translate(-50%);
+  width: 16px;
+  height: 16px;
+  border-left: 2px solid #FF6400;
+  border-bottom: 2px solid #FF6400;
+  content: "";
+  left: 50%;
+  background: #fafafa;
+}
+
+.feature_value, .login .internet-banking .login-info .login-info-header h2, .commoninfo .commoninfo-cards .info-card .info-card-content h1, .personal .personal-box .personal-content h2, .ourvalues .values-box h2, .servicenetwork .branches .branches-card-box .branches-left-con h2 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.feature_description, .commoninfo .commoninfo-cards .info-card .info-card-content p, .personal .personal-box .personal-content p, .about p, .working .card-head-descrpi, .ourvalues .values-box p, .servicenetwork .branches .branches-card-box .branches-left-con p, .servicenetwork .branches .branches-card-box .branches-right-con .branch-clock span, .servicenetwork .branches .branches-card-box .branches-right-con .branch-info span {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.login {
+  background-image: url("https://online.unibank.az/ibank/resources/imgs/icons/bg-login.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.login .internet-banking {
+  width: 1062px;
+  min-height: 734px;
+  height: auto !important;
+  background-color: #fafafa;
+  border-radius: 5px;
+  box-shadow: 0 40px 50px rgba(0, 0, 0, 0.3);
+  margin: 0 auto !important;
+}
+.login .internet-banking .login-tab-menu {
+  width: 530px;
+  min-height: 734px;
+  height: auto !important;
+  border-radius: 5px;
+  float: left;
+  position: relative;
+}
+.login .internet-banking .login-tab-menu .login-tab-content-active {
+  transition: 1s;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 324px;
+  margin-top: 103px;
+}
+.login .internet-banking .login-tab-menu .login-tab-content-active .login-tab-content-img {
+  text-align: center;
+}
+.login .internet-banking .login-tab-menu .login-tab-content-active .login-tab-content-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+.login .internet-banking .login-tab-menu .login-tab-content-active .login-tab-content-title {
+  margin-top: 25px;
+}
+.login .internet-banking .login-tab-menu .login-tab-content-active .login-tab-content-title h2 {
+  color: #3e3e3e;
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+.login .internet-banking .login-tab-menu .login-tab-content-active .login-tab-content-title p {
+  color: #9b9b9b;
+  font-size: 14px;
+}
+.login .internet-banking .login-tab-menu .login-tab-content-nonactive {
+  position: absolute;
+  left: -20px;
+  width: 324px;
+  margin-top: 103px;
+  opacity: 0;
+}
+.login .internet-banking .login-tab-menu .login-tab-content-nonactive .login-tab-content-img {
+  text-align: center;
+}
+.login .internet-banking .login-tab-menu .login-tab-content-nonactive .login-tab-content-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+.login .internet-banking .login-tab-menu .login-tab-content-nonactive .login-tab-content-title {
+  margin-top: 25px;
+}
+.login .internet-banking .login-tab-menu .login-tab-content-nonactive .login-tab-content-title h2 {
+  color: #3e3e3e;
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+.login .internet-banking .login-tab-menu .login-tab-content-nonactive .login-tab-content-title p {
+  color: #9b9b9b;
+  font-size: 14px;
+}
+.login .internet-banking .login-tab-menu .login-tab-dots {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.login .internet-banking .login-tab-menu .login-tab-dots .dot-active {
+  width: 15px;
+  height: 15px;
+  border-radius: 100px;
+  background-color: #ff6400;
+}
+.login .internet-banking .login-tab-menu .login-tab-dots .dot-nonactive {
+  width: 15px;
+  height: 15px;
+  border-radius: 100px;
+  background-color: rgba(175, 168, 168, 0.55);
+}
+.login .internet-banking .login-info {
+  width: 530px;
+  min-height: 734px;
+  height: auto !important;
+  padding: 85px 40px 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  float: right;
+  box-shadow: -8px 3px 12px 4px rgba(0, 0, 0, 0.08);
+}
+.login .internet-banking .login-info .login-info-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.login .internet-banking .login-info .login-info-header h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.login .internet-banking .login-info .login-info-header a {
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+}
+.login .internet-banking .login-info .login-info-header a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  bottom: 0;
+}
+.login .internet-banking .login-info .login-qr {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.login .internet-banking .login-info .login-qr .login-qr-img img {
+  width: 90%;
+  height: 90%;
+  position: relative;
+  right: 13px;
+}
+.login .internet-banking .login-info .login-qr .login-direction {
+  cursor: pointer;
+}
+.login .internet-banking .login-info .login-qr .login-direction p {
+  border: 1px solid #ff9500;
+  width: 249px;
+  border-radius: 5px;
+  padding: 20px 25px;
+  margin-top: 11px;
+}
+.login .internet-banking .login-info .login-qr .login-direction p img {
+  width: 14%;
+}
+.login .internet-banking .login-info .login-qr .login-direction p .direct-des {
+  position: relative;
+  cursor: pointer;
+}
+.login .internet-banking .login-info .login-qr .login-direction p .direct-des::before {
+  content: "";
+  width: 100%;
+  height: 0.5px;
+  background-color: #ff6400;
+  position: absolute;
+  bottom: -1px;
+}
+.login .internet-banking .login-info .login-warn {
+  padding: 7px;
+  font-size: 14px;
+  color: gray;
+  width: 100%;
+  background: #f3f3f3;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.login .internet-banking .login-info .login-warn img {
+  width: 7%;
+  opacity: 0.7;
+}
+.login .internet-banking .login-info .login-warn p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 7px;
+}
+.login .internet-banking .login-info .fin-code {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  margin-top: 55px;
+}
+.login .internet-banking .login-info .fin-code::before {
+  content: "";
+  width: 100%;
+  height: 0.5px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2156862745);
+  bottom: -1px;
+}
+.login .internet-banking .login-info .fin-code::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 0.8px;
+  background-color: #ff6400;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.login .internet-banking .login-info .fin-code p {
+  position: absolute;
+  left: 30px;
+  bottom: 2px;
+  font-size: 14px;
+  color: #e28116;
+  font-weight: 500;
+}
+.login .internet-banking .login-info .fin-code img {
+  width: 5.5%;
+}
+.login .internet-banking .login-info .fin-code input {
+  width: 90%;
+  border: none;
+  outline: none;
+}
+.login .internet-banking .login-info .fin-code-active {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  margin-top: 55px;
+}
+.login .internet-banking .login-info .fin-code-active::before {
+  content: "";
+  width: 100%;
+  height: 0.5px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2156862745);
+  bottom: -1px;
+}
+.login .internet-banking .login-info .fin-code-active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1.8px;
+  background-color: #ff6400;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.4s;
+}
+.login .internet-banking .login-info .fin-code-active p {
+  position: absolute;
+  left: 30px;
+  bottom: 35px;
+  font-size: 12px;
+  color: #e28116;
+  font-weight: 500;
+  transition: 0.4s;
+}
+.login .internet-banking .login-info .fin-code-active img {
+  width: 5.5%;
+}
+.login .internet-banking .login-info .fin-code-active input {
+  width: 85%;
+  border: none;
+  outline: none;
+  position: absolute;
+  bottom: 5px;
+  left: 30px;
+}/*# sourceMappingURL=main.css.map */

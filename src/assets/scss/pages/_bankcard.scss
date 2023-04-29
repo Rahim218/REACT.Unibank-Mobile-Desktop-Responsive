@@ -1,0 +1,194 @@
+@import '../abstracts/extend';
+@import '../abstracts/variables';
+
+.outside {
+    @extend .header-title;
+    padding-top: 50px;
+
+}
+
+.bankcards {
+
+    h1 {
+        @extend .header-title
+    }
+
+    .bankcard-content {
+        position: relative;
+        background-color: $greey;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        border-radius: 10px;
+        padding: 50px 65px;
+        margin-top: 30px;
+
+        .bankcard-image {
+            img {
+                width: 95%;
+            }
+        }
+
+        button {
+            @extend .big-link;
+            position: absolute;
+            border: none;
+            top: 70px;
+            right: 70px;
+        }
+
+        .bankcard-title {
+
+
+            h2 {
+                @extend .cards-title;
+            }
+
+            p {
+                @extend .cards-description;
+            }
+
+            .bankcard-info {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .info-currency,
+                .info-percent,
+                .info-cash {
+                    display: flex;
+                    align-items: stretch;
+                    gap: 10px;
+
+                    i {
+                        color: #ff6b00;
+                        font-size: 25px;
+                        margin-top: 10px;
+
+                    }
+
+                    p {
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #000;
+                        text-align: left;
+                    }
+                }
+            }
+
+
+        }
+
+    }
+
+}
+
+.debetcards {
+    padding: 50px 0;
+
+    h1 {
+        @extend .header-title;
+    }
+
+    .debetcard-content {
+
+        .card-box {
+            padding: 45px 65px;
+            border-radius: 10px;
+            background-color: $greey;
+
+            .card-photo {
+                width: 100%;
+
+                img {
+                    width: 70%;
+                    border-radius: 15px;
+                    box-shadow: -15px 15px 30px 0 rgba(0, 0, 0, .24);
+                }
+
+
+            }
+
+            .card-content {
+                margin-top: 35px;
+
+                h2 {
+                    @extend .cards-title;
+                }
+
+                p {
+                    @extend .cards-description;
+                }
+
+                button {
+                    @extend .big-link;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .bankcards {
+        .bankcard-content {
+            position: relative;
+
+            display: flex !important;
+            flex-wrap: wrap;
+            text-align: center;
+            padding: 30px 40px !important;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 10px;
+
+            .bankcard-title {
+                .bankcard-info {
+
+                    .info-cash,
+                    .info-currency,
+                    .info-percent {
+                        display: flex;
+                        flex-direction: column;
+
+                        p {
+
+                            font-size: 12px;
+                            line-height: 12px;
+                            text-align: center;
+                        }
+
+                    }
+
+                }
+            }
+
+            button {
+                position: absolute;
+                top: 490px;
+                right: 120px;
+
+
+            }
+        }
+    }
+
+    .debetcard-content {
+        .card-box {
+            padding: 25px 40px !important;
+            margin-top: 10px !important;
+            align-items: center !important;
+
+            .card-photo {
+                img {
+                    width: 100% !important;
+                }
+            }
+
+            .card-content {
+                text-align: center !important;
+            }
+        }
+    }
+}
