@@ -163,4 +163,15 @@
 		padding: 4px 10px;
 		text-align: center;
 	}
+	
+}
+
+@media (max-width: 576px) {
+	.card-url{
+		text-align: center !important;
+		width: 70% !important;
+	}
+	.product-card-basket{
+		text-align: center;
+	}
 }

@@ -24,21 +24,21 @@ function HumanResource() {
                     <p className={toggle === 5 ? 'active' : 'noactive'} onClick={() => updateToggle(5)}>Təlim və inkişaf</p>
                 </div>
 
-                <div className={toggle === 1 ? 'showcontent' : 'content'}>
+                <div className={toggle === 1 ? 'showcontent' : 'hidecontent'}>
                     <CommonInfo />
                 </div>
-                <div className={toggle === 2 ? 'showcontent' : 'content'}>
+                <div className={toggle === 2 ? 'showcontent' : 'hidecontent'}>
                     <Vacancy />
                 </div>
                 
-                <div className={toggle === 3 ? 'showcontent' : 'content'}>
+                <div className={toggle === 3 ? 'showcontent' : 'hidecontent'}>
                     <Working/>
 
                 </div>
-                <div className={toggle === 4 ? 'showcontent' : 'content'}>
+                <div className={toggle === 4 ? 'showcontent' : 'hidecontent'}>
                     <Prosses/>
                 </div>
-                <div className={toggle === 5 ? 'showcontent' : 'content'}>
+                <div className={toggle === 5 ? 'showcontent' : 'hidecontent'}>
                     <Training/>
                 </div>
 

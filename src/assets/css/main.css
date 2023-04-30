@@ -220,12 +220,6 @@
 }
 
 @media (max-width: 576px) {
-  .UCard {
-    display: none !important;
-  }
-  .Servis {
-    display: none !important;
-  }
   #top-header {
     background-color: #fff;
     position: relative;
@@ -253,7 +247,7 @@
   .box {
     display: flex !important;
     align-items: center !important;
-    justify-content: space-between !important;
+    justify-content: space-around;
   }
   .box .nav {
     display: none !important;
@@ -267,10 +261,7 @@
     justify-content: space-between;
   }
   .media-header {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    align-items: center !important;
-    justify-content: space-between !important;
+    display: none !important;
   }
   #bottom-header {
     display: none !important;
@@ -286,6 +277,38 @@
   }
   #side-bar {
     z-index: 111 !important;
+  }
+  .top-header2 {
+    display: block !important;
+  }
+  .top-header2 .top-header2-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .top-header2 .top-header2-content .logo {
+    text-align: center;
+  }
+  .top-header2 .top-header2-content .logo img {
+    width: 100%;
+  }
+  .top-header2 .top-header2-content .contact {
+    background: #f5f5f6;
+    border: none;
+    line-height: 45px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 0 0 15px;
+  }
+  .top-header2 .top-header2-content .contact i {
+    color: #ff6400;
+  }
+  .top-header2 .top-header2-content .contact span {
+    color: #000;
+    font-weight: bold;
   }
 }
 @media (min-width: 576px) {
@@ -311,14 +334,14 @@ p {
 
 .header-title, .servicenetwork h1, .ourvalues h1, .about h1, .humanresource h1, .shopping-cart .block-heading h1,
 .shopping-cart .block-heading h2,
-.shopping-cart .block-heading h3, .debetcards h1, .bankcards h1, .outside, .Servis .servis-content .right-con h1, .Servis .servis-content .left-con .left-con-title h1, .Currency h1, .Ubank .ubank-content .ubank-title h1, .UCard .ucard-title h1 {
+.shopping-cart .block-heading h3, .debetcards h1, .bankcards h1, .outside, .ContactUs .contactUs-content .contactUs-right-con h1, .ContactUs .contactUs-content .contactUs-left-con .servis-content h1, .Currency h1, .Ubank .ubank-content .ubank-title h1 {
   font-weight: 800;
   font-size: 28px;
   color: #FF6400;
   margin: 0 0 20px;
 }
 
-.description-title, .Servis .servis-content .right-con p, .Servis .servis-content .left-con .left-con-title p, .Ubank .ubank-content .ubank-title p, .UCard .ucard-title p {
+.description-title, .ContactUs .contactUs-content .contactUs-right-con p, .ContactUs .contactUs-content .contactUs-left-con .servis-content p, .Ubank .ubank-content .ubank-title p {
   font-weight: 400;
   font-size: 14px;
   color: #000;
@@ -327,7 +350,7 @@ p {
   padding-right: 30px;
 }
 
-.smal-link, .UCard .ucard-title .ucard-links .child1, .slide-item .slide-content a {
+.smal-link, .slide-items .slide-item .slide-content a {
   border: 1px solid #fff;
   color: #fff;
   font-size: 14px;
@@ -335,7 +358,7 @@ p {
   border-radius: 25px;
 }
 
-.big-link, .vacany-box .right-info, .check, .debetcards .debetcard-content .card-box .card-content button, .bankcards .bankcard-content button, .Servis .servis-content .right-con a, .Servis .servis-content .left-con .left-con-title a, .Information .news .all-news, .Ubank .ubank-content .ubank-title a {
+.big-link, .vacany-box .right-info, .check, .debetcards .debetcard-content .card-box .card-content button, .bankcards .bankcard-content button, .ContactUs .contactUs-content .contactUs-right-con a, .ContactUs .contactUs-content .contactUs-left-con .servis-content a, .Information .news .all-news, .Ubank .ubank-content .ubank-title a {
   color: #fff;
   font-weight: 700;
   text-decoration: none;
@@ -417,18 +440,18 @@ p {
   margin-bottom: 20px;
 }
 
-.slide-item {
+.slide-items .slide-item {
   background-color: #ff6400;
   height: 450px;
   border-radius: 10px;
   position: relative;
 }
-.slide-item .rowlist {
+.slide-items .slide-item .rowlist {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.slide-item .image img {
+.slide-items .slide-item .image img {
   width: 35%;
   position: absolute;
   bottom: 0;
@@ -436,10 +459,10 @@ p {
   margin: 0;
   filter: drop-shadow(-70px 20px 40px rgba(0, 0, 0, 0.24));
 }
-.slide-item .slide-content {
+.slide-items .slide-item .slide-content {
   margin: 120px 0;
 }
-.slide-item .slide-content h2 {
+.slide-items .slide-item .slide-content h2 {
   font-weight: 800;
   font-size: 34px;
   color: #fff;
@@ -447,7 +470,7 @@ p {
   line-height: normal;
   width: 90%;
 }
-.slide-item .slide-content p {
+.slide-items .slide-item .slide-content p {
   width: 460px;
   margin-top: 10px;
   font-weight: 400;
@@ -522,14 +545,14 @@ p {
 }
 .header-title, .servicenetwork h1, .ourvalues h1, .about h1, .humanresource h1, .shopping-cart .block-heading h1,
 .shopping-cart .block-heading h2,
-.shopping-cart .block-heading h3, .debetcards h1, .bankcards h1, .outside, .Servis .servis-content .right-con h1, .Servis .servis-content .left-con .left-con-title h1, .Currency h1, .Ubank .ubank-content .ubank-title h1, .UCard .ucard-title h1 {
+.shopping-cart .block-heading h3, .debetcards h1, .bankcards h1, .outside, .ContactUs .contactUs-content .contactUs-right-con h1, .ContactUs .contactUs-content .contactUs-left-con .servis-content h1, .Currency h1, .Ubank .ubank-content .ubank-title h1 {
   font-weight: 800;
   font-size: 28px;
   color: #FF6400;
   margin: 0 0 20px;
 }
 
-.description-title, .Servis .servis-content .right-con p, .Servis .servis-content .left-con .left-con-title p, .Ubank .ubank-content .ubank-title p, .UCard .ucard-title p {
+.description-title, .ContactUs .contactUs-content .contactUs-right-con p, .ContactUs .contactUs-content .contactUs-left-con .servis-content p, .Ubank .ubank-content .ubank-title p {
   font-weight: 400;
   font-size: 14px;
   color: #000;
@@ -538,7 +561,7 @@ p {
   padding-right: 30px;
 }
 
-.smal-link, .UCard .ucard-title .ucard-links .child1, .slide-item .slide-content a {
+.smal-link, .slide-items .slide-item .slide-content a {
   border: 1px solid #fff;
   color: #fff;
   font-size: 14px;
@@ -546,7 +569,7 @@ p {
   border-radius: 25px;
 }
 
-.big-link, .vacany-box .right-info, .check, .debetcards .debetcard-content .card-box .card-content button, .bankcards .bankcard-content button, .Servis .servis-content .right-con a, .Servis .servis-content .left-con .left-con-title a, .Information .news .all-news, .Ubank .ubank-content .ubank-title a {
+.big-link, .vacany-box .right-info, .check, .debetcards .debetcard-content .card-box .card-content button, .bankcards .bankcard-content button, .ContactUs .contactUs-content .contactUs-right-con a, .ContactUs .contactUs-content .contactUs-left-con .servis-content a, .Information .news .all-news, .Ubank .ubank-content .ubank-title a {
   color: #fff;
   font-weight: 700;
   text-decoration: none;
@@ -695,43 +718,75 @@ p {
   padding: 40px 0 25px;
 }
 
-.UCard .Ucard-content {
-  background: #fafafa;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  height: 400px;
-  padding: 35px 0 20px;
+.yourCard {
+  margin: 80px 0 60px;
 }
-.UCard .ucard-image {
-  position: relative;
+.yourCard .yourCard-content {
+  background-color: #fafafa;
+  height: 420px;
+  border-radius: 10px;
   width: 100%;
 }
-.UCard .ucard-image img {
-  position: absolute;
-  width: 95%;
-  top: -280px;
-}
-.UCard .ucard-title p {
+.yourCard .yourCard-content .yourCard-content-img img {
   width: 85%;
+  margin-top: -80px;
+  margin-left: 20px;
 }
-.UCard .ucard-title .ucard-links {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+.yourCard .yourCard-content .yourCard-content-title .yourCard-content-description h1 {
+  font-weight: 800;
+  font-size: 28px;
+  color: #FF6400;
+  margin: 0 0 20px;
 }
-.UCard .ucard-title .ucard-links .child1 {
+.yourCard .yourCard-content .yourCard-content-title .yourCard-content-description p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  line-height: 1.43;
+  margin-bottom: 40px;
+  padding-right: 30px;
+  width: 80%;
+}
+.yourCard .yourCard-content .yourCard-content-title .yourCard-content-btns div:nth-child(1) {
+  padding: 16px 25px;
+  font-size: 14px;
+  line-height: 16px;
   background-color: #FF6400;
   color: white;
-}
-.UCard .ucard-title .ucard-links a {
-  color: #969696;
   border-radius: 25px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 12px 30px;
+  text-align: center;
+}
+.yourCard .yourCard-content .yourCard-content-title .yourCard-content-btns div:nth-child(1) a {
+  color: white;
+  font-weight: 500;
+}
+.yourCard .yourCard-content .yourCard-content-title .yourCard-content-btns div:nth-child(2) {
+  display: inline-block;
+  padding: 14px 30px;
   font-size: 14px;
-  font-weight: 700;
+  border-radius: 25px;
+  font-weight: 600;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #fff !important;
+  text-align: center;
+}
+.yourCard .yourCard-content .yourCard-content-title .yourCard-content-btns div:nth-child(2) a {
+  color: #969696;
+  font-weight: 500;
+}
+.yourCard .yourCard-content .yourCard-content-title .yourCard-content-btns div:nth-child(3) {
+  display: inline-block;
+  padding: 14px 30px;
+  font-size: 14px;
+  border-radius: 25px;
+  font-weight: 600;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #969696 !important;
+  text-align: center;
+}
+.yourCard .yourCard-content .yourCard-content-title .yourCard-content-btns div:nth-child(3) a {
+  color: #969696;
+  font-weight: 500;
 }
 
 .Ubank .ubank-content {
@@ -914,48 +969,39 @@ p {
   margin-top: 15px;
 }
 
-.Servis {
-  padding: 15px 0;
+.ContactUs {
+  padding: 30px 0;
 }
-.Servis .servis-content {
-  border-radius: 10px;
-}
-.Servis .servis-content .left-con {
-  background-color: #fafafa;
-  padding: 45px 65px;
-  display: flex;
-  align-items: center;
+.ContactUs .contactUs-content {
   height: 320px;
-  border-radius: 10px;
 }
-.Servis .servis-content .left-con .left-con-title h1 {
-  line-height: 40px;
-}
-.Servis .servis-content .left-con .left-con-title p {
-  font-weight: 400 !important;
-}
-.Servis .servis-content .left-con .left-con-image img {
-  width: 220px;
-}
-.Servis .servis-content .right-con {
+.ContactUs .contactUs-content .contactUs-left-con {
   padding: 45px 65px;
-  height: 320px;
-  border-radius: 10px;
-  background-color: #fafafa;
   position: relative;
+  overflow: hidden;
+  background-color: #fafafa;
+  border-radius: 10px;
+  height: 320px;
 }
-.Servis .servis-content .right-con img {
+.ContactUs .contactUs-content .contactUs-left-con .servis-content p {
+  width: 100%;
+}
+.ContactUs .contactUs-content .contactUs-left-con .servis-location img {
+  margin-bottom: -43px;
+}
+.ContactUs .contactUs-content .contactUs-right-con {
+  position: relative;
+  padding: 45px 65px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #fafafa;
+  height: 320px;
+}
+.ContactUs .contactUs-content .contactUs-right-con img {
   position: absolute;
-  width: 80%;
   top: 0;
   right: 0;
-}
-.Servis .servis-content .right-con h1 {
-  line-height: 38px;
-}
-.Servis .servis-content .right-con p {
   width: 80%;
-  font-weight: 400 !important;
 }
 @media (max-width: 576px) {
   .card {
@@ -983,51 +1029,76 @@ p {
     font-size: 12px !important;
     margin: 0 auto;
   }
-  .UCard .Ucard-content {
-    height: 590px !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  .yourCard {
+    margin: 40px 0 60px !important;
   }
-  .UCard .Ucard-content .ucard-image {
-    position: relative;
+  .yourCard .yourCard-content {
+    background-color: #fafafa;
+    height: 570px !important;
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 auto;
   }
-  .UCard .Ucard-content .ucard-image img {
-    position: absolute;
-    top: 0;
+  .yourCard .yourCard-content .yourCard-content-img img {
+    width: 95%;
+    margin-top: -80px;
+    margin-left: 0;
   }
-  .UCard .Ucard-content .ucard-title {
-    padding-right: 20px;
-    padding-left: 30px;
+  .yourCard .yourCard-content .yourCard-content-title {
     margin-bottom: 20px;
   }
-  .UCard .Ucard-content .ucard-title h1 {
-    font-size: 20px;
-    line-height: normal;
-    margin-bottom: 10px;
-    font-weight: 800;
+  .yourCard .yourCard-content .yourCard-content-title .yourCard-content-description {
+    padding: 0 20px;
   }
-  .UCard .Ucard-content .ucard-title p {
-    width: 350px;
-    font-size: 12px;
+  .yourCard .yourCard-content .yourCard-content-title .yourCard-content-description h1 {
+    font-size: 20px !important;
+    line-height: normal !important;
+    margin-bottom: 10px !important;
+    font-weight: 800 !important;
   }
-  .UCard .Ucard-content .ucard-title .ucard-links {
-    display: flex;
-    flex-direction: column;
+  .yourCard .yourCard-content .yourCard-content-title .yourCard-content-description p {
+    margin-bottom: 20px !important;
+    font-size: 12px !important;
+    line-height: normal !important;
+    width: 100% !important;
   }
-  .UCard .Ucard-content .ucard-title .ucard-links .child1 {
-    width: 100%;
+  .yourCard .yourCard-content .yourCard-content-title .yourCard-content-btns div:nth-child(1) {
+    padding: 16px 25px;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: #FF6400;
+    color: white;
+    border-radius: 25px;
+    text-align: center;
+    width: 90%;
+  }
+  .yourCard .yourCard-content .yourCard-content-title .yourCard-content-btns div:nth-child(2) {
+    display: inline-block;
+    padding: 14px 30px;
+    font-size: 12px !important;
+    border-radius: 25px;
+    font-weight: 600;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #fff !important;
     text-align: center;
   }
-  .UCard .Ucard-content .ucard-title .ucard-links .link-same {
-    display: inline-block !important;
-    display: flex !important;
-    align-items: center !important;
-    gap: 20px;
+  .yourCard .yourCard-content .yourCard-content-title .yourCard-content-btns div:nth-child(3) {
+    display: inline-block;
+    padding: 14px 30px;
+    font-size: 12px !important;
+    border-radius: 25px;
+    font-weight: 600;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #fff !important;
+    text-align: center;
+  }
+  .Ubank {
+    width: 100% !important;
   }
   .Ubank .ubank-content {
     display: flex;
     flex-wrap: wrap;
+    width: 100% !important;
     padding: 20px;
   }
   .Ubank .ubank-content .ubank-title {
@@ -1136,70 +1207,101 @@ p {
     left: 50%;
     background: #fafafa;
   }
-  .nav-tabs {
-    border: none;
-    margin: 20px 40px;
-    display: flex;
-    align-items: center;
+  .Currency .currencyMedia {
+    display: block !important;
   }
-  .nav-tabs .nav-link {
-    border: none;
-    padding: 0;
+  .Currency .currencyMedia .currency-tab-menu {
+    padding-left: 40px;
   }
-  .Servis .left-con {
-    background-color: #fafafa !important;
-    height: 270px !important;
-    padding: 14px 20px !important;
-    width: 100% !important;
-    margin: 0;
+  .Currency .currencyMedia .update-time {
+    display: inline-block;
+    padding-left: 40px;
+    margin-top: 40px;
   }
-  .Servis .left-con .left-con-title h1 {
+  .Currency .currencyMedia .cash {
+    padding: 10px 20px 10px 40px;
+  }
+  .Currency .currencyMedia .showTab {
+    display: block;
+  }
+  .Currency .currencyMedia .hideTab {
+    display: none;
+  }
+  .ContactUs {
+    padding: 30px 0 20px;
+  }
+  .ContactUs .contactUs-content {
+    height: 450px !important;
+  }
+  .ContactUs .contactUs-content .contactUs-left-con {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px !important;
+    position: relative;
+    overflow: hidden;
+    background-color: #fafafa;
+    border-radius: 10px;
+    height: 220px !important;
+  }
+  .ContactUs .contactUs-content .contactUs-left-con .servis-content h1 {
     font-size: 20px !important;
     line-height: 28px !important;
+    margin-bottom: 15px !important;
   }
-  .Servis .left-con .left-con-title p {
-    font-size: 12px;
-    width: 120%;
-    margin-bottom: 20px !important;
-    font-weight: 400 !important;
-    opacity: 0.7;
+  .ContactUs .contactUs-content .contactUs-left-con .servis-content p {
+    width: 200px !important;
+    font-size: 12px !important;
+    margin-bottom: 15px !important;
   }
-  .Servis .left-con .left-con-title a {
+  .ContactUs .contactUs-content .contactUs-left-con .servis-content a {
     padding: 13px 35px !important;
+    line-height: normal !important;
     font-size: 12px !important;
   }
-  .Servis .left-con .left-con-image img {
-    width: 150px !important;
-    margin-top: 50px;
-    padding-right: 40px !important;
+  .ContactUs .contactUs-content .servis-location img {
+    margin-bottom: -43px;
+    width: 170px !important;
+    height: 170px;
   }
-  .Servis .right-con {
-    padding: 14px 20px !important;
-    height: 270px !important;
+  .ContactUs .contactUs-right-con {
+    position: relative;
+    padding: 20px !important;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #fafafa;
+    height: 220px !important;
   }
-  .Servis .right-con h1 {
+  .ContactUs .contactUs-right-con img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+  }
+  .ContactUs .contactUs-right-con h1 {
     font-size: 20px !important;
     line-height: 28px !important;
+    margin-bottom: 15px !important;
   }
-  .Servis .right-con p {
+  .ContactUs .contactUs-right-con p {
     font-size: 12px !important;
-    width: 100% !important;
+    margin-bottom: 15px !important;
   }
-  .Servis .right-con a {
+  .ContactUs .contactUs-right-con a {
     padding: 13px 35px !important;
+    line-height: normal !important;
     font-size: 12px !important;
   }
 }
 .header-title, .servicenetwork h1, .ourvalues h1, .about h1, .humanresource h1, .shopping-cart .block-heading h1,
 .shopping-cart .block-heading h2,
-.shopping-cart .block-heading h3, .debetcards h1, .bankcards h1, .outside, .UCard .ucard-title h1, .Ubank .ubank-content .ubank-title h1, .Currency h1, .Servis .servis-content .left-con .left-con-title h1, .Servis .servis-content .right-con h1 {
+.shopping-cart .block-heading h3, .debetcards h1, .bankcards h1, .outside, .Ubank .ubank-content .ubank-title h1, .Currency h1, .ContactUs .contactUs-content .contactUs-left-con .servis-content h1, .ContactUs .contactUs-content .contactUs-right-con h1 {
   font-weight: 800;
   font-size: 28px;
   color: #FF6400;
   margin: 0 0 20px;
 }
 
-.description-title, .UCard .ucard-title p, .Ubank .ubank-content .ubank-title p, .Servis .servis-content .left-con .left-con-title p, .Servis .servis-content .right-con p {
+.description-title, .Ubank .ubank-content .ubank-title p, .ContactUs .contactUs-content .contactUs-left-con .servis-content p, .ContactUs .contactUs-content .contactUs-right-con p {
   font-weight: 400;
   font-size: 14px;
   color: #000;
@@ -1208,7 +1310,7 @@ p {
   padding-right: 30px;
 }
 
-.smal-link, .slide-item .slide-content a, .UCard .ucard-title .ucard-links .child1 {
+.smal-link, .slide-items .slide-item .slide-content a {
   border: 1px solid #fff;
   color: #fff;
   font-size: 14px;
@@ -1216,7 +1318,7 @@ p {
   border-radius: 25px;
 }
 
-.big-link, .vacany-box .right-info, .check, .debetcards .debetcard-content .card-box .card-content button, .bankcards .bankcard-content button, .Ubank .ubank-content .ubank-title a, .Information .news .all-news, .Servis .servis-content .left-con .left-con-title a, .Servis .servis-content .right-con a {
+.big-link, .vacany-box .right-info, .check, .debetcards .debetcard-content .card-box .card-content button, .bankcards .bankcard-content button, .Ubank .ubank-content .ubank-title a, .Information .news .all-news, .ContactUs .contactUs-content .contactUs-left-con .servis-content a, .ContactUs .contactUs-content .contactUs-right-con a {
   color: #fff;
   font-weight: 700;
   text-decoration: none;
@@ -1409,14 +1511,14 @@ p {
 }
 .header-title, .servicenetwork h1, .ourvalues h1, .about h1, .humanresource h1, .shopping-cart .block-heading h1,
 .shopping-cart .block-heading h2,
-.shopping-cart .block-heading h3, .debetcards h1, .bankcards h1, .outside, .UCard .ucard-title h1, .Ubank .ubank-content .ubank-title h1, .Currency h1, .Servis .servis-content .left-con .left-con-title h1, .Servis .servis-content .right-con h1 {
+.shopping-cart .block-heading h3, .debetcards h1, .bankcards h1, .outside, .Ubank .ubank-content .ubank-title h1, .Currency h1, .ContactUs .contactUs-content .contactUs-left-con .servis-content h1, .ContactUs .contactUs-content .contactUs-right-con h1 {
   font-weight: 800;
   font-size: 28px;
   color: #FF6400;
   margin: 0 0 20px;
 }
 
-.description-title, .UCard .ucard-title p, .Ubank .ubank-content .ubank-title p, .Servis .servis-content .left-con .left-con-title p, .Servis .servis-content .right-con p {
+.description-title, .Ubank .ubank-content .ubank-title p, .ContactUs .contactUs-content .contactUs-left-con .servis-content p, .ContactUs .contactUs-content .contactUs-right-con p {
   font-weight: 400;
   font-size: 14px;
   color: #000;
@@ -1425,7 +1527,7 @@ p {
   padding-right: 30px;
 }
 
-.smal-link, .slide-item .slide-content a, .UCard .ucard-title .ucard-links .child1 {
+.smal-link, .slide-items .slide-item .slide-content a {
   border: 1px solid #fff;
   color: #fff;
   font-size: 14px;
@@ -1433,7 +1535,7 @@ p {
   border-radius: 25px;
 }
 
-.big-link, .vacany-box .right-info, .check, .debetcards .debetcard-content .card-box .card-content button, .bankcards .bankcard-content button, .Ubank .ubank-content .ubank-title a, .Information .news .all-news, .Servis .servis-content .left-con .left-con-title a, .Servis .servis-content .right-con a {
+.big-link, .vacany-box .right-info, .check, .debetcards .debetcard-content .card-box .card-content button, .bankcards .bankcard-content button, .Ubank .ubank-content .ubank-title a, .Information .news .all-news, .ContactUs .contactUs-content .contactUs-left-con .servis-content a, .ContactUs .contactUs-content .contactUs-right-con a {
   color: #fff;
   font-weight: 700;
   text-decoration: none;
@@ -1616,7 +1718,7 @@ p {
   }
   .bankcards .bankcard-content button {
     position: absolute;
-    top: 490px;
+    top: 440px;
     right: 120px;
   }
   .debetcard-content .card-box {
@@ -1633,14 +1735,14 @@ p {
 }
 .header-title, .servicenetwork h1, .ourvalues h1, .about h1, .humanresource h1, .shopping-cart .block-heading h1,
 .shopping-cart .block-heading h2,
-.shopping-cart .block-heading h3, .UCard .ucard-title h1, .Ubank .ubank-content .ubank-title h1, .Currency h1, .Servis .servis-content .left-con .left-con-title h1, .Servis .servis-content .right-con h1, .outside, .bankcards h1, .debetcards h1 {
+.shopping-cart .block-heading h3, .Ubank .ubank-content .ubank-title h1, .Currency h1, .ContactUs .contactUs-content .contactUs-left-con .servis-content h1, .ContactUs .contactUs-content .contactUs-right-con h1, .outside, .bankcards h1, .debetcards h1 {
   font-weight: 800;
   font-size: 28px;
   color: #FF6400;
   margin: 0 0 20px;
 }
 
-.description-title, .UCard .ucard-title p, .Ubank .ubank-content .ubank-title p, .Servis .servis-content .left-con .left-con-title p, .Servis .servis-content .right-con p {
+.description-title, .Ubank .ubank-content .ubank-title p, .ContactUs .contactUs-content .contactUs-left-con .servis-content p, .ContactUs .contactUs-content .contactUs-right-con p {
   font-weight: 400;
   font-size: 14px;
   color: #000;
@@ -1649,7 +1751,7 @@ p {
   padding-right: 30px;
 }
 
-.smal-link, .slide-item .slide-content a, .UCard .ucard-title .ucard-links .child1 {
+.smal-link, .slide-items .slide-item .slide-content a {
   border: 1px solid #fff;
   color: #fff;
   font-size: 14px;
@@ -1657,7 +1759,7 @@ p {
   border-radius: 25px;
 }
 
-.big-link, .vacany-box .right-info, .check, .Ubank .ubank-content .ubank-title a, .Information .news .all-news, .Servis .servis-content .left-con .left-con-title a, .Servis .servis-content .right-con a, .bankcards .bankcard-content button, .debetcards .debetcard-content .card-box .card-content button {
+.big-link, .vacany-box .right-info, .check, .Ubank .ubank-content .ubank-title a, .Information .news .all-news, .ContactUs .contactUs-content .contactUs-left-con .servis-content a, .ContactUs .contactUs-content .contactUs-right-con a, .bankcards .bankcard-content button, .debetcards .debetcard-content .card-box .card-content button {
   color: #fff;
   font-weight: 700;
   text-decoration: none;
@@ -1882,7 +1984,16 @@ p {
     text-align: center;
   }
 }
-.header-title, .servicenetwork h1, .ourvalues h1, .about h1, .humanresource h1, .UCard .ucard-title h1, .Ubank .ubank-content .ubank-title h1, .Currency h1, .Servis .servis-content .left-con .left-con-title h1, .Servis .servis-content .right-con h1, .outside, .bankcards h1, .debetcards h1, .shopping-cart .block-heading h1,
+@media (max-width: 576px) {
+  .card-url {
+    text-align: center !important;
+    width: 70% !important;
+  }
+  .product-card-basket {
+    text-align: center;
+  }
+}
+.header-title, .servicenetwork h1, .ourvalues h1, .about h1, .humanresource h1, .Ubank .ubank-content .ubank-title h1, .Currency h1, .ContactUs .contactUs-content .contactUs-left-con .servis-content h1, .ContactUs .contactUs-content .contactUs-right-con h1, .outside, .bankcards h1, .debetcards h1, .shopping-cart .block-heading h1,
 .shopping-cart .block-heading h2,
 .shopping-cart .block-heading h3 {
   font-weight: 800;
@@ -1891,7 +2002,7 @@ p {
   margin: 0 0 20px;
 }
 
-.description-title, .UCard .ucard-title p, .Ubank .ubank-content .ubank-title p, .Servis .servis-content .left-con .left-con-title p, .Servis .servis-content .right-con p {
+.description-title, .Ubank .ubank-content .ubank-title p, .ContactUs .contactUs-content .contactUs-left-con .servis-content p, .ContactUs .contactUs-content .contactUs-right-con p {
   font-weight: 400;
   font-size: 14px;
   color: #000;
@@ -1900,7 +2011,7 @@ p {
   padding-right: 30px;
 }
 
-.smal-link, .slide-item .slide-content a, .UCard .ucard-title .ucard-links .child1 {
+.smal-link, .slide-items .slide-item .slide-content a {
   border: 1px solid #fff;
   color: #fff;
   font-size: 14px;
@@ -1908,7 +2019,7 @@ p {
   border-radius: 25px;
 }
 
-.big-link, .vacany-box .right-info, .Ubank .ubank-content .ubank-title a, .Information .news .all-news, .Servis .servis-content .left-con .left-con-title a, .Servis .servis-content .right-con a, .bankcards .bankcard-content button, .debetcards .debetcard-content .card-box .card-content button, .check {
+.big-link, .vacany-box .right-info, .Ubank .ubank-content .ubank-title a, .Information .news .all-news, .ContactUs .contactUs-content .contactUs-left-con .servis-content a, .ContactUs .contactUs-content .contactUs-right-con a, .bankcards .bankcard-content button, .debetcards .debetcard-content .card-box .card-content button, .check {
   color: #fff;
   font-weight: 700;
   text-decoration: none;
@@ -1994,7 +2105,7 @@ p {
   display: block;
 }
 
-.content {
+.hidecontent {
   display: none;
 }
 
@@ -2094,6 +2205,9 @@ p {
   width: 100%;
   transition: 0.5s;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .commoninfo .commoninfo-cards .info-card:hover {
   background-color: #ff6400;
@@ -2102,8 +2216,12 @@ p {
 .commoninfo .commoninfo-cards .info-card:hover p {
   color: #fff;
 }
+.commoninfo .commoninfo-cards .info-card .image {
+  width: 100%;
+}
 .commoninfo .commoninfo-cards .info-card .image img {
-  width: 25%;
+  width: 110%;
+  text-align: center !important;
   border-radius: 10px;
 }
 .commoninfo .commoninfo-cards .info-card .info-card-content h1 {
@@ -2379,39 +2497,25 @@ p {
     height: 6px;
   }
   .info-card {
-    padding: 15px 10px !important;
     display: flex !important;
     align-items: center !important;
-    height: auto !important;
-  }
-  .info-card .image {
-    width: 20% !important;
+    flex-direction: row !important;
+    padding: 15px 40px !important;
+    height: 120px !important;
+    gap: 10px;
   }
   .info-card .image img {
-    width: 50% !important;
-  }
-  .info-card .info-card-content {
-    width: 70%;
+    width: 80% !important;
   }
   .info-card .info-card-content h1 {
-    line-height: 14px !important;
-    font-weight: 700 !important;
     font-size: 14px !important;
-    height: auto;
-    margin-top: 0 !important;
-    margin-bottom: 5px !important;
-    text-align: left;
+    text-align: left !important;
+    margin: 0 0 5px 0 !important;
   }
   .info-card .info-card-content p {
-    line-height: 12px !important;
-    font-weight: 400 !important;
     font-size: 12px !important;
-    text-align: left;
-    margin-bottom: 5px !important;
-    padding-right: 30px !important;
-    height: auto;
-    width: 300px !important;
-    margin-top: 5px !important;
+    text-align: left !important;
+    margin: 0 !important;
   }
   .personal-box {
     padding: 25px 30px !important;
@@ -2636,7 +2740,7 @@ p {
     font-weight: 500 !important;
   }
 }
-.header-title, .servicenetwork h1, .UCard .ucard-title h1, .Ubank .ubank-content .ubank-title h1, .Currency h1, .Servis .servis-content .left-con .left-con-title h1, .Servis .servis-content .right-con h1, .outside, .bankcards h1, .debetcards h1, .shopping-cart .block-heading h1,
+.header-title, .servicenetwork h1, .Ubank .ubank-content .ubank-title h1, .Currency h1, .ContactUs .contactUs-content .contactUs-left-con .servis-content h1, .ContactUs .contactUs-content .contactUs-right-con h1, .outside, .bankcards h1, .debetcards h1, .shopping-cart .block-heading h1,
 .shopping-cart .block-heading h2,
 .shopping-cart .block-heading h3, .humanresource h1, .about h1, .ourvalues h1 {
   font-weight: 800;
@@ -2645,7 +2749,7 @@ p {
   margin: 0 0 20px;
 }
 
-.description-title, .UCard .ucard-title p, .Ubank .ubank-content .ubank-title p, .Servis .servis-content .left-con .left-con-title p, .Servis .servis-content .right-con p {
+.description-title, .Ubank .ubank-content .ubank-title p, .ContactUs .contactUs-content .contactUs-left-con .servis-content p, .ContactUs .contactUs-content .contactUs-right-con p {
   font-weight: 400;
   font-size: 14px;
   color: #000;
@@ -2654,7 +2758,7 @@ p {
   padding-right: 30px;
 }
 
-.smal-link, .slide-item .slide-content a, .UCard .ucard-title .ucard-links .child1 {
+.smal-link, .slide-items .slide-item .slide-content a {
   border: 1px solid #fff;
   color: #fff;
   font-size: 14px;
@@ -2662,7 +2766,7 @@ p {
   border-radius: 25px;
 }
 
-.big-link, .Ubank .ubank-content .ubank-title a, .Information .news .all-news, .Servis .servis-content .left-con .left-con-title a, .Servis .servis-content .right-con a, .bankcards .bankcard-content button, .debetcards .debetcard-content .card-box .card-content button, .check, .vacany-box .right-info {
+.big-link, .Ubank .ubank-content .ubank-title a, .Information .news .all-news, .ContactUs .contactUs-content .contactUs-left-con .servis-content a, .ContactUs .contactUs-content .contactUs-right-con a, .bankcards .bankcard-content button, .debetcards .debetcard-content .card-box .card-content button, .check, .vacany-box .right-info {
   color: #fff;
   font-weight: 700;
   text-decoration: none;
@@ -2897,7 +3001,7 @@ p {
     font-size: 12px !important;
   }
 }
-.header-title, .UCard .ucard-title h1, .Ubank .ubank-content .ubank-title h1, .Currency h1, .Servis .servis-content .left-con .left-con-title h1, .Servis .servis-content .right-con h1, .outside, .bankcards h1, .debetcards h1, .shopping-cart .block-heading h1,
+.header-title, .Ubank .ubank-content .ubank-title h1, .Currency h1, .ContactUs .contactUs-content .contactUs-left-con .servis-content h1, .ContactUs .contactUs-content .contactUs-right-con h1, .outside, .bankcards h1, .debetcards h1, .shopping-cart .block-heading h1,
 .shopping-cart .block-heading h2,
 .shopping-cart .block-heading h3, .humanresource h1, .about h1, .ourvalues h1, .servicenetwork h1 {
   font-weight: 800;
@@ -2906,7 +3010,7 @@ p {
   margin: 0 0 20px;
 }
 
-.description-title, .UCard .ucard-title p, .Ubank .ubank-content .ubank-title p, .Servis .servis-content .left-con .left-con-title p, .Servis .servis-content .right-con p {
+.description-title, .Ubank .ubank-content .ubank-title p, .ContactUs .contactUs-content .contactUs-left-con .servis-content p, .ContactUs .contactUs-content .contactUs-right-con p {
   font-weight: 400;
   font-size: 14px;
   color: #000;
@@ -2915,7 +3019,7 @@ p {
   padding-right: 30px;
 }
 
-.smal-link, .slide-item .slide-content a, .UCard .ucard-title .ucard-links .child1 {
+.smal-link, .slide-items .slide-item .slide-content a {
   border: 1px solid #fff;
   color: #fff;
   font-size: 14px;
@@ -2923,7 +3027,7 @@ p {
   border-radius: 25px;
 }
 
-.big-link, .Ubank .ubank-content .ubank-title a, .Information .news .all-news, .Servis .servis-content .left-con .left-con-title a, .Servis .servis-content .right-con a, .bankcards .bankcard-content button, .debetcards .debetcard-content .card-box .card-content button, .check, .vacany-box .right-info {
+.big-link, .Ubank .ubank-content .ubank-title a, .Information .news .all-news, .ContactUs .contactUs-content .contactUs-left-con .servis-content a, .ContactUs .contactUs-content .contactUs-right-con a, .bankcards .bankcard-content button, .debetcards .debetcard-content .card-box .card-content button, .check, .vacany-box .right-info {
   color: #fff;
   font-weight: 700;
   text-decoration: none;
@@ -3150,21 +3254,28 @@ p {
 .login .internet-banking .login-info .login-qr .login-direction {
   cursor: pointer;
 }
-.login .internet-banking .login-info .login-qr .login-direction p {
+.login .internet-banking .login-info .login-qr .login-direction .p-none {
+  border: 1px solid #eeeeee;
+  width: 249px;
+  border-radius: 5px;
+  padding: 20px 25px;
+  margin-top: 11px;
+}
+.login .internet-banking .login-info .login-qr .login-direction .p-active {
   border: 1px solid #ff9500;
   width: 249px;
   border-radius: 5px;
   padding: 20px 25px;
   margin-top: 11px;
 }
-.login .internet-banking .login-info .login-qr .login-direction p img {
+.login .internet-banking .login-info .login-qr .login-direction img {
   width: 14%;
 }
-.login .internet-banking .login-info .login-qr .login-direction p .direct-des {
+.login .internet-banking .login-info .login-qr .login-direction .direct-des {
   position: relative;
   cursor: pointer;
 }
-.login .internet-banking .login-info .login-qr .login-direction p .direct-des::before {
+.login .internet-banking .login-info .login-qr .login-direction .direct-des::before {
   content: "";
   width: 100%;
   height: 0.5px;
@@ -3218,7 +3329,7 @@ p {
   left: 50%;
   transform: translateX(-50%);
 }
-.login .internet-banking .login-info .fin-code p {
+.login .internet-banking .login-info .fin-code label {
   position: absolute;
   left: 30px;
   bottom: 2px;
@@ -3233,6 +3344,15 @@ p {
   width: 90%;
   border: none;
   outline: none;
+}
+.login .internet-banking .login-info .fin-code input:focus ~ label {
+  position: absolute;
+  left: 30px;
+  bottom: 35px;
+  font-size: 12px;
+  color: #e28116;
+  font-weight: 500;
+  transition: 0.4s;
 }
 .login .internet-banking .login-info .fin-code-active {
   display: flex;
@@ -3280,4 +3400,380 @@ p {
   position: absolute;
   bottom: 5px;
   left: 30px;
+}
+
+.password {
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+}
+
+.form,
+.signature {
+  margin-top: 45px;
+}
+.form .field,
+.signature .field {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+.form .field::before,
+.signature .field::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.5px;
+  bottom: -1px;
+  background-color: rgba(0, 0, 0, 0.4392156863);
+}
+.form .field::after,
+.signature .field::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #ff6400;
+  transform: translateX(-50%);
+}
+.form .field label,
+.signature .field label {
+  position: absolute;
+  content: attr(title);
+  left: 35px;
+  top: -25px;
+  font-size: 14px;
+  color: #ff6400;
+  font-weight: 500;
+}
+.form .field .username,
+.signature .field .username {
+  width: 89%;
+  height: 30px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+}
+.form .field-active,
+.signature .field-active {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.form .field-active::before,
+.signature .field-active::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.5px;
+  bottom: -1px;
+  background-color: rgba(0, 0, 0, 0.4392156863);
+}
+.form .field-active::after,
+.signature .field-active::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 50%;
+  background-color: #ff6400;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+.form .field-active label,
+.signature .field-active label {
+  position: absolute;
+  content: attr(title);
+  left: 35px;
+  top: -25px;
+  font-size: 14px;
+  color: #ff6400;
+  font-weight: 500;
+}
+.form .field-active .username,
+.signature .field-active .username {
+  width: 89%;
+  height: 30px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+}
+.form .key,
+.form .signature-field,
+.form .field2,
+.signature .key,
+.signature .signature-field,
+.signature .field2 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+.form .key::before,
+.form .signature-field::before,
+.form .field2::before,
+.signature .key::before,
+.signature .signature-field::before,
+.signature .field2::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.5px;
+  bottom: -1px;
+  background-color: rgba(0, 0, 0, 0.4392156863);
+}
+.form .key::after,
+.form .signature-field::after,
+.form .field2::after,
+.signature .key::after,
+.signature .signature-field::after,
+.signature .field2::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #ff6400;
+  transform: translateX(-50%);
+}
+.form .key label,
+.form .signature-field label,
+.form .field2 label,
+.signature .key label,
+.signature .signature-field label,
+.signature .field2 label {
+  position: absolute;
+  content: attr(title);
+  left: 35px;
+  top: -25px;
+  font-size: 14px;
+  color: #ff6400;
+  font-weight: 500;
+}
+.form .key .password,
+.form .signature-field .password,
+.form .field2 .password,
+.signature .key .password,
+.signature .signature-field .password,
+.signature .field2 .password {
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+}
+.form .key2,
+.form .signature-field2,
+.form .field-active2,
+.signature .key2,
+.signature .signature-field2,
+.signature .field-active2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.form .key2::before,
+.form .signature-field2::before,
+.form .field-active2::before,
+.signature .key2::before,
+.signature .signature-field2::before,
+.signature .field-active2::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.5px;
+  bottom: -1px;
+  background-color: rgba(0, 0, 0, 0.4392156863);
+}
+.form .key2::after,
+.form .signature-field2::after,
+.form .field-active2::after,
+.signature .key2::after,
+.signature .signature-field2::after,
+.signature .field-active2::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  bottom: -1px;
+  left: 50%;
+  background-color: #ff6400;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+.form .key2 label,
+.form .signature-field2 label,
+.form .field-active2 label,
+.signature .key2 label,
+.signature .signature-field2 label,
+.signature .field-active2 label {
+  position: absolute;
+  content: attr(title);
+  left: 35px;
+  top: -25px;
+  font-size: 14px;
+  color: #ff6400;
+  font-weight: 500;
+}
+.form .key2 .password,
+.form .signature-field2 .password,
+.form .field-active2 .password,
+.signature .key2 .password,
+.signature .signature-field2 .password,
+.signature .field-active2 .password {
+  width: 89%;
+  height: 30px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+}
+
+.forgotPassword {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+.forgotPassword .forgotPassword-left {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.forgotPassword .forgotPassword-left img {
+  width: 100%;
+}
+.forgotPassword .forgotPassword-left::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.5px;
+  bottom: -4px;
+  background-color: rgba(0, 0, 0, 0.4392156863);
+}
+.forgotPassword .forgotPassword-left::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 50%;
+  background-color: #ff6400;
+  transform: translateX(-50%);
+}
+.forgotPassword .forgotPassword-left label {
+  position: absolute;
+  left: 60px;
+  top: -30px;
+  font-size: 14px;
+  color: #ff6400;
+  font-weight: 500;
+}
+.forgotPassword .forgotPassword-left input {
+  margin-left: 10px;
+  width: 55%;
+  outline: none;
+  border: none;
+}
+.forgotPassword .forgotPassword-left-active {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.forgotPassword .forgotPassword-left-active::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.5px;
+  bottom: -4px;
+  background-color: rgba(0, 0, 0, 0.4392156863);
+}
+.forgotPassword .forgotPassword-left-active::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 50%;
+  background-color: #ff6400;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+.forgotPassword .forgotPassword-left-active label {
+  position: absolute;
+  left: 60px;
+  top: -30px;
+  font-size: 14px;
+  color: #ff6400;
+  font-weight: 500;
+}
+.forgotPassword .forgotPassword-left-active input {
+  margin-left: 10px;
+  width: 55%;
+  outline: none;
+  border: none;
+}
+.forgotPassword .forgotPassword-right a {
+  color: #a4bbdb;
+  font-size: 18px;
+  position: relative;
+}
+.forgotPassword .forgotPassword-right a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1.5px;
+  background-color: #a4bbdb;
+  bottom: -1px;
+  left: 0;
+}
+
+.enter {
+  width: 100%;
+}
+.enter a {
+  width: 100%;
+  background: #ff6400;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 10px 10px 40px;
+  color: white;
+}
+
+.signature-enter {
+  margin-top: 40px;
+}
+.signature-enter a {
+  width: 50%;
+  background: #ff6400;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 10px 10px 40px;
+  color: white;
+}
+
+.ll {
+  padding-top: 20px;
 }/*# sourceMappingURL=main.css.map */

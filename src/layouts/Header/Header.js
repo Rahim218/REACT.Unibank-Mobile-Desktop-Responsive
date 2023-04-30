@@ -49,83 +49,100 @@ function Header() {
     <div id="header" >
       <div className="container">
         <div id="top-header">
-          <div className="container">
-            <div className="media-header row align-items-center justify-content-between ">
-              <div className="col-lg-7 col-9 ">
-                <div className="box d-flex gap-1">
-                  <div id="bar" className="col-6">
-                    <div onClick={clickBar} className=" ham-menu">
-                      <i className="fa-solid fa-bars-staggered"></i>
-                    </div>
+         <div className="container">
+         <div className="media-header row align-items-center justify-content-between ">
+            <div className="col-lg-7 col-9 ">
+              <div className="box d-flex gap-1">
+                <div className="col-lg-1">
+                  <div className="logo">
+                    <Link to='/'> <img src="https://unibank.az/assets/images/orange.png" alt="" /> </Link>
                   </div>
-                  <div className="col-lg-1 col-2">
-                    <div className="logo">
-                      <Link to='/'> <img src="https://unibank.az/assets/images/orange.png" alt="" /> </Link>
-                    </div>
+                </div>
+                <div className="col-lg-11">
+                  <div className="nav d-flex align-items-center gap-4">
+                    <p><Link to='/ServiceNetwork'>
+                      Xidmət şəbəkəsi </Link></p>
+                    <p><a href="/#">Bank Haqqında</a></p>
+                    <p><a href="/#">Keşbek</a></p>
+                    <p><a href="/#">Tariflər</a></p>
+                    <p><Link to='/HumanResource'>
+                      İnsan Resursları </Link></p>
+                    <p><a href="/#">Bankla əlaqə və təkliflər</a></p>
                   </div>
-                  <div className="col-lg-11 ">
-                    <div className="nav d-flex align-items-center gap-4">
-                      <p><Link to='/ServiceNetwork'>
-                        Xidmət şəbəkəsi </Link></p>
-                      <p><a href="/#">Bank Haqqında</a></p>
-                      <p><a href="/#">Keşbek</a></p>
-                      <p><a href="/#">Tariflər</a></p>
-                      <p><Link to='/HumanResource'>
-                        İnsan Resursları </Link></p>
-                      <p><a href="/#">Bankla əlaqə və təkliflər</a></p>
-                    </div>
 
-                  </div>
                 </div>
               </div>
-
-
-              <div className="col-lg-4  col-3 ">
-                <div className="d-flex align-items-center  ">
-                  <div id="options" className="col-lg-5">
-                    <div className="type d-flex gap-2">
-                      <a className={special ? 'nonactive' : 'active'} onClick={specialClick} href="/#">Fərdi</a>
-                      <a className={biznes ? 'active' : 'nonactive'} onClick={biznesClick} href="/#" >Biznes</a>
-                    </div>
+            </div>
+            <div className="col-lg-4  col-3 ">
+              <div className="d-flex align-items-center  ">
+                <div id="options" className="col-lg-5">
+                  <div className="type d-flex gap-2">
+                    <a className={special ? 'nonactive' : 'active'} onClick={specialClick} href="/#">Fərdi</a>
+                    <a className={biznes ? 'active' : 'nonactive'} onClick={biznesClick} href="/#" >Biznes</a>
                   </div>
-                  <div id="media-lang" className="col-lg-7">
-                    <div className="row align-items-center">
-                      <div className="col-lg-3">
-                        <div className="theme">
-                          <a href="/#"><i className="fa-brands fa-affiliatetheme" ></i></a>
+                </div>
+                <div id="media-lang" className="col-lg-7">
+                  <div className="row align-items-center">
+                    <div className="col-lg-3">
+                      <div className="theme">
+                        <a href="/#"><i className="fa-brands fa-affiliatetheme" ></i></a>
 
-                        </div>
-                      </div>
-                      <div className="col-lg-6">
-                        <div className="lang d-flex gap-1">
-                          <a href="/#">ENG</a>
-                          <a href="/#">RUS</a>
-                        </div>
-                      </div>
-
-                      <div className="col-lg-3">
-                        <div className="search">
-                          <a href=""><i className="fa-solid fa-magnifying-glass fa-rotate-90"></i></a>
-
-                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="col-4 ">
-                    <div className="media-phone d-none">
-                      <a className=" contact d-flex align-items-center gap-2" href="/#"><i className="fa-solid fa-phone"></i> <span>117</span></a>
+                    <div className="col-lg-6">
+                      <div className="lang d-flex gap-1">
+                        <a href="/#">ENG</a>
+                        <a href="/#">RUS</a>
+                      </div>
+                    </div>
 
+                    <div className="col-lg-3">
+                      <div className="search">
+                        <a href=""><i className="fa-solid fa-magnifying-glass fa-rotate-90"></i></a>
+
+                      </div>
                     </div>
                   </div>
                 </div>
+                <div className="col-4 ">
+                  <div className="media-phone d-none">
+                    <a className=" contact d-flex align-items-center gap-2" href="/#"><i className="fa-solid fa-phone"></i> <span>117</span></a>
 
+                  </div>
+                </div>
               </div>
 
             </div>
 
+          </div>
+         </div>
 
+
+          <div className="top-header2 d-none">
+            <div className="container">
+              <div className="top-header2-content ">
+                <div className="col-3">
+
+                  <div onClick={clickBar} className=" ham-menu">
+                    <i className="fa-solid fa-bars-staggered"></i>
+                  </div>
+
+                </div>
+                <div className="col-3">
+                  <div className="logo">
+                    <Link to='/'> <img src="https://unibank.az/assets/images/orange.png" alt="" /> </Link>
+                  </div>
+                </div>
+                <div className="col-3">
+                  <a className=" contact d-flex align-items-center gap-2" href="/#"><i className="fa-solid fa-phone"></i> <span>117</span></a>
+
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
+
         <div id="bottom-header">
           <div className="container">
             <div className="d-flex align-items-center  justify-content-between">
@@ -166,7 +183,7 @@ function Header() {
           </nav>
 
           <div className="nav-2-drop d-flex flex-column align-items-center ">
-            <p><Link to='/'>
+            <p><Link to='/ServiceNetwork'>
               Xidmət şəbəkəsi </Link></p>
             <p><a href="/#">Bank Haqqında</a></p>
             <p><a href="/#">Keşbek</a></p>

@@ -45,7 +45,7 @@ function BankCards() {
                     </div>
 
                     <div className="col-lg-2 col-12">
-                        <button href="/#">Add basket</button>
+                        <button href="/#">Ətraflı</button>
                     </div>
 
 

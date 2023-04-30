@@ -5,18 +5,23 @@
     display: block;
 }
 
-.content {
+
+
+.hidecontent {
     display: none;
 }
+
 .measure-card-image {
     img {
         width: 80%;
 
     }
 }
-.bg-custom{
+
+.bg-custom {
     color: #000 !important;
 }
+
 .working-title {
     text-align: center;
     margin: 40px 0;
@@ -126,6 +131,9 @@
             width: 100%;
             transition: .5s;
             cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
             &:hover {
                 background-color: $orange;
@@ -137,8 +145,11 @@
             }
 
             .image {
+              
+                width: 100%;
                 img {
-                    width: 25%;
+                    width: 110%;
+                    text-align: center !important;
                     border-radius: 10px
                 }
             }
@@ -271,7 +282,8 @@
             display: flex;
             align-items: baseline;
             gap: 15px;
-            span{
+
+            span {
                 color: #fff;
             }
 
@@ -342,7 +354,7 @@
         }
     }
 
-   
+
 
     .working-title {
         text-align: center;
@@ -455,6 +467,7 @@
 
     .prosses-long-cards {
         margin-top: 20px;
+
         .prosses-long-box {
             .prosses-long-image {
                 img {
@@ -465,13 +478,15 @@
 
             .prosses-long-content {
                 margin-top: 15px;
+
                 h2 {
                     font-weight: 700;
                     font-size: 20px;
                     margin: 0;
                     line-height: 1.43;
                 }
-                p{
+
+                p {
                     font-size: 14px;
                     line-height: 24px;
                     font-weight: 400;
@@ -481,7 +496,7 @@
     }
 }
 
-.training{
+.training {
     margin-top: 40px;
 }
 
@@ -509,14 +524,15 @@
 }
 
 @media (max-width:576px) {
-   
+
 
     .tab-links {
         display: flex !important;
         overflow-y: auto;
         padding-top: 20px !important;
         padding-bottom: 20px !important;
-        p{
+
+        p {
             display: inline-block;
             padding: 10px 20px !important;
             margin-right: 10px !important;
@@ -538,48 +554,37 @@
         &::-webkit-scrollbar {
             width: 0px;
             height: 6px;
-           
+
 
         }
     }
 
     .info-card {
-        padding: 15px 10px !important;
+
         display: flex !important;
         align-items: center !important;
-        height: auto !important;
+        flex-direction: row !important;
+        padding: 15px 40px !important;
+        height: 120px !important;
+        gap: 10px;
 
         .image {
-            width: 20% !important;
-
             img {
-                width: 50% !important;
+                width: 80% !important;
             }
         }
 
         .info-card-content {
-            width: 70%;
-
             h1 {
-                line-height: 14px !important;
-                font-weight: 700 !important;
                 font-size: 14px !important;
-                height: auto;
-                margin-top: 0 !important;
-                margin-bottom: 5px !important;
-                text-align: left;
+                text-align: left !important;
+                margin:0 0 5px 0 !important;
+                
             }
-
-            p {
-                line-height: 12px !important;
-                font-weight: 400 !important;
+            p{
                 font-size: 12px !important;
-                text-align: left;
-                margin-bottom: 5px !important;
-                padding-right: 30px !important;
-                height: auto;
-                width: 300px !important;
-                margin-top: 5px !important;
+                text-align: left !important;
+                margin: 0 !important;
             }
         }
     }
@@ -888,10 +893,11 @@
 
 
     }
+
     .prosses-long-content {
         margin-top: 15px;
-       
-        p{
+
+        p {
             font-size: 12px !important;
             line-height: 18px !important;
             font-weight: 500 !important;

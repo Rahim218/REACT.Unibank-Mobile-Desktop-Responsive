@@ -184,8 +184,6 @@
     }
 }
 
-
-
 #side-bar {
     background-color: $background;
     display: flex;
@@ -199,8 +197,8 @@
     top: 65px;
     width: 100%;
     padding: 15px 0;
-    
-    
+
+
 
     .type {
 
@@ -268,8 +266,8 @@
     }
 
     .search-drop {
-       
-        
+
+
         a {
             cursor: pointer;
             box-shadow: 0 2px 14px -8px rgba(0, 0, 0, .3);
@@ -280,7 +278,7 @@
             height: 35px;
             background: #fff;
             border-radius: 5px;
-            
+
 
             i {
                 color: $navigation-list;
@@ -288,6 +286,7 @@
             }
         }
     }
+
     .nav-drop {
         p {
             a {
@@ -298,6 +297,7 @@
             }
         }
     }
+
     .nav-2-drop {
 
         a {
@@ -312,19 +312,10 @@
 }
 
 @media (max-width:576px) {
-   
-    .UCard{
-        display: none !important;
-    }
-   
-   
-  
-   
-    .Servis{
-        display: none !important;
-    }
-    
-    
+
+
+
+
 
     #top-header {
         background-color: #fff;
@@ -364,7 +355,7 @@
     .box {
         display: flex !important;
         align-items: center !important;
-        justify-content: space-between !important;
+        justify-content: space-around;
 
         .nav {
             display: none !important;
@@ -384,10 +375,8 @@
     }
 
     .media-header {
-        display: flex !important;
-        flex-wrap: wrap !important;
-        align-items: center !important;
-        justify-content: space-between !important;
+        display: none !important;
+        
     }
 
     #bottom-header {
@@ -408,12 +397,52 @@
     #media-lang {
         display: none;
     }
-    #side-bar{
+
+    #side-bar {
         z-index: 111 !important;
     }
+
+    .top-header2{
+        display: block !important;
+        .top-header2-content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .logo{
+                text-align: center;
+                img{
+                    width: 100%;
+                }
+            }
+            .contact{
+                background: #f5f5f6;
+                border: none;
+                line-height: 45px;
+                border-radius: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                padding: 0 0 0 15px;
+                i{
+                    color: $orange;
+                }
+                span{
+                    color: #000;
+                    font-weight: bold;
+                }
+            }
+        }
+
+
+
+    }
+
 }
-@media (min-width :576px){
-    #side-bar{
+
+@media (min-width :576px) {
+    #side-bar {
         display: none !important;
     }
 }

@@ -66,7 +66,7 @@ function Basket() {
                     <h2>Your Items</h2>
 
                 </div>
-                <div class="conten">
+                <div class="content">
                     <div class="row">
                         <div class="col-md-12 col-lg-12 ">
                             <div class="items">
@@ -77,8 +77,10 @@ function Basket() {
                                         return (
                                             <div class="product">
                                                 <div class="row align-items-center justify-content-center">
-                                                    <div class="col-md-3">
-                                                        <img class="card-url" src={item.card_url} />
+                                                    <div class="col-md-3 te">
+                                                       <div className="product-card-basket">
+                                                       <img class="card-url" src={item.card_url} />
+                                                       </div>
                                                     </div>
                                                     <div class="col-md-8">
                                                         <div class="info">

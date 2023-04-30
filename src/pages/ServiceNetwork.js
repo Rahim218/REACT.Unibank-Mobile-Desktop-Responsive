@@ -24,19 +24,19 @@ function ServiceNetwork() {
                 </div>
 
 
-                <div className={toggle === 1 ? 'showcontent' : 'content'}>
+                <div className={toggle === 1 ? 'showcontent' : 'hidecontent'}>
                     <AllBranch/>
                 </div>
-                <div className={toggle === 2 ? 'showcontent' : 'content'}>
+                <div className={toggle === 2 ? 'showcontent' : 'hidecontent'}>
                     <SaturdayBranch/>
                 </div>
 
-                <div className={toggle === 3 ? 'showcontent' : 'content'}>
+                <div className={toggle === 3 ? 'showcontent' : 'hidecontent'}>
 
                 </div>
-                <div className={toggle === 4 ? 'showcontent' : 'content'}>
+                <div className={toggle === 4 ? 'showcontent' : 'hidecontent'}>
                 </div>
-                <div className={toggle === 5 ? 'showcontent' : 'content'}>
+                <div className={toggle === 5 ? 'showcontent' : 'hidecontent'}>
                 </div>
 
             </div>

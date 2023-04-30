@@ -3,7 +3,11 @@ import React, { useState } from 'react'
 function Login() {
   const [toggle, setToggle] = useState(1)
   const [toggle2, setToggle2] = useState(1)
-  const [nonActiveClass, setNonActiveClass] = useState("fin-code")
+  const [nonActiveClass, setNonActiveClass] = useState("field")
+  const [nonActiveClass2, setNonActiveClass2] = useState("field2")
+  const [nonActiveClass3, setNonActiveClass3] = useState("forgotPassword-left")
+  const [nonActiveClass4, setNonActiveClass4] = useState("signature-field")
+  const [nonActiveClass5, setNonActiveClass5] = useState("key")
 
   function updateToggle(id) {
     setToggle(id)
@@ -11,11 +15,54 @@ function Login() {
   function updateToggle2(id) {
     setToggle2(id)
   }
-  function activeInput(event) {
-    setNonActiveClass('fin-code-active')
-    
+  function changeClass(event) {
+    setNonActiveClass('field-active')
+    setNonActiveClass2('field2')
+    setNonActiveClass3('forgotPassword-left')
+    setNonActiveClass5('key')
+    setNonActiveClass4('signature-field')
+
 
   }
+  function changeClass2(event) {
+    setNonActiveClass2('field-active2')
+    setNonActiveClass('field')
+    setNonActiveClass3('forgotPassword-left')
+    setNonActiveClass5('key')
+    setNonActiveClass4('signature-field')
+
+
+
+  }
+  function changeClass3(event) {
+    setNonActiveClass2('field2')
+    setNonActiveClass('field')
+    setNonActiveClass3('forgotPassword-left-active')
+    setNonActiveClass5('key')
+    setNonActiveClass4('signature-field')
+
+
+
+  }
+
+  function changeClass4(event) {
+    setNonActiveClass2('field2')
+    setNonActiveClass('field')
+    setNonActiveClass3('forgotPassword-left')
+    setNonActiveClass4('signature-field2')
+    setNonActiveClass5('key')
+
+  }
+  function changeClass5(event) {
+    setNonActiveClass2('field2')
+    setNonActiveClass('field')
+    setNonActiveClass3('forgotPassword-left')
+    setNonActiveClass4('signature-field')
+    setNonActiveClass5('key2')
+
+
+  }
+
   return (
     <div className='login'>
 
@@ -60,27 +107,78 @@ function Login() {
 
               </div>
               <div className="login-direction">
-                <p><img src="	https://online.unibank.az/ibank/resources/imgs/icons/login-mobile.png" alt="" /> <span className={toggle2 === 1 ? 'direct-des' : ''} onClick={() => updateToggle2(1)}>FİN kod ilə</span></p>
-                <p><img src="https://online.unibank.az/ibank/resources/imgs/icons/asan.png" alt="" /> <span className={toggle2 === 2 ? 'direct-des' : ''} onClick={() => updateToggle2(2)}>Asan İmza</span></p>
+                <p className={toggle2===1?'p-active' : 'p-none'} ><img src="	https://online.unibank.az/ibank/resources/imgs/icons/login-mobile.png" alt="" /> <span className={toggle2 === 1 ? 'direct-des' : ''} onClick={() => updateToggle2(1)}>FİN kod ilə</span></p>
+                <p className={toggle2===2?'p-active' : 'p-none'}  ><img src="https://online.unibank.az/ibank/resources/imgs/icons/asan.png" alt="" /> <span className={toggle2 === 2 ? 'direct-des' : ''} onClick={() => updateToggle2(2)}>Asan İmza</span></p>
               </div>
             </div>
             <div className="login-warn">
               <img src="	https://online.unibank.az/ibank/resources/imgs/icons/login-info.png" alt="" />
               <p>QR kod ilə giriş üçün UBank-dan istifadə et</p>
             </div>
-            <div className="form">
+            <div className={toggle2 === 1 ? 'form' : 'd-none'}>
+
               <div className={nonActiveClass}>
                 <img src="	https://online.unibank.az/ibank/resources/imgs/icons/account.png" alt="" />
-                <input onClick={activeInput} type="text" />
-                <p  onClick={activeInput} >Şəxsiyyət vəsiqəsinin FİN kodu</p>
+                <input onFocus={changeClass} type="text" required autocomplete="off" className="username" />
+                <label htmlFor="">Şəxsiyyət vəsiqəsinin FİN kodu</label>
                 <img src="https://online.unibank.az/ibank/resources/imgs/icons/login-info.png" alt="" />
               </div>
-              <div className={nonActiveClass}>
-                <img src="	https://online.unibank.az/ibank/resources/imgs/icons/lock.png" alt="" />
-                <input onClick={activeInput} type="text" />
-                <p  onClick={activeInput} >Şifrə</p>
+
+              <div className="ll">
+                <div className={nonActiveClass2}>
+                  <img src="https://online.unibank.az/ibank/resources/imgs/icons/lock.png" alt="" />
+
+                  <input onFocus={changeClass2} type="password" required autocomplete="off" className="password" />
+                  <label htmlFor="">Şifrə</label>
+
+                </div>
+              </div>
+
+              <div className="forgotPassword">
+                <div className={nonActiveClass3}>
+                  <div className="checkText">
+                    <img src="https://online.unibank.az/ibank/captcha?attr=97d7d07f9d" alt="" />
+                  </div>
+                  <input onClick={changeClass3} type="text" className="text-number" />
+                  <label htmlFor=""> Kodu daxil edin</label>
+                </div>
+                <div className="forgotPassword-right">
+                  <a href="">Şifrəni unutmusuz?</a>
+                </div>
+              </div>
+
+              <div className="enter">
+                <a href="">Daxil ol<i class="fa-solid fa-angle-right"></i>
+                </a>
               </div>
             </div>
+
+            <div className={toggle2 === 2 ? 'signature' : 'd-none'}>
+              <div className={nonActiveClass4}>
+                <img src="	https://online.unibank.az/ibank/resources/imgs/icons/login-mobile.png" alt="" />
+
+                <input onFocus={changeClass4} type="password" required autocomplete="off" className="password" />
+                <label htmlFor="">Mobil nömrə</label>
+
+              </div>
+              <div className="ll">
+                <div className={nonActiveClass5}>
+                  <img src="https://online.unibank.az/ibank/resources/imgs/icons/asan-key.png" alt="" />
+
+                  <input onFocus={changeClass5} type="password" required autocomplete="off" className="password" />
+                  <label htmlFor="">İsdifadəçi ID-si</label>
+
+                </div>
+
+              </div>
+
+              <div className="signature-enter">
+              <a href="">Daxil ol<i class="fa-solid fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </div>

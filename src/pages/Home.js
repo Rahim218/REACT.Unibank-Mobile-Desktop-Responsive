@@ -18,6 +18,13 @@ function Home() {
   const [result, setResult] = useState(0)
 
 
+  const [toggle, setToggle] = useState(1)
+
+  function updateToggle(id) {
+    setToggle(id)
+  }
+
+
 
   const clickCash = () => {
     setCash(false);
@@ -40,16 +47,16 @@ function Home() {
   }
   function handleChangeAmount(event) {
     setAmount(event.target.value);
-    if (selectCountry=='USD' && fromCountry=='AZN') {
+    if (selectCountry == 'USD' && fromCountry == 'AZN') {
       setResult(event.target.value * 1.6970)
     }
-    else if (selectCountry=='EUR' && fromCountry=='AZN') {
+    else if (selectCountry == 'EUR' && fromCountry == 'AZN') {
       setResult(event.target.value * 1.83)
     }
-    else if (selectCountry=='RUB' && fromCountry=='AZN') {
+    else if (selectCountry == 'RUB' && fromCountry == 'AZN') {
       setResult(event.target.value * 0.0199)
     }
-    else if (selectCountry=='GBP' && fromCountry=='AZN') {
+    else if (selectCountry == 'GBP' && fromCountry == 'AZN') {
       setResult(event.target.value * 2.08)
     }
   }
@@ -73,32 +80,34 @@ function Home() {
       <Slide />
       <Card />
 
-      <div className="UCard">
+      <div className="yourCard">
         <div className="container">
-          <div className="Ucard-content">
-            <div className="col-lg-6 col-12">
-              <div className="ucard-image">
+          <div className="yourCard-content row align-items-center ">
+            <div className="col-lg-6">
+              <div className="yourCard-content-img">
                 <img src="https://unibank.az/assets/static/Ucard/ucard.webp" alt="" />
               </div>
             </div>
-            <div className="col-lg-6 col-12">
-              <div className="ucard-title">
-                <h1>
-                  Sənin kartın - UCarddır! </h1>
-                <p>
-                  Bu kart sənə dünyanın istənilən yerində multivalyutalı hesablarla alış-veriş imkanı, 10 000 ₼-dək və 40 günədək faizsiz kredit xətti, 30%-dək keşbek və illik 6%-dək gəlir əldə etmək imkanı verir. Bir sözlə, bütün ehtiyaclar tək kartda!</p>
-                <div className="ucard-links">
-                  <a className='child1' href="/#">Ətraflı</a>
-                  <div className="link-same">
-                    <a href="/#">Partnyorlar</a>
-                    <a href="/#">Şəxsi kabinet</a>
-                  </div>
+            <div className="col-lg-6">
+              <div className="yourCard-content-title">
+                <div className="yourCard-content-description">
+                  <h1>Sənin kartın - UCarddır!</h1>
+                  <p>Bu kart sənə dünyanın istənilən yerində multivalyutalı hesablarla alış-veriş imkanı, 10 000 ₼-dək və 40 günədək faizsiz kredit xətti, 30%-dək keşbek və illik 6%-dək gəlir əldə etmək imkanı verir. Bir sözlə, bütün ehtiyaclar tək kartda!</p>
                 </div>
+
+                <div className="yourCard-content-btns row align-items-center justify-content-center  gap-3 ">
+                  <div className="col-lg-2 col-12"><a href="">Ətraflı</a></div>
+                  <div className="col-lg-3 col-5"><a href="">Partnyorlar</a></div>
+                  <div className="col-lg-3 col-5"><a href="">Şəxsi kabinet</a></div>
+                </div>
+
               </div>
             </div>
           </div>
         </div>
       </div>
+
+
 
       <div className="Ubank">
         <div className="container">
@@ -262,148 +271,143 @@ function Home() {
               </div>
             </div>
 
-            <div className="media-tab-menu d-none">
-              <Tabs
-                id="controlled-tab-example"
-                activeKey={key}
-                onSelect={(k) => setKey(k)}
+            <div className="currencyMedia d-none">
+              <div className="currency-tab-menu">
+                <p className={toggle === 1 ? 'tab-title-active' : 'tab-title-nonactive'} onClick={() => updateToggle(1)}>Nağd</p>
+                <p className={toggle === 2 ? 'tab-title-active' : 'tab-title-nonactive'} onClick={() => updateToggle(2)} >Nağdsız</p>
+                <p className={toggle === 3 ? 'tab-title-active' : 'tab-title-nonactive'} onClick={() => updateToggle(3)}>Kart</p>
+              </div>
 
-              >
-                <Tab onClick={clickCash} eventKey="nağd" title={<p className={cash ? "tab-title-nonactive" : "tab-title-active"}>Nağd</p>}>
-                  <div className="col-lg-4">
-                    <div className="cash">
-                      <div className="cash-header">
+              <span className='update-time' >Yeniləndi 20.04.2023</span>
 
-                        <span className='update-time' >Yeniləndi 20.04.2023</span>
-                      </div>
-                      <div className="cash-table">
-                        <table>
-                          <thead>
-                            <tr>
-                              <th>Valyuta</th>
-                              <th>Alış</th>
-                              <th>Satış</th>
-                            </tr>
-                          </thead>
 
-                          <tbody>
-                            <tr>
-                              <td>USD</td>
-                              <td>1.6970 <span><i class="fa-solid fa-angle-down"></i></span></td>
-                              <td>1.7015 <span><i class="fa-solid fa-angle-down"></i></span></td>
-                            </tr>
-                            <tr>
-                              <td>EUR</td>
-                              <td>1.8313 <span><i class="fa-solid fa-angle-down"></i></span></td>
-                              <td>1.8886 <span><i class="fa-solid fa-angle-down"></i></span></td>
-                            </tr>
-                            <tr>
-                              <td>RUB</td>
-                              <td>0.0199 <span><i class="fa-solid fa-angle-down"></i></span></td>
-                              <td>0.0212 <span><i class="fa-solid fa-angle-down"></i></span></td>
-                            </tr>
-                            <tr>
-                              <td>GBP</td>
-                              <td>2.0816 <span><i class="fa-solid fa-angle-down"></i></span></td>
-                              <td>2.1492 <span><i class="fa-solid fa-angle-down"></i></span></td>
-                            </tr>
-                          </tbody>
+              <div className={toggle === 1 ? '.showTab' : 'hideTab'}>
+                <div className="col-lg-4 col-12">
+                  <div className="cash">
+                    <div className="cash-table">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Valyuta</th>
+                            <th>Alış</th>
+                            <th>Satış</th>
+                          </tr>
+                        </thead>
 
-                        </table>
-                      </div>
+                        <tbody>
+                          <tr>
+                            <td>USD</td>
+                            <td>1.6970 <span><i class="fa-solid fa-angle-down"></i></span></td>
+                            <td>1.7015 <span><i class="fa-solid fa-angle-down"></i></span></td>
+                          </tr>
+                          <tr>
+                            <td>EUR</td>
+                            <td>1.8313 <span><i class="fa-solid fa-angle-down"></i></span></td>
+                            <td>1.8886 <span><i class="fa-solid fa-angle-down"></i></span></td>
+                          </tr>
+                          <tr>
+                            <td>RUB</td>
+                            <td>0.0199 <span><i class="fa-solid fa-angle-down"></i></span></td>
+                            <td>0.0212 <span><i class="fa-solid fa-angle-down"></i></span></td>
+                          </tr>
+                          <tr>
+                            <td>GBP</td>
+                            <td>2.0816 <span><i class="fa-solid fa-angle-down"></i></span></td>
+                            <td>2.1492 <span><i class="fa-solid fa-angle-down"></i></span></td>
+                          </tr>
+                        </tbody>
+
+                      </table>
                     </div>
                   </div>
-                </Tab>
-                <Tab onClick={clickCashless} eventKey="nağdsız" title={<p className={cashless ? "tab-title-active" : "tab-title-nonactive"}>Nağdsız</p>}>
-                  <div className="col-lg-4">
-                    <div className="cash">
-                      <div className="cash-header">
-                        <span className='update-time' >Yeniləndi 20.04.2023</span>
-                      </div>
-                      <div className="cash-table">
-                        <table>
-                          <thead>
-                            <tr>
-                              <th>Valyuta</th>
-                              <th>Alış</th>
-                              <th>Satış</th>
-                            </tr>
-                          </thead>
+                </div>
+              </div>
+              <div className={toggle === 2 ? '.showTab' : 'hideTab'}>
+                <div className="col-lg-4 col-12">
+                  <div className="cash">
+                    <div className="cash-table">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Valyuta</th>
+                            <th>Alış</th>
+                            <th>Satış</th>
+                          </tr>
+                        </thead>
 
-                          <tbody>
-                            <tr>
-                              <td>USD</td>
-                              <td>1.6900 <span><i class="fa-solid fa-angle-down"></i></span></td>
-                              <td>1.7025 <span><i class="fa-solid fa-angle-down"></i></span></td>
-                            </tr>
-                            <tr>
-                              <td>EUR</td>
-                              <td>1.8373 <span><i class="fa-solid fa-angle-down"></i></span></td>
-                              <td>1.8962 <span><i class="fa-solid fa-angle-down"></i></span></td>
-                            </tr>
-                            <tr>
-                              <td>RUB</td>
-                              <td>0.0199 <span><i class="fa-solid fa-angle-down"></i></span></td>
-                              <td>0.0215 <span><i class="fa-solid fa-angle-down"></i></span></td>
-                            </tr>
-                            <tr>
-                              <td>GBP</td>
-                              <td>2.0753 <span><i class="fa-solid fa-angle-down"></i></span></td>
-                              <td>2.1503 <span><i class="fa-solid fa-angle-down"></i></span></td>
-                            </tr>
-                          </tbody>
+                        <tbody>
+                          <tr>
+                            <td>USD</td>
+                            <td>1.6900 <span><i class="fa-solid fa-angle-down"></i></span></td>
+                            <td>1.7025 <span><i class="fa-solid fa-angle-down"></i></span></td>
+                          </tr>
+                          <tr>
+                            <td>EUR</td>
+                            <td>1.8373 <span><i class="fa-solid fa-angle-down"></i></span></td>
+                            <td>1.8962 <span><i class="fa-solid fa-angle-down"></i></span></td>
+                          </tr>
+                          <tr>
+                            <td>RUB</td>
+                            <td>0.0199 <span><i class="fa-solid fa-angle-down"></i></span></td>
+                            <td>0.0215 <span><i class="fa-solid fa-angle-down"></i></span></td>
+                          </tr>
+                          <tr>
+                            <td>GBP</td>
+                            <td>2.0753 <span><i class="fa-solid fa-angle-down"></i></span></td>
+                            <td>2.1503 <span><i class="fa-solid fa-angle-down"></i></span></td>
+                          </tr>
+                        </tbody>
 
-                        </table>
-                      </div>
+                      </table>
                     </div>
                   </div>
-                </Tab>
-                <Tab onClick={clickCard} eventKey="kart" title={<p className={card ? "tab-title-active" : "tab-title-nonactive"}>Kart</p>}>
-                  <div className="col-lg-4">
-                    <div className="cash">
-                      <div className="cash-header">
-                        <span className='update-time' >Yeniləndi 20.04.2023</span>
-                      </div>
-                      <div className="cash-table">
-                        <table>
-                          <thead>
-                            <tr>
-                              <th>Valyuta</th>
-                              <th>Alış</th>
-                              <th>Satış</th>
-                            </tr>
-                          </thead>
+                </div>
+              </div>
+              <div className={toggle === 3 ? '.showTab' : 'hideTab'}>
+                <div className="col-lg-4 col-12">
+                  <div className="cash">
+                    <div className="cash-table">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Valyuta</th>
+                            <th>Alış</th>
+                            <th>Satış</th>
+                          </tr>
+                        </thead>
 
-                          <tbody>
-                            <tr>
-                              <td>USD</td>
-                              <td>1.6915 <span><i class="fa-solid fa-angle-down"></i></span></td>
-                              <td>1.7100 <span><i class="fa-solid fa-angle-down"></i></span></td>
-                            </tr>
-                            <tr>
-                              <td>EUR</td>
-                              <td>1.8448 <span><i class="fa-solid fa-angle-down"></i></span></td>
-                              <td>1.8820 <span><i class="fa-solid fa-angle-down"></i></span></td>
-                            </tr>
-                            <tr>
-                              <td>RUB</td>
-                              <td>0.0204 <span><i class="fa-solid fa-angle-down"></i></span></td>
-                              <td>0.0212 <span><i class="fa-solid fa-angle-down"></i></span></td>
-                            </tr>
-                            <tr>
-                              <td>GBP</td>
-                              <td>2.0922 <span><i class="fa-solid fa-angle-down"></i></span></td>
-                              <td>2.1344 <span><i class="fa-solid fa-angle-down"></i></span></td>
-                            </tr>
-                          </tbody>
+                        <tbody>
+                          <tr>
+                            <td>USD</td>
+                            <td>1.6915 <span><i class="fa-solid fa-angle-down"></i></span></td>
+                            <td>1.7100 <span><i class="fa-solid fa-angle-down"></i></span></td>
+                          </tr>
+                          <tr>
+                            <td>EUR</td>
+                            <td>1.8448 <span><i class="fa-solid fa-angle-down"></i></span></td>
+                            <td>1.8820 <span><i class="fa-solid fa-angle-down"></i></span></td>
+                          </tr>
+                          <tr>
+                            <td>RUB</td>
+                            <td>0.0204 <span><i class="fa-solid fa-angle-down"></i></span></td>
+                            <td>0.0212 <span><i class="fa-solid fa-angle-down"></i></span></td>
+                          </tr>
+                          <tr>
+                            <td>GBP</td>
+                            <td>2.0922 <span><i class="fa-solid fa-angle-down"></i></span></td>
+                            <td>2.1344 <span><i class="fa-solid fa-angle-down"></i></span></td>
+                          </tr>
+                        </tbody>
 
-                        </table>
-                      </div>
+                      </table>
                     </div>
                   </div>
-                </Tab>
-              </Tabs>
+                </div>
+              </div>
             </div>
+
+
+
 
             <div className="calculator ">
               <div className="col-lg-4">
@@ -482,37 +486,33 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="Servis">
+
+      <div className="ContactUs">
         <div className="container">
-          <div className="servis-content row align-items-center g-2  justify-content-center">
+          <div className="contactUs-content row  g-3">
             <div className="col-lg-7 col-12">
-              <div className="left-con row align-items-center ">
-                <div className="col-lg-8 col-8">
-                  <div className="left-con-title">
+              <div className="contactUs-left-con row align-items-center">
+                <div className="col-lg-7 col-7">
+                  <div className="servis-content ">
                     <h1>Xidmət <br /> şəbəkəsi</h1>
-                    <p>
-                      Filial və UTM-lərin ünvanları, həmçinin - iş saatları və digər məlumatlar haqqında ətraflı. </p>
-                    <a href="/#">Daha ətraflı</a>
+                    <p>Filial və UTM-lərin ünvanları, həmçinin - iş saatları və digər məlumatlar haqqında ətraflı.</p>
+                    <a href="">Daha ətraflı</a>
                   </div>
                 </div>
-                <div className="col-lg-4 col-4">
-                  <div className="left-con-image">
+                <div className="col-lg-5 col-5">
+                  <div className="servis-location">
                     <img src="https://unibank.az/assets/images/Bitmap.png" alt="" />
                   </div>
                 </div>
               </div>
             </div>
             <div className="col-lg-5 col-12">
-              <div className="right-con">
+              <div className="contactUs-right-con">
                 <img src="https://unibank.az/assets/images/callcenter.svg" alt="" />
-                <h1>Sualin var?
-                  <br />
-                  Bizimlə əlaqə saxla!
-                </h1>
-                <p>
-                  Onlayn-məsləhətçi, 117 Çağrı mərkəzi və ya bank filiallarına müraciət et və suallarına cavab al. Rahat və asan!
-                </p>
-                <a href="/#">Daha ətraflı</a>
+                <h1>Sualın var? <br />
+                  Bizimlə əlaqə saxla!</h1>
+                <p>Onlayn-məsləhətçi, 117 Çağrı mərkəzi və ya bank filiallarına müraciət et və suallarına cavab al. Rahat və asan!</p>
+                <a href="">Daha ətraflı</a>
               </div>
             </div>
           </div>

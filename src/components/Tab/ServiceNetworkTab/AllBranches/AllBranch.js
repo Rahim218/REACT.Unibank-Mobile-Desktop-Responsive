@@ -2,9 +2,8 @@ import React, { useEffect, useRef } from 'react'
 import AllBranchCards from './AllBranchCards';
 import info from '../../../../assets/image/info.png'
 
-function AllBranch() {
+function AllBranch({allBranchAPIKey}) {
     const mapContainerRef = useRef(null);
-    const apiKey = "AIzaSyD1k6_eq-C7ltxMMUo6cIyBTY-klnTEH3s"
 
     const mapStyles = [
         {
@@ -85,7 +84,7 @@ function AllBranch() {
         };
 
         const script = document.createElement("script");
-        script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap`;
+        script.src = `https://maps.googleapis.com/maps/api/js?key=${allBranchAPIKey}&callback=initMap`;
         script.async = true;
         document.body.appendChild(script);
 

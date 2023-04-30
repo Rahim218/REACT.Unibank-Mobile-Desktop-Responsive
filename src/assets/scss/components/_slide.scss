@@ -3,67 +3,73 @@
 
 
 
-.slide-item {
-    background-color: #ff6400;
-    height: 450px;
-    border-radius: 10px;
-    position: relative;
+
+.slide-items {
+   
+    .slide-item {
+        background-color: #ff6400;
+        height: 450px;
+        border-radius: 10px;
+        position: relative;
 
 
-    .rowlist {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+
+
+        .rowlist {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .image {
+
+            img {
+                width: 35%;
+                position: absolute;
+                bottom: 0;
+                left: 65px;
+                margin: 0;
+                filter: drop-shadow(-70px 20px 40px rgba(0, 0, 0, .24));
+
+            }
+        }
+
+        .slide-content {
+            margin: 120px 0;
+
+
+            h2 {
+                font-weight: 800;
+                font-size: 34px;
+                color: #fff;
+                margin-bottom: 20px;
+                line-height: normal;
+                width: 90%;
+            }
+
+
+
+            p {
+                width: 460px;
+                margin-top: 10px;
+                font-weight: 400;
+                font-size: 14px;
+                color: #fff;
+                margin-bottom: 40px;
+                line-height: 25px;
+
+
+            }
+
+
+            a {
+                @extend .smal-link
+            }
+        }
+
+
     }
-
-
-    .image {
-
-        img {
-            width: 35%;
-            position: absolute;
-            bottom: 0;
-            left: 65px;
-            margin: 0;
-            filter: drop-shadow(-70px 20px 40px rgba(0, 0, 0, .24));
-
-        }
-    }
-
-    .slide-content {
-        margin: 120px 0;
-
-
-        h2 {
-            font-weight: 800;
-            font-size: 34px;
-            color: #fff;
-            margin-bottom: 20px;
-            line-height: normal;
-            width: 90%;
-        }
-
-
-
-        p {
-            width: 460px;
-            margin-top: 10px;
-            font-weight: 400;
-            font-size: 14px;
-            color: #fff;
-            margin-bottom: 40px;
-            line-height: 25px;
-
-
-        }
-
-
-        a {
-            @extend .smal-link
-        }
-    }
-
-
 }
 
 .carousel .carousel-indicators button {
@@ -73,7 +79,7 @@
     width: 10px;
     height: 10px;
     margin-left: 10px;
-    
+
 }
 
 .my-carousel .carousel-indicators {
@@ -84,7 +90,7 @@
     margin: 0;
     padding: 0;
     justify-content: center;
-  }
+}
 
 
 

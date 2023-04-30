@@ -177,29 +177,38 @@
                 .login-direction {
                     cursor: pointer;
 
-                    p {
-                        border: 1px solid #ff9500;
+                    .p-none {
+                        border: 1px solid #eeeeee;
                         width: 249px;
                         border-radius: 5px;
                         padding: 20px 25px;
                         margin-top: 11px;
 
-                        img {
-                            width: 14%;
-                        }
 
-                        .direct-des {
-                            position: relative;
-                            cursor: pointer;
+                    }
+                    .p-active{
+                        border: 1px solid #ff9500;
+                        width: 249px;
+                        border-radius: 5px;
+                        padding: 20px 25px;
+                        margin-top: 11px;
+                    }
 
-                            &::before {
-                                content: '';
-                                width: 100%;
-                                height: 0.5px;
-                                background-color: $orange;
-                                position: absolute;
-                                bottom: -1px;
-                            }
+                    img {
+                        width: 14%;
+                    }
+
+                    .direct-des {
+                        position: relative;
+                        cursor: pointer;
+
+                        &::before {
+                            content: '';
+                            width: 100%;
+                            height: 0.5px;
+                            background-color: $orange;
+                            position: absolute;
+                            bottom: -1px;
                         }
                     }
                 }
@@ -256,7 +265,7 @@
                     transform: translateX(-50%);
                 }
 
-                p {
+                label {
                     position: absolute;
                     left: 30px;
                     bottom: 2px;
@@ -273,6 +282,16 @@
                     width: 90%;
                     border: none;
                     outline: none;
+
+                    &:focus~label {
+                        position: absolute;
+                        left: 30px;
+                        bottom: 35px;
+                        font-size: 12px;
+                        color: #e28116;
+                        font-weight: 500;
+                        transition: 0.4s;
+                    }
                 }
             }
 
@@ -333,4 +352,413 @@
 
     }
 
+}
+
+
+
+.password {
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+
+
+.form,
+.signature {
+    margin-top: 45px;
+
+    .field {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        gap: 10px;
+        margin-top: 20px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 0.5px;
+            bottom: -1px;
+            background-color: #00000070;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            background-color: $orange;
+            transform: translateX(-50%);
+        }
+
+
+        label {
+
+
+            position: absolute;
+            content: attr(title);
+            left: 35px;
+            top: -25px;
+            font-size: 14px;
+            color: $orange;
+            font-weight: 500;
+
+        }
+
+        .username {
+            width: 89%;
+            height: 30px;
+            font-size: 16px;
+            outline: none;
+            border: none;
+
+        }
+
+
+
+
+
+    }
+
+    .field-active {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 0.5px;
+            bottom: -1px;
+            background-color: #00000070;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 1px;
+            bottom: 0;
+            left: 50%;
+            background-color: $orange;
+            transform: translateX(-50%);
+            transition: .5s;
+
+        }
+
+
+        label {
+
+
+            position: absolute;
+            content: attr(title);
+            left: 35px;
+            top: -25px;
+            font-size: 14px;
+            color: $orange;
+            font-weight: 500;
+
+        }
+
+        .username {
+            width: 89%;
+            height: 30px;
+            font-size: 16px;
+            outline: none;
+            border: none;
+
+        }
+
+
+    }
+
+    .key,
+    .signature-field,
+    .field2 {
+
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        gap: 10px;
+        margin-top: 20px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 0.5px;
+            bottom: -1px;
+            background-color: #00000070;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            background-color: $orange;
+            transform: translateX(-50%);
+        }
+
+
+        label {
+
+
+            position: absolute;
+            content: attr(title);
+            left: 35px;
+            top: -25px;
+            font-size: 14px;
+            color: $orange;
+            font-weight: 500;
+
+        }
+
+        .password {
+            width: 100%;
+            height: 30px;
+            font-size: 16px;
+            outline: none;
+            border: none;
+
+        }
+
+
+
+
+
+
+    }
+
+    .key2,
+    .signature-field2,
+    .field-active2 {
+
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 0.5px;
+            bottom: -1px;
+            background-color: #00000070;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 2px;
+            bottom: -1px;
+            left: 50%;
+            background-color: $orange;
+            transform: translateX(-50%);
+            transition: .5s;
+
+        }
+
+
+        label {
+
+
+            position: absolute;
+            content: attr(title);
+            left: 35px;
+            top: -25px;
+            font-size: 14px;
+            color: $orange;
+            font-weight: 500;
+
+        }
+
+        .password {
+            width: 89%;
+            height: 30px;
+            font-size: 16px;
+            outline: none;
+            border: none;
+
+        }
+
+
+
+    }
+
+
+
+}
+
+
+.forgotPassword {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 50px 0;
+
+    .forgotPassword-left {
+        width: 55%;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 0.5px;
+            bottom: -4px;
+            background-color: #00000070;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 50%;
+            background-color: $orange;
+            transform: translateX(-50%);
+        }
+
+
+        label {
+            position: absolute;
+            left: 60px;
+            top: -30px;
+            font-size: 14px;
+            color: $orange;
+            font-weight: 500;
+        }
+
+        input {
+            margin-left: 10px;
+            width: 55%;
+            outline: none;
+            border: none;
+        }
+    }
+
+    .forgotPassword-left-active {
+        width: 55%;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 0.5px;
+            bottom: -4px;
+            background-color: #00000070;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 2px;
+            bottom: -4px;
+            left: 50%;
+            background-color: $orange;
+            transform: translateX(-50%);
+            transition: .5s;
+
+        }
+
+
+        label {
+            position: absolute;
+            left: 60px;
+            top: -30px;
+            font-size: 14px;
+            color: $orange;
+            font-weight: 500;
+        }
+
+        input {
+            margin-left: 10px;
+            width: 55%;
+            outline: none;
+            border: none;
+        }
+    }
+
+    .forgotPassword-right {
+        a {
+            color: #a4bbdb;
+            font-size: 18px;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 1.5px;
+                background-color: #a4bbdb;
+                bottom: -1px;
+                left: 0;
+            }
+        }
+    }
+
+}
+
+.enter {
+    width: 100%;
+
+    a {
+        width: 100%;
+        background: #ff6400;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 10px 10px 10px 40px;
+        color: white;
+    }
+}
+
+.signature-enter {
+    margin-top: 40px;
+
+    a {
+        width: 50%;
+        background: #ff6400;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 10px 10px 10px 40px;
+        color: white;
+    }
+
+}
+
+.ll {
+    padding-top: 20px;
 }
