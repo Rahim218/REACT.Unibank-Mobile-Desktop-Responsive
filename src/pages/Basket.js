@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-function Basket() {
+function Basket({updateCartCount}) {
 
     const [basketItems, setBasketItems] = useState([]);
 
@@ -20,6 +20,8 @@ function Basket() {
     }
 
     const DeleteHandler = (event) => {
+        updateCartCount((prevCount) => prevCount - 1);
+
         let id = event.target.getAttribute('data-id');
         console.log(id);
         let wishlists = JSON.parse(localStorage.getItem("basket"));

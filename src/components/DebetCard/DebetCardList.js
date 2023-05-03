@@ -1,7 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
-function DebetCardList() {
-    const navigate = useNavigate()
+function DebetCardList({updateCartCount}) {
     const debetCards = [
         {
             id:1,
@@ -48,6 +46,8 @@ function DebetCardList() {
     ]
 
     const addToBasket = (event) => {
+
+
         let id = event.target.getAttribute('data-id');
         var data = debetCards.find(pr => pr.id == id);
         console.log(data);
@@ -56,22 +56,27 @@ function DebetCardList() {
         if (wishlistLocal != null) {
             if (wishlistLocal.find(pr => pr.id == id) == undefined) {
                 wishlistLocal.push(data);
-                
+                updateCartCount((prevCount) => prevCount + 1);             
             }
 
             else{
                 let elem=wishlistLocal.find(pr => pr.id == id)
                  elem.itemCount =Number(elem.itemCount)+1
+
             }
             
             localStorage.setItem("basket", JSON.stringify(wishlistLocal));
-            navigate('/wishlist')
+
 
         } else {
 
             localStorage.setItem("basket", JSON.stringify([data]));
-            navigate('/wishlist')
+            updateCartCount((prevCount) => prevCount + 1);
+
+
+           
         }
+
 
     }
 

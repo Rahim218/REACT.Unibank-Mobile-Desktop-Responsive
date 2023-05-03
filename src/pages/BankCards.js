@@ -2,7 +2,7 @@ import React from 'react'
 import DebetCardList from '../components/DebetCard/DebetCardList'
 import OtherCardList from '../components/OtherCard/OtherCardList'
 
-function BankCards() {
+function BankCards({updateCartCount}) {
 
 
 
@@ -55,7 +55,7 @@ function BankCards() {
 
                 <h1 className='outside'>Debet kartlar</h1>
 
-                <DebetCardList />
+                <DebetCardList updateCartCount={updateCartCount} />
 
                 <h1 className='outside'>Digər</h1>
 

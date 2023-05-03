@@ -1,23 +1,15 @@
-import React, { useState,useEffect } from 'react'
+
 import Header from './layouts/Header/Header'
 import { Outlet } from 'react-router-dom'
 import Footer from './layouts/Footer/Footer'
 
-function Layout() {
-  const [productCount, setProductCount] = useState(0)
-  useEffect(() => {
-    const countFromLocalStorage = JSON.parse(localStorage.getItem('basket'));
-    if (countFromLocalStorage != null) {
-      setProductCount(countFromLocalStorage.length)
-    }
-    else {
-      setProductCount(0)
-    }
-  }, []);
+function Layout({cartCount}) {
+ 
+
 
   return (
     <div>
-      <Header productCount={productCount} />
+      <Header cartCount={cartCount}/>
       <Outlet />
       <Footer />
     </div>

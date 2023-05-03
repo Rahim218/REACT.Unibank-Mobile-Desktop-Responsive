@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import DarkMode from '../../components/DarkMode/DarkMode'
 
 
-function Header({ productCount }) {
+function Header({cartCount}) {
 
   const [special, setSpecial] = useState(false);
   const [biznes, setBiznes] = useState(false);
@@ -84,17 +84,17 @@ function Header({ productCount }) {
                 <div className="box d-flex gap-1">
                   <div className="col-lg-1">
                     <div className="logo">
-                      <Link to='/'> <img src="https://unibank.az/assets/images/orange.png" alt="" /> </Link>
+                      <Link to='/home'> <img src="https://unibank.az/assets/images/orange.png" alt="" /> </Link>
                     </div>
                   </div>
                   <div className="col-lg-11">
                     <div className="nav d-flex align-items-center gap-4">
-                      <p ><Link to='/ServiceNetwork'>
+                      <p ><Link to='/servicenetwork'>
                         Xidmət şəbəkəsi </Link></p>
                       <p><a href="/#">Bank Haqqında</a></p>
                       <p><a href="/#">Keşbek</a></p>
                       <p><a href="/#">Tariflər</a></p>
-                      <p><Link to='/HumanResource'>
+                      <p><Link to='/humanresource'>
                         İnsan Resursları </Link></p>
                       <p><a href="/#">Bankla əlaqə və təkliflər</a></p>
                     </div>
@@ -158,7 +158,7 @@ function Header({ productCount }) {
                 </div>
                 <div className="col-3">
                   <div className="logo">
-                    <Link to='/'> <img src="https://unibank.az/assets/images/orange.png" alt="" /> </Link>
+                    <Link to='/home'> <img src="https://unibank.az/assets/images/orange.png" alt="" /> </Link>
                   </div>
                 </div>
                 <div className="col-3">
@@ -176,7 +176,7 @@ function Header({ productCount }) {
             <div className="d-flex align-items-center  justify-content-between">
 
               <nav className="d-flex align-items-center gap-4">
-                <p><Link to='/Kartlar'>Kartlar</Link></p>
+                <p><Link to='/kartlar'>Kartlar</Link></p>
                 <p><a href="/#">Kreditlər</a></p>
                 <p><a href="/#">Əmanətlər</a></p>
                 <p><a href="/#">Köçürmələr</a></p>
@@ -187,10 +187,10 @@ function Header({ productCount }) {
 
 
               <div className="botom-right d-flex align-items-center gap-3">
-                <Link className="basket" to="/wishlist"><i className="fa-solid fa-cart-shopping"></i> <span className="cart-count">{productCount}</span></Link>
+                <Link className="basket" to="/wishlist"><i className="fa-solid fa-cart-shopping"></i> <span className="cart-count">{cartCount}</span></Link>
 
                 <a className=" contact d-flex align-items-center gap-2" href="/#"><i className="fa-solid fa-phone"></i> <span>117</span></a>
-                <Link className="internet d-flex align-items-center gap-2" to="/Login"><i className="fa-solid fa-circle-right" ></i> <span>İnternet bankçılıq</span></Link>
+                <Link className="internet d-flex align-items-center gap-2" to="/login"><i className="fa-solid fa-circle-right" ></i> <span>İnternet bankçılıq</span></Link>
               </div>
 
 
@@ -204,7 +204,7 @@ function Header({ productCount }) {
             <a className={biznes ? 'active' : 'nonactive'} onClick={biznesClick} href="/#" >Biznes</a>
           </div>
           <nav className="nav-drop">
-            <p onClick={turnOffSideBar} ><Link to='/Kartlar'>Kartlar</Link></p>
+            <p onClick={turnOffSideBar} ><Link to='/kartlar'>Kartlar</Link></p>
             <p><a href="/#">Kreditlər</a></p>
             <p><a href="/#">Əmanətlər</a></p>
             <p><a href="/#">Köçürmələr</a></p>
@@ -213,12 +213,12 @@ function Header({ productCount }) {
           </nav>
 
           <div className="nav-2-drop d-flex flex-column align-items-center ">
-            <p><Link onClick={turnOffSideBar} to='/ServiceNetwork'>
+            <p><Link onClick={turnOffSideBar} to='/servicenetwork'>
               Xidmət şəbəkəsi </Link></p>
             <p><a href="/#">Bank Haqqında</a></p>
             <p><a href="/#">Keşbek</a></p>
             <p><a href="/#">Tariflər</a></p>
-            <p><Link onClick={turnOffSideBar} to='/HumanResource'>
+            <p><Link onClick={turnOffSideBar} to='/humanresource'>
               İnsan Resursları </Link></p>
             <p><a href="/#">Bankla əlaqə və təkliflər</a></p>
           </div>
