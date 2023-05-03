@@ -1,7 +1,15 @@
 @import '../abstracts/variables';
 
+#header{
+    z-index: 11111111111111;
+}
 
-
+.showModal{
+    display: block;
+}
+.hiddenModal{
+    display: none;
+}
 
 #top-header {
 

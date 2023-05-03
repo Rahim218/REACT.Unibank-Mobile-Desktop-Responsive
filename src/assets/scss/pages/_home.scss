@@ -174,7 +174,7 @@
 
 
     .ubank-content {
-        background-color: #fafafa;
+        background-color: $greey;
         border-radius: 10px;
 
         display: flex;
@@ -234,7 +234,7 @@
     }
 
     .currency-content {
-        background-color: #fafafa;
+        background-color: $greey;
         padding: 1px 0;
         border-radius: 10px;
 
@@ -250,7 +250,7 @@
 
                     thead {
                         font-size: 14px;
-                        color: #ACB3B8;
+                        color: $thead-color;
                         line-height: 18px;
                         text-align: left;
 

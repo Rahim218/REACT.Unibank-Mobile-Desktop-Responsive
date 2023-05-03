@@ -2,8 +2,9 @@ import React, { useEffect, useRef } from 'react'
 import AllBranchCards from './AllBranchCards';
 import info from '../../../../assets/image/info.png'
 
-function AllBranch({allBranchAPIKey}) {
+function AllBranch() {
     const mapContainerRef = useRef(null);
+    const allBranchAPIKey = 'AIzaSyD1k6_eq-C7ltxMMUo6cIyBTY-klnTEH3s';
 
     const mapStyles = [
         {

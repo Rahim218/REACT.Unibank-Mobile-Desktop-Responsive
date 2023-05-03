@@ -59,7 +59,8 @@ function DebetCardList() {
             }
 
             else{
-                wishlistLocal.find(pr => pr.id == id).itemCount +=1
+                let elem=wishlistLocal.find(pr => pr.id == id)
+                 elem.itemCount =Number(elem.itemCount)+1
             }
             
             localStorage.setItem("basket", JSON.stringify(wishlistLocal));

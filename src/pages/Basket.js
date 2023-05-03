@@ -21,6 +21,7 @@ function Basket() {
 
     const DeleteHandler = (event) => {
         let id = event.target.getAttribute('data-id');
+        console.log(id);
         let wishlists = JSON.parse(localStorage.getItem("basket"));
         const index = wishlists.indexOf(wishlists.find(c => c.id == id));
         wishlists.splice(index, 1);
@@ -75,7 +76,7 @@ function Basket() {
 
                                     basketItems.map((item) => {
                                         return (
-                                            <div class="product">
+                                            <div  class="product">
                                                 <div class="row align-items-center justify-content-center">
                                                     <div class="col-md-3 te">
                                                        <div className="product-card-basket">
@@ -89,18 +90,19 @@ function Basket() {
                                                                     <div class="product-name">
                                                                         <a href="/#">{item.card_name}</a>
                                                                         <div class="product-info">
-                                                                            <div><span>Price : {item.price * item.itemCount}$</span></div>
+                                                                            <div><span>Price: {item.price}</span></div>
+                                                                            <div><span>Total : {item.price * item.itemCount}$</span></div>
 
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-4 quantity">
                                                                     <label for="quantity">Quantity:</label>
-                                                                    <input id={item.id} type="number" value={item.itemCount} onChange={(e) => handleCountChange(item.id, e.target.value)} class="form-control quantity-input" />
+                                                                    <input type="number" value={item.itemCount} onChange={(e) => handleCountChange(item.id, e.target.value)} class="form-control quantity-input" />
                                                                 </div>
                                                                 <div class="col-md-3 price">
 
-                                                                    <i onClick={DeleteHandler} className="fa-solid fa-trash-can"></i>
+                                                                    <i data-id={item.id}  onClick={DeleteHandler} className="fa-solid fa-trash-can"></i>
                                                                 </div>
                                                             </div>
                                                         </div>

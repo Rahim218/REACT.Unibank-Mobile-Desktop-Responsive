@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { Link } from "react-router-dom";
+
 
 function Login() {
   const [toggle, setToggle] = useState(1)
@@ -8,6 +10,7 @@ function Login() {
   const [nonActiveClass3, setNonActiveClass3] = useState("forgotPassword-left")
   const [nonActiveClass4, setNonActiveClass4] = useState("signature-field")
   const [nonActiveClass5, setNonActiveClass5] = useState("key")
+  const [language, setLanguage] = useState(1)
 
   function updateToggle(id) {
     setToggle(id)
@@ -63,10 +66,28 @@ function Login() {
 
   }
 
+  function toggleLanguage(id) {
+    setLanguage(id)
+
+  }
   return (
     <div className='login'>
 
       <div className="container">
+        <div className="internet-banking-top">
+          <div className="internet-banking-logo">
+            <Link to='/' ><img src="https://online.unibank.az/ibank/resources/imgs/icons/main-logo.png" alt="" />
+            </Link>
+
+          </div>
+          <div className="internet-banking-language">
+            <span className={language === 1 ? 'span-active' : 'span-deactive'} onClick={() => toggleLanguage(1)} >AZ</span>
+            <span className={language === 2 ? 'span-active' : 'span-deactive'} onClick={() => toggleLanguage(2)} >EN</span>
+            <span className={language === 3 ? 'span-active' : 'span-deactive'} onClick={() => toggleLanguage(3)} >RU</span>
+          </div>
+        </div>
+
+
         <div className="internet-banking">
           <div className="login-tab-menu">
             <div className={toggle === 1 ? 'login-tab-content-active' : 'login-tab-content-nonactive'}>
@@ -107,8 +128,8 @@ function Login() {
 
               </div>
               <div className="login-direction">
-                <p className={toggle2===1?'p-active' : 'p-none'} ><img src="	https://online.unibank.az/ibank/resources/imgs/icons/login-mobile.png" alt="" /> <span className={toggle2 === 1 ? 'direct-des' : ''} onClick={() => updateToggle2(1)}>FİN kod ilə</span></p>
-                <p className={toggle2===2?'p-active' : 'p-none'}  ><img src="https://online.unibank.az/ibank/resources/imgs/icons/asan.png" alt="" /> <span className={toggle2 === 2 ? 'direct-des' : ''} onClick={() => updateToggle2(2)}>Asan İmza</span></p>
+                <p className={toggle2 === 1 ? 'p-active' : 'p-none'} ><img src="	https://online.unibank.az/ibank/resources/imgs/icons/login-mobile.png" alt="" /> <span className={toggle2 === 1 ? 'direct-des' : ''} onClick={() => updateToggle2(1)}>FİN kod ilə</span></p>
+                <p className={toggle2 === 2 ? 'p-active' : 'p-none'}  ><img src="https://online.unibank.az/ibank/resources/imgs/icons/asan.png" alt="" /> <span className={toggle2 === 2 ? 'direct-des' : ''} onClick={() => updateToggle2(2)}>Asan İmza</span></p>
               </div>
             </div>
             <div className="login-warn">
@@ -173,7 +194,7 @@ function Login() {
               </div>
 
               <div className="signature-enter">
-              <a href="">Daxil ol<i class="fa-solid fa-angle-right"></i>
+                <a href="">Daxil ol<i class="fa-solid fa-angle-right"></i>
                 </a>
               </div>
             </div>
