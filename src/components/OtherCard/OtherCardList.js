@@ -3,7 +3,7 @@ import React from 'react'
 
 
 
-function OtherCardList() {
+function OtherCardList({updateCartCount}) {
     const debetCards = [
         {
             id: 6,
@@ -48,6 +48,8 @@ function OtherCardList() {
         if (wishlistLocal != null) {
             if (wishlistLocal.find(pr => pr.id == id) == undefined) {
                 wishlistLocal.push(data);
+                updateCartCount((prevCount) => prevCount + 1);             
+
             }
             else {
                 let elem = wishlistLocal.find(pr => pr.id == id)
@@ -57,6 +59,8 @@ function OtherCardList() {
         } else {
 
             localStorage.setItem("basket", JSON.stringify([data]));
+            updateCartCount((prevCount) => prevCount + 1);             
+
         }
 
 

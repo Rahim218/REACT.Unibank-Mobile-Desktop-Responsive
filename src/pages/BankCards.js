@@ -59,7 +59,7 @@ function BankCards({updateCartCount}) {
 
                 <h1 className='outside'>Digər</h1>
 
-                <OtherCardList />
+                <OtherCardList updateCartCount={updateCartCount} />
 
 
 
