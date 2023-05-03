@@ -1,5 +1,6 @@
 #header {
   z-index: 11111111111111;
+  background-color: var(--background-color);
 }
 
 .showModal {
@@ -12,7 +13,7 @@
 
 #top-header {
   padding: 15px 0;
-  background-color: #FAFAFA;
+  background-color: var(--background-color);
 }
 #top-header #bar {
   display: none;
@@ -22,14 +23,17 @@
   height: 45px;
   border-radius: 100px;
   padding: 10px 10px;
-  background-color: #f5f5f6;
+  background-color: var(--back);
   text-align: center;
+}
+#top-header .ham-menu i {
+  color: var(--text-color);
 }
 #top-header .logo img {
   width: 42%;
 }
 #top-header .nav a {
-  color: #323232;
+  color: var(--navigation-color);
   font-size: 12px;
   font-weight: 400;
 }
@@ -40,17 +44,18 @@
   border-radius: 5px;
   font-size: 12px;
   font-weight: 600;
-  background-color: #fff;
+  background-color: var(--back);
   outline: 0;
   box-shadow: 0 2px 14px -8px rgba(0, 0, 0, 0.3);
 }
 #top-header .type .nonactive {
   outline: 0;
-  background-color: #fff;
-  color: #323232;
+  background-color: var(--back);
+  color: var(--navigation-color);
+  border-radius: 5px;
   font-size: 12px;
   font-weight: 400;
-  border: 2px solid #fff;
+  border: none;
   padding: 6px 20px;
   box-shadow: 0 2px 14px -8px rgba(0, 0, 0, 0.3);
 }
@@ -63,11 +68,12 @@
   align-items: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: #323232;
+  color: var(--navigation-color);
   padding: 6px 12px;
   font-weight: 600;
   font-size: 12px;
   border-radius: 5px;
+  background-color: var(--back);
 }
 #top-header .theme a {
   padding: 4px 10px;
@@ -89,11 +95,11 @@
   justify-content: center;
   align-items: center;
   height: 35px;
-  background: #fff;
+  background: var(--back);
   border-radius: 5px;
 }
 #top-header .search a i {
-  color: #323232;
+  color: var(--navigation-color);
   font-size: 12px;
 }
 
@@ -102,7 +108,7 @@
 }
 #bottom-header nav p a {
   font-size: 18px;
-  color: #000;
+  color: var(--navigation-color);
   text-decoration: none;
   font-weight: 700;
 }
@@ -130,6 +136,7 @@
   padding: 8px 15px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 15px;
+  background-color: var(--back);
 }
 #bottom-header .botom-right .contact,
 #bottom-header .botom-right .internet {
@@ -139,10 +146,15 @@
   padding: 8px 15px;
   font-size: 14px;
   border-radius: 25px;
+  background-color: var(--back);
+}
+#bottom-header .botom-right .contact span,
+#bottom-header .botom-right .internet span {
+  color: var(--text-color);
 }
 
 #side-bar {
-  background-color: #f5f5f6;
+  background-color: var(--background-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -162,18 +174,18 @@
   border-radius: 5px;
   font-size: 12px;
   font-weight: 600;
-  background-color: #fff;
+  background-color: var(--back);
   outline: 0;
   box-shadow: 0 2px 14px -8px rgba(0, 0, 0, 0.3);
 }
 #side-bar .type .nonactive {
   outline: 0;
-  background-color: #fff;
-  color: #323232;
+  background-color: var(--back);
+  color: var(--navigation-color);
   font-size: 12px;
   font-weight: 400;
-  border: 2px solid #fff;
   padding: 6px 20px;
+  border-radius: 5px;
   box-shadow: 0 2px 14px -8px rgba(0, 0, 0, 0.3);
 }
 #side-bar .lang-drop a {
@@ -185,7 +197,7 @@
   align-items: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: #323232;
+  color: var(--navigation-color);
   padding: 6px 12px;
   font-weight: 600;
   font-size: 12px;
@@ -211,21 +223,21 @@
   justify-content: center;
   align-items: center;
   height: 35px;
-  background: #fff;
+  background: var(--back);
   border-radius: 5px;
 }
 #side-bar .search-drop a i {
-  color: #323232;
+  color: var(--navigation-color);
   font-size: 12px;
 }
 #side-bar .nav-drop p a {
   font-size: 18px;
-  color: #000;
+  color: var(--text-color);
   text-decoration: none;
   font-weight: 700;
 }
 #side-bar .nav-2-drop a {
-  color: #323232;
+  color: var(--text-color);
   font-size: 12px;
   font-weight: 400;
   opacity: 0.5;
@@ -233,7 +245,7 @@
 
 @media (max-width: 576px) {
   #top-header {
-    background-color: #fff;
+    background-color: var(--background-color);
     position: relative;
   }
   #top-header .top-header-right {
@@ -305,7 +317,7 @@
     width: 100%;
   }
   .top-header2 .top-header2-content .contact {
-    background: #f5f5f6;
+    background: var(--back);
     border: none;
     line-height: 45px;
     border-radius: 30px;
@@ -319,7 +331,7 @@
     color: #ff6400;
   }
   .top-header2 .top-header2-content .contact span {
-    color: #000;
+    color: var(--text-color);
     font-weight: bold;
   }
 }
@@ -356,7 +368,7 @@ p {
 .description-title, .ContactUs .contactUs-content .contactUs-right-con p, .ContactUs .contactUs-content .contactUs-left-con .servis-content p, .Ubank .ubank-content .ubank-title p {
   font-weight: 400;
   font-size: 14px;
-  color: #000;
+  color: var(--text-color);
   line-height: 1.43;
   margin-bottom: 40px;
   padding-right: 30px;
@@ -386,7 +398,7 @@ p {
 .cards-title, .product-info span, .product-name a, .debetcards .debetcard-content .card-box .card-content h2, .bankcards .bankcard-content .bankcard-title h2 {
   font-weight: 800;
   font-size: 24px;
-  color: #000;
+  color: var(--text-color);
   line-height: 30px;
 }
 
@@ -394,7 +406,7 @@ p {
   font-weight: 400;
   font-size: 14px;
   line-height: 25px;
-  color: #000;
+  color: var(--text-color);
   margin-bottom: 25px;
 }
 
@@ -409,6 +421,7 @@ p {
   padding: 16px 40px;
   border-radius: 25px;
   border: 2px solid #969696;
+  background-color: var(--back);
 }
 
 .tab-active, .servicenetwork .tab-links .active, .humanresource .tab-links .active {
@@ -422,6 +435,7 @@ p {
   border-radius: 25px;
   border: 2px solid #FF6400;
   position: relative;
+  background-color: var(--back);
 }
 .tab-active::before, .servicenetwork .tab-links .active::before, .humanresource .tab-links .active::before {
   position: absolute;
@@ -433,13 +447,13 @@ p {
   border-bottom: 2px solid #FF6400;
   content: "";
   left: 50%;
-  background: #fafafa;
+  background: var(--back);
 }
 
 .feature_value, .login .internet-banking .login-info .login-info-header h2, .servicenetwork .branches .branches-card-box .branches-left-con h2, .ourvalues .values-box h2, .personal .personal-box .personal-content h2, .commoninfo .commoninfo-cards .info-card .info-card-content h1 {
   font-weight: 700;
   font-size: 20px;
-  color: #000;
+  color: var(--text-color);
   line-height: normal;
   margin-bottom: 10px;
 }
@@ -447,7 +461,7 @@ p {
 .feature_description, .servicenetwork .branches .branches-card-box .branches-right-con .branch-info span, .servicenetwork .branches .branches-card-box .branches-right-con .branch-clock span, .servicenetwork .branches .branches-card-box .branches-left-con p, .ourvalues .values-box p, .working .card-head-descrpi, .about p, .personal .personal-box .personal-content p, .commoninfo .commoninfo-cards .info-card .info-card-content p {
   font-weight: 400;
   font-size: 16px;
-  color: rgba(0, 0, 0, 0.8);
+  color: var(--text-color);
   line-height: normal;
   margin-bottom: 20px;
 }
@@ -567,7 +581,7 @@ p {
 .description-title, .ContactUs .contactUs-content .contactUs-right-con p, .ContactUs .contactUs-content .contactUs-left-con .servis-content p, .Ubank .ubank-content .ubank-title p {
   font-weight: 400;
   font-size: 14px;
-  color: #000;
+  color: var(--text-color);
   line-height: 1.43;
   margin-bottom: 40px;
   padding-right: 30px;
@@ -597,7 +611,7 @@ p {
 .cards-title, .product-info span, .product-name a, .debetcards .debetcard-content .card-box .card-content h2, .bankcards .bankcard-content .bankcard-title h2 {
   font-weight: 800;
   font-size: 24px;
-  color: #000;
+  color: var(--text-color);
   line-height: 30px;
 }
 
@@ -605,7 +619,7 @@ p {
   font-weight: 400;
   font-size: 14px;
   line-height: 25px;
-  color: #000;
+  color: var(--text-color);
   margin-bottom: 25px;
 }
 
@@ -620,6 +634,7 @@ p {
   padding: 16px 40px;
   border-radius: 25px;
   border: 2px solid #969696;
+  background-color: var(--back);
 }
 
 .tab-active, .servicenetwork .tab-links .active, .humanresource .tab-links .active {
@@ -633,6 +648,7 @@ p {
   border-radius: 25px;
   border: 2px solid #FF6400;
   position: relative;
+  background-color: var(--back);
 }
 .tab-active::before, .servicenetwork .tab-links .active::before, .humanresource .tab-links .active::before {
   position: absolute;
@@ -644,13 +660,13 @@ p {
   border-bottom: 2px solid #FF6400;
   content: "";
   left: 50%;
-  background: #fafafa;
+  background: var(--back);
 }
 
 .feature_value, .login .internet-banking .login-info .login-info-header h2, .servicenetwork .branches .branches-card-box .branches-left-con h2, .ourvalues .values-box h2, .personal .personal-box .personal-content h2, .commoninfo .commoninfo-cards .info-card .info-card-content h1 {
   font-weight: 700;
   font-size: 20px;
-  color: #000;
+  color: var(--text-color);
   line-height: normal;
   margin-bottom: 10px;
 }
@@ -658,9 +674,60 @@ p {
 .feature_description, .servicenetwork .branches .branches-card-box .branches-right-con .branch-info span, .servicenetwork .branches .branches-card-box .branches-right-con .branch-clock span, .servicenetwork .branches .branches-card-box .branches-left-con p, .ourvalues .values-box p, .working .card-head-descrpi, .about p, .personal .personal-box .personal-content p, .commoninfo .commoninfo-cards .info-card .info-card-content p {
   font-weight: 400;
   font-size: 16px;
-  color: rgba(0, 0, 0, 0.8);
+  color: var(--text-color);
   line-height: normal;
   margin-bottom: 20px;
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --greey: #fafafa;
+  --black2: #1a1a1a;
+  --grey2: red;
+  --black3: #313131;
+  --black4: #464646;
+  --black5: #323232;
+}
+
+.body {
+  background-color: var(--background-color) !important;
+  color: var(--text-color) !important;
+  font-weight: var(--font-weight) !important;
+  background-color: var(--background-card-color) !important;
+  border-radius: var(--border-radius) !important;
+  background-color: var(--back) !important;
+  background-color: var(--back-currency-color);
+  color: var(--navigation-color);
+  -webkit-filter: var(--webkit-filter) !important;
+}
+
+body.light {
+  --background-color: var(--white);
+  --text-color: var(--black);
+  --background-card-color: var(--greey);
+  --font-weight: 400;
+  --border-radius: var(--greey2);
+  --back: var(--white);
+  --back-currency-color: var(--white);
+  --webkit-filter: invert(0%);
+  --navigation-color: var(--black5);
+}
+
+body.dark {
+  --background-color: var(--black);
+  --text-color: var(--white);
+  --background-card-color: var(--black2);
+  --border-radius: var(--greey2);
+  --webkit-filter: invert(100%);
+  --back: var(--black3);
+  --back-currency-color: var(--black4);
+  --navigation-color: var(--white);
+  --font-weight: 500;
+}
+
+.home-body {
+  background-color: var(--background-color);
 }
 
 .currency-header {
@@ -668,14 +735,14 @@ p {
   font-family: CocoSharp, Arial;
   font-weight: 700;
   font-size: 18px;
-  color: #000;
+  color: var(--text-color);
 }
 
 .update-time {
   display: inline-block;
   line-height: 12px;
   font-size: 12px;
-  color: rgba(50, 50, 50, 0.5);
+  color: var(--text-color);
   margin-bottom: 30px;
   font-weight: 400;
 }
@@ -683,7 +750,7 @@ p {
 .card {
   padding: 40px 50px;
   text-align: center;
-  background: #FAFAFA;
+  background: var(--background-card-color);
   border-radius: 10px;
   border: none;
   width: 100%;
@@ -691,7 +758,7 @@ p {
 .card h2 {
   line-height: 18px;
   font-size: 18px;
-  color: #000;
+  color: var(--text-color);
   font-weight: 700;
   text-align: center;
 }
@@ -707,7 +774,7 @@ p {
 .card p {
   line-height: 14px;
   font-weight: 400;
-  color: #000;
+  color: var(--text-color);
   margin-top: -20px;
   margin-bottom: 45px;
   font-size: 14px;
@@ -730,14 +797,13 @@ p {
   padding: 40px 0 25px;
 }
 
-.yourCard {
-  margin: 80px 0 60px;
-}
 .yourCard .yourCard-content {
-  background-color: #fafafa;
   height: 420px;
   border-radius: 10px;
   width: 100%;
+  margin: 80px 0 60px;
+  background-color: var(--background-card-color);
+  border-radius: 10px;
 }
 .yourCard .yourCard-content .yourCard-content-img img {
   width: 85%;
@@ -753,7 +819,7 @@ p {
 .yourCard .yourCard-content .yourCard-content-title .yourCard-content-description p {
   font-weight: 400;
   font-size: 14px;
-  color: #000;
+  color: var(--text-color);
   line-height: 1.43;
   margin-bottom: 40px;
   padding-right: 30px;
@@ -778,8 +844,7 @@ p {
   font-size: 14px;
   border-radius: 25px;
   font-weight: 600;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  color: #fff !important;
+  border: 1px solid;
   text-align: center;
 }
 .yourCard .yourCard-content .yourCard-content-title .yourCard-content-btns div:nth-child(2) a {
@@ -792,8 +857,8 @@ p {
   font-size: 14px;
   border-radius: 25px;
   font-weight: 600;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  color: #969696 !important;
+  border: 1px solid;
+  color: var(--border-radius);
   text-align: center;
 }
 .yourCard .yourCard-content .yourCard-content-title .yourCard-content-btns div:nth-child(3) a {
@@ -802,7 +867,7 @@ p {
 }
 
 .Ubank .ubank-content {
-  background-color: #fafafa;
+  background-color: var(--background-card-color);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -817,6 +882,7 @@ p {
 }
 .Ubank .ubank-content .ubank-title .mobile-market img {
   width: 30%;
+  -webkit-filter: var(--webkit-filter);
 }
 .Ubank .ubank-content .ubank-title a {
   margin-top: 30px;
@@ -840,7 +906,7 @@ p {
   padding: 40px 70px;
 }
 .Currency .currency-content {
-  background-color: #fafafa;
+  background-color: var(--background-card-color);
   padding: 1px 0;
   border-radius: 10px;
 }
@@ -877,7 +943,7 @@ p {
   width: 33.3333333%;
   padding: 14px 0;
   white-space: nowrap;
-  color: #323232;
+  color: var(--text-color);
   font-weight: 700;
 }
 .Currency .currency-content .calculator {
@@ -889,7 +955,7 @@ p {
   margin-bottom: 40px;
   margin-right: auto;
   margin-left: auto;
-  background: #fff;
+  background-color: var(--back) !important;
   box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.1);
   padding: 50px 62px;
   border-radius: 10px;
@@ -910,21 +976,25 @@ p {
   overflow: hidden;
   padding: 20px 20px;
   border-radius: 5px;
-  border: 1px solid rgba(50, 50, 50, 0.1);
+  border: 1px solid;
   margin-bottom: 10px;
   width: 280px;
   display: flex;
   align-items: center;
+  background-color: var(--back-currency-color);
 }
 .Currency .currency-content .calculator .exchange-currency .exchange-to input,
 .Currency .currency-content .calculator .exchange-currency .exchange-from input {
   border: none;
   outline: none;
+  background-color: transparent;
 }
 .Currency .currency-content .calculator .exchange-currency .exchange-to select,
 .Currency .currency-content .calculator .exchange-currency .exchange-from select {
   border: none;
   outline: none;
+  background-color: transparent;
+  color: var(--text-color);
 }
 
 .Information .news {
@@ -939,7 +1009,8 @@ p {
   padding: 30px;
   border-radius: 10px;
   transition: 0.3s;
-  background-color: #fafafa;
+  background-color: var(--background-card-color);
+  height: 270px;
 }
 .Information .information-content .information-box:hover {
   background-color: #FF6400;
@@ -967,7 +1038,7 @@ p {
 .Information .information-content .information-box p {
   font-weight: 200;
   font-size: 14px;
-  color: #000;
+  color: var(--text-color);
   line-height: 23px;
   overflow: hidden;
   opacity: 0.7;
@@ -977,7 +1048,7 @@ p {
   font-family: CocoSharp, Arial;
   font-weight: 400;
   font-size: 12px;
-  color: rgba(50, 50, 50, 0.5);
+  color: var(--text-color);
   margin-top: 15px;
 }
 
@@ -991,7 +1062,7 @@ p {
   padding: 45px 65px;
   position: relative;
   overflow: hidden;
-  background-color: #fafafa;
+  background-color: var(--background-card-color);
   border-radius: 10px;
   height: 320px;
 }
@@ -1006,7 +1077,7 @@ p {
   padding: 45px 65px;
   overflow: hidden;
   border-radius: 10px;
-  background-color: #fafafa;
+  background-color: var(--background-card-color);
   height: 320px;
 }
 .ContactUs .contactUs-content .contactUs-right-con img {
@@ -1041,11 +1112,9 @@ p {
     font-size: 12px !important;
     margin: 0 auto;
   }
-  .yourCard {
-    margin: 40px 0 60px !important;
-  }
   .yourCard .yourCard-content {
-    background-color: #fafafa;
+    margin: 40px 0 60px !important;
+    background-color: var(--background-card-color);
     height: 570px !important;
     border-radius: 10px;
     width: 100%;
@@ -1090,7 +1159,7 @@ p {
     font-size: 12px !important;
     border-radius: 25px;
     font-weight: 600;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--navigation-color);
     color: #fff !important;
     text-align: center;
   }
@@ -1100,7 +1169,7 @@ p {
     font-size: 12px !important;
     border-radius: 25px;
     font-weight: 600;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--navigation-color);
     color: #fff !important;
     text-align: center;
   }
@@ -1251,7 +1320,7 @@ p {
     padding: 20px !important;
     position: relative;
     overflow: hidden;
-    background-color: #fafafa;
+    background-color: var(--background-card-color);
     border-radius: 10px;
     height: 220px !important;
   }
@@ -1316,7 +1385,7 @@ p {
 .description-title, .Ubank .ubank-content .ubank-title p, .ContactUs .contactUs-content .contactUs-left-con .servis-content p, .ContactUs .contactUs-content .contactUs-right-con p {
   font-weight: 400;
   font-size: 14px;
-  color: #000;
+  color: var(--text-color);
   line-height: 1.43;
   margin-bottom: 40px;
   padding-right: 30px;
@@ -1346,7 +1415,7 @@ p {
 .cards-title, .product-info span, .product-name a, .debetcards .debetcard-content .card-box .card-content h2, .bankcards .bankcard-content .bankcard-title h2 {
   font-weight: 800;
   font-size: 24px;
-  color: #000;
+  color: var(--text-color);
   line-height: 30px;
 }
 
@@ -1354,7 +1423,7 @@ p {
   font-weight: 400;
   font-size: 14px;
   line-height: 25px;
-  color: #000;
+  color: var(--text-color);
   margin-bottom: 25px;
 }
 
@@ -1369,6 +1438,7 @@ p {
   padding: 16px 40px;
   border-radius: 25px;
   border: 2px solid #969696;
+  background-color: var(--back);
 }
 
 .tab-active, .servicenetwork .tab-links .active, .humanresource .tab-links .active {
@@ -1382,6 +1452,7 @@ p {
   border-radius: 25px;
   border: 2px solid #FF6400;
   position: relative;
+  background-color: var(--back);
 }
 .tab-active::before, .servicenetwork .tab-links .active::before, .humanresource .tab-links .active::before {
   position: absolute;
@@ -1393,13 +1464,13 @@ p {
   border-bottom: 2px solid #FF6400;
   content: "";
   left: 50%;
-  background: #fafafa;
+  background: var(--back);
 }
 
 .feature_value, .login .internet-banking .login-info .login-info-header h2, .servicenetwork .branches .branches-card-box .branches-left-con h2, .ourvalues .values-box h2, .personal .personal-box .personal-content h2, .commoninfo .commoninfo-cards .info-card .info-card-content h1 {
   font-weight: 700;
   font-size: 20px;
-  color: #000;
+  color: var(--text-color);
   line-height: normal;
   margin-bottom: 10px;
 }
@@ -1407,12 +1478,13 @@ p {
 .feature_description, .servicenetwork .branches .branches-card-box .branches-right-con .branch-info span, .servicenetwork .branches .branches-card-box .branches-right-con .branch-clock span, .servicenetwork .branches .branches-card-box .branches-left-con p, .ourvalues .values-box p, .working .card-head-descrpi, .about p, .personal .personal-box .personal-content p, .commoninfo .commoninfo-cards .info-card .info-card-content p {
   font-weight: 400;
   font-size: 16px;
-  color: rgba(0, 0, 0, 0.8);
+  color: var(--text-color);
   line-height: normal;
   margin-bottom: 20px;
 }
 
 .Footer {
+  background-color: var(--background-color);
   padding: 75px 0 60px;
 }
 .Footer .footer-menu {
@@ -1424,12 +1496,12 @@ p {
   line-height: 54px;
   font-family: CocoSharp, Arial;
   font-size: 14px;
-  color: #000;
+  color: var(--text-color);
   font-weight: 700;
 }
 .Footer .footer-menu .footer-menu-body a {
   font-size: 12px;
-  color: #000;
+  color: var(--text-color);
   line-height: 35px;
   font-weight: 400;
 }
@@ -1490,10 +1562,12 @@ p {
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+  color: var(--text-color);
 }
 .Footer .footer-brand .left-side span {
   font-size: 12px;
   margin-top: 10px;
+  color: var(--text-color);
 }
 
 @media (max-width: 576px) {
@@ -1521,6 +1595,10 @@ p {
     width: 80% !important;
   }
 }
+hr {
+  background-color: var(--text-color);
+}
+
 .header-title, .servicenetwork h1, .ourvalues h1, .about h1, .humanresource h1, .shopping-cart .block-heading h1,
 .shopping-cart .block-heading h2,
 .shopping-cart .block-heading h3, .debetcards h1, .bankcards h1, .outside, .Ubank .ubank-content .ubank-title h1, .Currency h1, .ContactUs .contactUs-content .contactUs-left-con .servis-content h1, .ContactUs .contactUs-content .contactUs-right-con h1 {
@@ -1533,7 +1611,7 @@ p {
 .description-title, .Ubank .ubank-content .ubank-title p, .ContactUs .contactUs-content .contactUs-left-con .servis-content p, .ContactUs .contactUs-content .contactUs-right-con p {
   font-weight: 400;
   font-size: 14px;
-  color: #000;
+  color: var(--text-color);
   line-height: 1.43;
   margin-bottom: 40px;
   padding-right: 30px;
@@ -1563,7 +1641,7 @@ p {
 .cards-title, .product-info span, .product-name a, .debetcards .debetcard-content .card-box .card-content h2, .bankcards .bankcard-content .bankcard-title h2 {
   font-weight: 800;
   font-size: 24px;
-  color: #000;
+  color: var(--text-color);
   line-height: 30px;
 }
 
@@ -1571,7 +1649,7 @@ p {
   font-weight: 400;
   font-size: 14px;
   line-height: 25px;
-  color: #000;
+  color: var(--text-color);
   margin-bottom: 25px;
 }
 
@@ -1586,6 +1664,7 @@ p {
   padding: 16px 40px;
   border-radius: 25px;
   border: 2px solid #969696;
+  background-color: var(--back);
 }
 
 .tab-active, .servicenetwork .tab-links .active, .humanresource .tab-links .active {
@@ -1599,6 +1678,7 @@ p {
   border-radius: 25px;
   border: 2px solid #FF6400;
   position: relative;
+  background-color: var(--back);
 }
 .tab-active::before, .servicenetwork .tab-links .active::before, .humanresource .tab-links .active::before {
   position: absolute;
@@ -1610,13 +1690,13 @@ p {
   border-bottom: 2px solid #FF6400;
   content: "";
   left: 50%;
-  background: #fafafa;
+  background: var(--back);
 }
 
 .feature_value, .login .internet-banking .login-info .login-info-header h2, .servicenetwork .branches .branches-card-box .branches-left-con h2, .ourvalues .values-box h2, .personal .personal-box .personal-content h2, .commoninfo .commoninfo-cards .info-card .info-card-content h1 {
   font-weight: 700;
   font-size: 20px;
-  color: #000;
+  color: var(--text-color);
   line-height: normal;
   margin-bottom: 10px;
 }
@@ -1624,7 +1704,7 @@ p {
 .feature_description, .servicenetwork .branches .branches-card-box .branches-right-con .branch-info span, .servicenetwork .branches .branches-card-box .branches-right-con .branch-clock span, .servicenetwork .branches .branches-card-box .branches-left-con p, .ourvalues .values-box p, .working .card-head-descrpi, .about p, .personal .personal-box .personal-content p, .commoninfo .commoninfo-cards .info-card .info-card-content p {
   font-weight: 400;
   font-size: 16px;
-  color: rgba(0, 0, 0, 0.8);
+  color: var(--text-color);
   line-height: normal;
   margin-bottom: 20px;
 }
@@ -1633,9 +1713,13 @@ p {
   padding-top: 50px;
 }
 
+.bank-card-dark {
+  background-color: var(--background-color);
+}
+
 .bankcards .bankcard-content {
   position: relative;
-  background-color: #fafafa;
+  background-color: var(--background-card-color);
   display: flex;
   align-items: center;
   gap: 40px;
@@ -1677,7 +1761,7 @@ p {
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
-  color: #000;
+  color: var(--text-color);
   text-align: left;
 }
 
@@ -1687,7 +1771,8 @@ p {
 .debetcards .debetcard-content .card-box {
   padding: 45px 65px;
   border-radius: 10px;
-  background-color: #fafafa;
+  height: 500px;
+  background-color: var(--background-card-color);
 }
 .debetcards .debetcard-content .card-box .card-photo {
   width: 100%;
@@ -1757,7 +1842,7 @@ p {
 .description-title, .Ubank .ubank-content .ubank-title p, .ContactUs .contactUs-content .contactUs-left-con .servis-content p, .ContactUs .contactUs-content .contactUs-right-con p {
   font-weight: 400;
   font-size: 14px;
-  color: #000;
+  color: var(--text-color);
   line-height: 1.43;
   margin-bottom: 40px;
   padding-right: 30px;
@@ -1787,7 +1872,7 @@ p {
 .cards-title, .product-info span, .product-name a, .bankcards .bankcard-content .bankcard-title h2, .debetcards .debetcard-content .card-box .card-content h2 {
   font-weight: 800;
   font-size: 24px;
-  color: #000;
+  color: var(--text-color);
   line-height: 30px;
 }
 
@@ -1795,7 +1880,7 @@ p {
   font-weight: 400;
   font-size: 14px;
   line-height: 25px;
-  color: #000;
+  color: var(--text-color);
   margin-bottom: 25px;
 }
 
@@ -1810,6 +1895,7 @@ p {
   padding: 16px 40px;
   border-radius: 25px;
   border: 2px solid #969696;
+  background-color: var(--back);
 }
 
 .tab-active, .servicenetwork .tab-links .active, .humanresource .tab-links .active {
@@ -1823,6 +1909,7 @@ p {
   border-radius: 25px;
   border: 2px solid #FF6400;
   position: relative;
+  background-color: var(--back);
 }
 .tab-active::before, .servicenetwork .tab-links .active::before, .humanresource .tab-links .active::before {
   position: absolute;
@@ -1834,13 +1921,13 @@ p {
   border-bottom: 2px solid #FF6400;
   content: "";
   left: 50%;
-  background: #fafafa;
+  background: var(--back);
 }
 
 .feature_value, .login .internet-banking .login-info .login-info-header h2, .servicenetwork .branches .branches-card-box .branches-left-con h2, .ourvalues .values-box h2, .personal .personal-box .personal-content h2, .commoninfo .commoninfo-cards .info-card .info-card-content h1 {
   font-weight: 700;
   font-size: 20px;
-  color: #000;
+  color: var(--text-color);
   line-height: normal;
   margin-bottom: 10px;
 }
@@ -1848,13 +1935,13 @@ p {
 .feature_description, .servicenetwork .branches .branches-card-box .branches-right-con .branch-info span, .servicenetwork .branches .branches-card-box .branches-right-con .branch-clock span, .servicenetwork .branches .branches-card-box .branches-left-con p, .ourvalues .values-box p, .working .card-head-descrpi, .about p, .personal .personal-box .personal-content p, .commoninfo .commoninfo-cards .info-card .info-card-content p {
   font-weight: 400;
   font-size: 16px;
-  color: rgba(0, 0, 0, 0.8);
+  color: var(--text-color);
   line-height: normal;
   margin-bottom: 20px;
 }
 
 .shopping-cart {
-  background-color: #fff !important;
+  background-color: var(--background-color) !important;
   padding-bottom: 50px;
 }
 
@@ -1864,7 +1951,7 @@ p {
 
 .shopping-cart .content {
   box-shadow: inset -6px -1px 15px rgba(0, 0, 0, 0.075);
-  background-color: #fafafa;
+  background-color: var(--background-card-color);
   border-radius: 10px;
 }
 
@@ -1964,6 +2051,17 @@ p {
   border-radius: 10px;
 }
 
+.quantity label {
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+.quantity input {
+  background-color: var(--back);
+  color: var(--text-color);
+  border: none;
+  outline: none;
+}
+
 .price i {
   color: #ff6400;
 }
@@ -2017,7 +2115,7 @@ p {
 .description-title, .Ubank .ubank-content .ubank-title p, .ContactUs .contactUs-content .contactUs-left-con .servis-content p, .ContactUs .contactUs-content .contactUs-right-con p {
   font-weight: 400;
   font-size: 14px;
-  color: #000;
+  color: var(--text-color);
   line-height: 1.43;
   margin-bottom: 40px;
   padding-right: 30px;
@@ -2047,7 +2145,7 @@ p {
 .cards-title, .bankcards .bankcard-content .bankcard-title h2, .debetcards .debetcard-content .card-box .card-content h2, .product-name a, .product-info span {
   font-weight: 800;
   font-size: 24px;
-  color: #000;
+  color: var(--text-color);
   line-height: 30px;
 }
 
@@ -2055,7 +2153,7 @@ p {
   font-weight: 400;
   font-size: 14px;
   line-height: 25px;
-  color: #000;
+  color: var(--text-color);
   margin-bottom: 25px;
 }
 
@@ -2070,6 +2168,7 @@ p {
   padding: 16px 40px;
   border-radius: 25px;
   border: 2px solid #969696;
+  background-color: var(--back);
 }
 
 .tab-active, .servicenetwork .tab-links .active, .humanresource .tab-links .active {
@@ -2083,6 +2182,7 @@ p {
   border-radius: 25px;
   border: 2px solid #FF6400;
   position: relative;
+  background-color: var(--back);
 }
 .tab-active::before, .servicenetwork .tab-links .active::before, .humanresource .tab-links .active::before {
   position: absolute;
@@ -2094,13 +2194,13 @@ p {
   border-bottom: 2px solid #FF6400;
   content: "";
   left: 50%;
-  background: #fafafa;
+  background: var(--back);
 }
 
 .feature_value, .login .internet-banking .login-info .login-info-header h2, .servicenetwork .branches .branches-card-box .branches-left-con h2, .ourvalues .values-box h2, .personal .personal-box .personal-content h2, .commoninfo .commoninfo-cards .info-card .info-card-content h1 {
   font-weight: 700;
   font-size: 20px;
-  color: #000;
+  color: var(--text-color);
   line-height: normal;
   margin-bottom: 10px;
 }
@@ -2108,7 +2208,7 @@ p {
 .feature_description, .servicenetwork .branches .branches-card-box .branches-right-con .branch-info span, .servicenetwork .branches .branches-card-box .branches-right-con .branch-clock span, .servicenetwork .branches .branches-card-box .branches-left-con p, .ourvalues .values-box p, .working .card-head-descrpi, .about p, .personal .personal-box .personal-content p, .commoninfo .commoninfo-cards .info-card .info-card-content p {
   font-weight: 400;
   font-size: 16px;
-  color: rgba(0, 0, 0, 0.8);
+  color: var(--text-color);
   line-height: normal;
   margin-bottom: 20px;
 }
@@ -2145,7 +2245,7 @@ p {
 .measure-card-content h3 {
   font-weight: 700;
   font-size: 16px;
-  color: #000;
+  color: var(--text-color);
   width: 80%;
   text-align: center;
   margin: 0;
@@ -2157,6 +2257,9 @@ p {
   margin-right: 60px;
 }
 
+.humanresource {
+  background-color: var(--background-color);
+}
 .humanresource .tab-links {
   display: flex;
   align-items: center;
@@ -2209,7 +2312,7 @@ p {
 }
 .commoninfo .commoninfo-cards .info-card {
   text-align: center;
-  background: #FAFAFA;
+  background: var(--background-card-color);
   border-radius: 10px;
   padding: 45px 50px;
   height: 100%;
@@ -2247,7 +2350,8 @@ p {
   align-items: flex-start;
   padding: 45px 65px;
   border-radius: 10px;
-  background-color: #fafafa;
+  height: 400px;
+  background-color: var(--background-card-color);
 }
 .personal .personal-box .image img {
   width: 25%;
@@ -2270,8 +2374,9 @@ p {
 
 .about {
   margin-top: 30px;
-  background-color: #fafafa;
+  background-color: var(--background-card-color);
   padding: 45px 65px;
+  border-radius: 10px;
 }
 .direction {
   padding: 30px 0;
@@ -2296,20 +2401,20 @@ p {
 
 .vacany-box {
   padding: 40px 65px 20px;
-  background: #FAFAFA;
+  background: var(--background-card-color);
   border-radius: 10px;
   margin-top: 25px;
 }
 .vacany-box .left-info h1 {
   font-weight: 700;
   font-size: 16px;
-  color: #000;
+  color: var(--text-color);
   line-height: normal;
   margin-bottom: 10px;
 }
 .vacany-box .left-info p {
   font-size: 12px;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--text-color);
   line-height: 1.67;
   font-weight: 400;
 }
@@ -2374,7 +2479,7 @@ p {
   font-size: 32px;
   line-height: 32px;
   font-weight: 800;
-  color: #000;
+  color: var(--text-color);
 }
 .working .info-people {
   text-align: center;
@@ -2384,7 +2489,7 @@ p {
   font-size: 32px;
   line-height: 32px;
   font-weight: 800;
-  color: #000;
+  color: var(--text-color);
 }
 .working .info-people .info-personal {
   margin-bottom: 50px;
@@ -2397,7 +2502,7 @@ p {
 .working .info-people .info-personal h2 {
   font-weight: 700;
   font-size: 20px;
-  color: #000;
+  color: var(--text-color);
   line-height: normal;
   margin-bottom: 5px;
   margin-top: 10px;
@@ -2405,13 +2510,14 @@ p {
 .working .info-people .info-personal span {
   font-weight: 400;
   font-size: 14px;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--text-color);
   line-height: normal;
 }
 .working .info-people .info-description {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  color: var(--text-color);
 }
 
 .prosses {
@@ -2421,17 +2527,19 @@ p {
   width: 27% !important;
 }
 .prosses .des {
-  margin-top: 50px;
+  margin-top: 0px;
 }
 .prosses .des p {
   font-weight: 400;
   font-size: 14px;
-  color: #000;
+  color: var(--text-color);
   line-height: 23px;
 }
 .prosses .prosses-cards-first .prosses-first-box {
+  margin-top: 40px;
+  margin-bottom: 40px;
   padding: 35px 30px;
-  background: #FAFAFA;
+  background: var(--background-card-color);
   height: 300px;
   border-radius: 10px;
   text-align: center;
@@ -2442,6 +2550,7 @@ p {
 .prosses .prosses-cards-first .prosses-first-box .prosses-first-content h2 {
   font-size: 20px;
   margin-top: 20px;
+  color: var(--text-color);
 }
 .prosses .prosses-cards-first .prosses-first-box .prosses-first-content a {
   padding: 16px 25px;
@@ -2465,17 +2574,22 @@ p {
 .prosses .prosses-long-cards .prosses-long-box .prosses-long-content h2 {
   font-weight: 700;
   font-size: 20px;
-  margin: 0;
+  margin: 0 0 7px 0;
   line-height: 1.43;
+  color: var(--text-color);
 }
 .prosses .prosses-long-cards .prosses-long-box .prosses-long-content p {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+  color: var(--text-color);
 }
 
 .training {
   margin-top: 40px;
+}
+.training .des p {
+  color: var(--text-color);
 }
 
 .ourvalues {
@@ -2764,7 +2878,7 @@ p {
 .description-title, .Ubank .ubank-content .ubank-title p, .ContactUs .contactUs-content .contactUs-left-con .servis-content p, .ContactUs .contactUs-content .contactUs-right-con p {
   font-weight: 400;
   font-size: 14px;
-  color: #000;
+  color: var(--text-color);
   line-height: 1.43;
   margin-bottom: 40px;
   padding-right: 30px;
@@ -2794,7 +2908,7 @@ p {
 .cards-title, .bankcards .bankcard-content .bankcard-title h2, .debetcards .debetcard-content .card-box .card-content h2, .product-name a, .product-info span {
   font-weight: 800;
   font-size: 24px;
-  color: #000;
+  color: var(--text-color);
   line-height: 30px;
 }
 
@@ -2802,7 +2916,7 @@ p {
   font-weight: 400;
   font-size: 14px;
   line-height: 25px;
-  color: #000;
+  color: var(--text-color);
   margin-bottom: 25px;
 }
 
@@ -2817,6 +2931,7 @@ p {
   padding: 16px 40px;
   border-radius: 25px;
   border: 2px solid #969696;
+  background-color: var(--back);
 }
 
 .tab-active, .servicenetwork .tab-links .active, .humanresource .tab-links .active {
@@ -2830,6 +2945,7 @@ p {
   border-radius: 25px;
   border: 2px solid #FF6400;
   position: relative;
+  background-color: var(--back);
 }
 .tab-active::before, .servicenetwork .tab-links .active::before, .humanresource .tab-links .active::before {
   position: absolute;
@@ -2841,13 +2957,13 @@ p {
   border-bottom: 2px solid #FF6400;
   content: "";
   left: 50%;
-  background: #fafafa;
+  background: var(--back);
 }
 
 .feature_value, .login .internet-banking .login-info .login-info-header h2, .servicenetwork .branches .branches-card-box .branches-left-con h2, .commoninfo .commoninfo-cards .info-card .info-card-content h1, .personal .personal-box .personal-content h2, .ourvalues .values-box h2 {
   font-weight: 700;
   font-size: 20px;
-  color: #000;
+  color: var(--text-color);
   line-height: normal;
   margin-bottom: 10px;
 }
@@ -2855,11 +2971,14 @@ p {
 .feature_description, .servicenetwork .branches .branches-card-box .branches-right-con .branch-info span, .servicenetwork .branches .branches-card-box .branches-right-con .branch-clock span, .servicenetwork .branches .branches-card-box .branches-left-con p, .commoninfo .commoninfo-cards .info-card .info-card-content p, .personal .personal-box .personal-content p, .about p, .working .card-head-descrpi, .ourvalues .values-box p {
   font-weight: 400;
   font-size: 16px;
-  color: rgba(0, 0, 0, 0.8);
+  color: var(--text-color);
   line-height: normal;
   margin-bottom: 20px;
 }
 
+.servicenetwork {
+  background-color: var(--background-color);
+}
 .servicenetwork .branches {
   margin-top: 30px;
 }
@@ -2871,7 +2990,7 @@ p {
   padding: 35px 65px;
   transition: 0.5s;
   border-radius: 10px;
-  background-color: #fafafa;
+  background-color: var(--background-card-color);
   cursor: pointer;
 }
 .servicenetwork .branches .branches-card-box:hover {
@@ -3025,7 +3144,7 @@ p {
 .description-title, .Ubank .ubank-content .ubank-title p, .ContactUs .contactUs-content .contactUs-left-con .servis-content p, .ContactUs .contactUs-content .contactUs-right-con p {
   font-weight: 400;
   font-size: 14px;
-  color: #000;
+  color: var(--text-color);
   line-height: 1.43;
   margin-bottom: 40px;
   padding-right: 30px;
@@ -3055,7 +3174,7 @@ p {
 .cards-title, .bankcards .bankcard-content .bankcard-title h2, .debetcards .debetcard-content .card-box .card-content h2, .product-name a, .product-info span {
   font-weight: 800;
   font-size: 24px;
-  color: #000;
+  color: var(--text-color);
   line-height: 30px;
 }
 
@@ -3063,7 +3182,7 @@ p {
   font-weight: 400;
   font-size: 14px;
   line-height: 25px;
-  color: #000;
+  color: var(--text-color);
   margin-bottom: 25px;
 }
 
@@ -3078,6 +3197,7 @@ p {
   padding: 16px 40px;
   border-radius: 25px;
   border: 2px solid #969696;
+  background-color: var(--back);
 }
 
 .tab-active, .humanresource .tab-links .active, .servicenetwork .tab-links .active {
@@ -3091,6 +3211,7 @@ p {
   border-radius: 25px;
   border: 2px solid #FF6400;
   position: relative;
+  background-color: var(--back);
 }
 .tab-active::before, .humanresource .tab-links .active::before, .servicenetwork .tab-links .active::before {
   position: absolute;
@@ -3102,13 +3223,13 @@ p {
   border-bottom: 2px solid #FF6400;
   content: "";
   left: 50%;
-  background: #fafafa;
+  background: var(--back);
 }
 
 .feature_value, .login .internet-banking .login-info .login-info-header h2, .commoninfo .commoninfo-cards .info-card .info-card-content h1, .personal .personal-box .personal-content h2, .ourvalues .values-box h2, .servicenetwork .branches .branches-card-box .branches-left-con h2 {
   font-weight: 700;
   font-size: 20px;
-  color: #000;
+  color: var(--text-color);
   line-height: normal;
   margin-bottom: 10px;
 }
@@ -3116,7 +3237,7 @@ p {
 .feature_description, .commoninfo .commoninfo-cards .info-card .info-card-content p, .personal .personal-box .personal-content p, .about p, .working .card-head-descrpi, .ourvalues .values-box p, .servicenetwork .branches .branches-card-box .branches-left-con p, .servicenetwork .branches .branches-card-box .branches-right-con .branch-clock span, .servicenetwork .branches .branches-card-box .branches-right-con .branch-info span {
   font-weight: 400;
   font-size: 16px;
-  color: rgba(0, 0, 0, 0.8);
+  color: var(--text-color);
   line-height: normal;
   margin-bottom: 20px;
 }
@@ -3882,4 +4003,20 @@ p {
 }
 .modal-own-inner .modal-own-content .search #search-icon {
   font-size: 20px;
+}
+
+#darkMode {
+  background: transparent url("https://eugenenor.gallerycdn.vsassets.io/extensions/eugenenor/freezing-moon-theme/0.1.5/1535400503513/Microsoft.VisualStudio.Services.Icons.Default") no-repeat center;
+  background-size: 30px 30px;
+  width: 45px;
+  height: 45px;
+  filter: grayscale(100%);
+  border: none;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+#darkMode.clicked {
+  filter: none !important;
+  background-color: black;
 }/*# sourceMappingURL=main.css.map */

@@ -2,7 +2,7 @@
 @import '../abstracts/extend';
 
 .shopping-cart {
-	background-color: #fff !important;
+	background-color: var(--background-color) !important;
 	padding-bottom: 50px;
 
 }
@@ -13,7 +13,7 @@
 
 .shopping-cart .content {
 	box-shadow: inset -6px -1px 15px rgba(0, 0, 0, 0.075);
-	background-color: $greey;
+	background-color: var(--background-card-color);
 	border-radius: 10px
 }
 
@@ -116,6 +116,20 @@
 .card-url{
 	width: 100%;
 	border-radius: 10px;
+}
+.quantity{
+	label{
+		color: var(--text-color);
+		margin-bottom: 10px
+		
+	}
+	input{
+		background-color: var(--back);
+		color:var(--text-color);
+		border: none;
+		outline: none
+	
+	}
 }
 .product-name{
 	a{

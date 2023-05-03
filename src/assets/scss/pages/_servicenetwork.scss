@@ -5,6 +5,7 @@
 
 
 .servicenetwork {
+    background-color: var(--background-color);
     h1{
         @extend .header-title;
     }
@@ -19,7 +20,7 @@
             padding: 35px 65px;
             transition: .5s;
             border-radius: 10px;
-            background-color: $greey ;
+            background-color: var(--background-card-color) ;
             cursor: pointer;
             &:hover{
                 background-color: #FF6400;

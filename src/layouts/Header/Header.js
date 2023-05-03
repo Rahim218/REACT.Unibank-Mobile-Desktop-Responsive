@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from 'react'
+import DarkMode from '../../components/DarkMode/DarkMode'
 
 
 function Header({ productCount }) {
@@ -8,6 +9,10 @@ function Header({ productCount }) {
   const [biznes, setBiznes] = useState(false);
   const [sideBar, setSideBar] = useState(false);
   const [modal, setModal] = useState(false);
+
+
+
+
 
   const turnOffSideBar = (e) => {
     if (sideBar === true) {
@@ -19,10 +24,10 @@ function Header({ productCount }) {
   }
   const toggleModal = (e) => {
     e.preventDefault();
-    if (modal===false) {
+    if (modal === false) {
       setModal(true)
     }
-    else{
+    else {
       setModal(false)
     }
   }
@@ -65,6 +70,10 @@ function Header({ productCount }) {
 
   console.log(itemCount);
 
+
+
+
+
   return (
     <div id="header" >
       <div className="container">
@@ -105,8 +114,7 @@ function Header({ productCount }) {
                     <div className="row align-items-center">
                       <div className="col-lg-3">
                         <div className="theme">
-                          <a href="/#"><i className="fa-brands fa-affiliatetheme" ></i></a>
-
+                          <DarkMode />
                         </div>
                       </div>
                       <div className="col-lg-6">
@@ -176,6 +184,8 @@ function Header({ productCount }) {
                 <p><a href="/#">Əlavə xidmətlər</a></p>
               </nav>
 
+
+
               <div className="botom-right d-flex align-items-center gap-3">
                 <Link className="basket" to="/wishlist"><i className="fa-solid fa-cart-shopping"></i> <span className="cart-count">{productCount}</span></Link>
 
@@ -241,7 +251,7 @@ function Header({ productCount }) {
               <h2>Axtarış</h2>
               <div className="search">
                 <input type="text" />
-                <i  id='search-icon' class="fa-solid fa-magnifying-glass" style={{ color: "#ff6400" }}></i>
+                <i id='search-icon' class="fa-solid fa-magnifying-glass" style={{ color: "#ff6400" }}></i>
               </div>
             </div>
           </div>

@@ -8,7 +8,7 @@
 .description-title {
     font-weight: 400;
     font-size: 14px;
-    color: #000;
+    color: var(--text-color);
     line-height: 1.43;
     margin-bottom: 40px;
     padding-right: 30px;
@@ -38,7 +38,7 @@
 .cards-title{
     font-weight: 800;
     font-size: 24px;
-    color: #000;
+    color: var(--text-color);
     line-height: 30px;
 }
 
@@ -46,7 +46,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 25px;
-    color: #000;
+    color: var(--text-color);
     margin-bottom: 25px;
 }
 
@@ -61,6 +61,7 @@
     padding: 16px 40px;
     border-radius: 25px;
     border: 2px solid #969696;
+    background-color: var(--back);
 }
 
 .tab-active {
@@ -75,6 +76,7 @@
     border-radius: 25px;
     border: 2px solid #FF6400;
     position: relative;
+    background-color: var(--back);
 
     &::before {
 
@@ -87,14 +89,14 @@
         border-bottom: 2px solid #FF6400;
         content: '';
         left: 50%;
-        background: #fafafa;
+        background: var(--back);
 
     }
 }
 .feature_value{
     font-weight: 700;
     font-size: 20px;
-    color: #000;
+    color: var(--text-color);
     line-height: normal;
     margin-bottom: 10px;
     
@@ -102,7 +104,7 @@
 .feature_description{
     font-weight: 400;
     font-size: 16px;
-    color: rgba(0,0,0,.8);
+    color: var(--text-color);
     line-height: normal;
     margin-bottom: 20px;
 }

@@ -7,6 +7,10 @@
 
 }
 
+.bank-card-dark{
+    background-color: var(--background-color);
+}
+
 .bankcards {
 
     h1 {
@@ -15,7 +19,7 @@
 
     .bankcard-content {
         position: relative;
-        background-color: $greey;
+        background-color: var(--background-card-color);
         display: flex;
         align-items: center;
         gap: 40px;
@@ -71,7 +75,7 @@
                         font-weight: 600;
                         font-size: 16px;
                         line-height: 20px;
-                        color: #000;
+                        color: var(--text-color);
                         text-align: left;
                     }
                 }
@@ -96,7 +100,8 @@
         .card-box {
             padding: 45px 65px;
             border-radius: 10px;
-            background-color: $greey;
+            height: 500px;
+            background-color: var(--background-card-color);
 
             .card-photo {
                 width: 100%;

@@ -1,6 +1,7 @@
 import React from 'react'
-
+import { useNavigate } from 'react-router-dom';
 function DebetCardList() {
+    const navigate = useNavigate()
     const debetCards = [
         {
             id:1,
@@ -64,9 +65,12 @@ function DebetCardList() {
             }
             
             localStorage.setItem("basket", JSON.stringify(wishlistLocal));
+            navigate('/wishlist')
+
         } else {
 
             localStorage.setItem("basket", JSON.stringify([data]));
+            navigate('/wishlist')
         }
 
     }

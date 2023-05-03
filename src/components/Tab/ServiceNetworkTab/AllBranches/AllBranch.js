@@ -134,10 +134,12 @@ function AllBranch() {
                     <AllBranchCards title="Xırdalan filalı" description="Xırdalan ş., M.Hüseynzadə küç., 6" />
                     <AllBranchCards title="Mingəçevir filialı" description="Mingəçevir ş., Heydər Əliyev pr., 36, AZ4500" />
 
-                    <div className="warn">
+                  <div className="container">
+                  <div className="warn">
                         <img src={info} alt="" />
                         <p>Qeyd: 17:00-dan sonra kart və kredit üzrə xidmətlər göstərilir.</p>
                     </div>
+                  </div>
 
                 </div>
 

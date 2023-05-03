@@ -38,7 +38,7 @@
     h3 {
         font-weight: 700;
         font-size: 16px;
-        color: #000;
+        color: var(--text-color);
         width: 80%;
         text-align: center;
         margin: 0;
@@ -54,6 +54,7 @@
 }
 
 .humanresource {
+    background-color: var(--background-color);
     h1 {
         @extend .header-title;
     }
@@ -122,7 +123,7 @@
         .info-card {
             text-align: center;
 
-            background: #FAFAFA;
+            background: var(--background-card-color);
             border-radius: 10px;
             padding: 45px 50px;
             height: 100%;
@@ -150,7 +151,9 @@
                 img {
                     width: 110%;
                     text-align: center !important;
-                    border-radius: 10px
+                    border-radius: 10px;
+                    
+                    
                 }
             }
 
@@ -177,7 +180,8 @@
         align-items: flex-start;
         padding: 45px 65px;
         border-radius: 10px;
-        background-color: #fafafa;
+        height: 400px;
+        background-color: var(--background-card-color);
 
         .image {
             img {
@@ -212,8 +216,9 @@
 
 .about {
     margin-top: 30px;
-    background-color: $greey;
+    background-color: var(--background-card-color);
     padding: 45px 65px;
+    border-radius: 10px;
 
     h1 {
         @extend .header-title;
@@ -251,7 +256,7 @@
 
 .vacany-box {
     padding: 40px 65px 20px;
-    background: #FAFAFA;
+    background: var(--background-card-color);
     border-radius: 10px;
     margin-top: 25px;
 
@@ -261,14 +266,14 @@
         h1 {
             font-weight: 700;
             font-size: 16px;
-            color: #000;
+            color: var(--text-color);
             line-height: normal;
             margin-bottom: 10px;
         }
 
         p {
             font-size: 12px;
-            color: rgba(0, 0, 0, .5);
+            color: var(--text-color);
             line-height: 1.67;
             font-weight: 400;
         }
@@ -362,18 +367,19 @@
         font-size: 32px;
         line-height: 32px;
         font-weight: 800;
-        color: #000;
+        color: var(--text-color);
     }
 
     .info-people {
         text-align: center;
         margin-top: 50px;
+       
 
         h1 {
             font-size: 32px;
             line-height: 32px;
             font-weight: 800;
-            color: #000;
+            color: var(--text-color);
         }
 
         .info-personal {
@@ -388,7 +394,7 @@
             h2 {
                 font-weight: 700;
                 font-size: 20px;
-                color: #000;
+                color: var(--text-color);
                 line-height: normal;
                 margin-bottom: 5px;
                 margin-top: 10px;
@@ -397,7 +403,7 @@
             span {
                 font-weight: 400;
                 font-size: 14px;
-                color: rgba(0, 0, 0, .5);
+                color: var(--text-color);
                 line-height: normal;
             }
         }
@@ -406,6 +412,7 @@
             font-weight: 400;
             font-size: 14px;
             line-height: 20px;
+            color: var(--text-color);
         }
 
     }
@@ -419,20 +426,22 @@
     }
 
     .des {
-        margin-top: 50px;
+        margin-top: 0px;
 
         p {
             font-weight: 400;
             font-size: 14px;
-            color: #000;
+            color: var(--text-color);
             line-height: 23px;
         }
     }
 
     .prosses-cards-first {
         .prosses-first-box {
+            margin-top: 40px;
+            margin-bottom: 40px;
             padding: 35px 30px;
-            background: #FAFAFA;
+            background: var(--background-card-color);
             height: 300px;
             border-radius: 10px;
             text-align: center;
@@ -447,6 +456,7 @@
                 h2 {
                     font-size: 20px;
                     margin-top: 20px;
+                    color: var(--text-color);
 
                 }
 
@@ -482,14 +492,16 @@
                 h2 {
                     font-weight: 700;
                     font-size: 20px;
-                    margin: 0;
+                    margin: 0 0 7px 0;
                     line-height: 1.43;
+                    color: var(--text-color);
                 }
 
                 p {
                     font-size: 14px;
                     line-height: 24px;
                     font-weight: 400;
+                    color: var(--text-color);
                 }
             }
         }
@@ -498,6 +510,11 @@
 
 .training {
     margin-top: 40px;
+    .des{
+        p{
+            color: var(--text-color);
+        }
+    }
 }
 
 
