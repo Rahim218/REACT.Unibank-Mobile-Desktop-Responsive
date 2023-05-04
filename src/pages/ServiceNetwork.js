@@ -1,4 +1,4 @@
-import React, { useState} from 'react'
+import React, { useState } from 'react'
 import AllBranch from '../components/Tab/ServiceNetworkTab/AllBranches/AllBranch';
 import SaturdayBranch from '../components/Tab/ServiceNetworkTab/SaturdayBranches/SaturdayBranch';
 
@@ -25,18 +25,23 @@ function ServiceNetwork() {
 
 
                 <div className={toggle === 1 ? 'showcontent' : 'hidecontent'}>
-                    <AllBranch/>
+                    <AllBranch />
                 </div>
                 <div className={toggle === 2 ? 'showcontent' : 'hidecontent'}>
-                    <SaturdayBranch/>
+                    <SaturdayBranch />
                 </div>
 
                 <div className={toggle === 3 ? 'showcontent' : 'hidecontent'}>
+                    <SaturdayBranch />
 
                 </div>
                 <div className={toggle === 4 ? 'showcontent' : 'hidecontent'}>
+                    <SaturdayBranch />
+
                 </div>
                 <div className={toggle === 5 ? 'showcontent' : 'hidecontent'}>
+                    <SaturdayBranch />
+
                 </div>
 
             </div>

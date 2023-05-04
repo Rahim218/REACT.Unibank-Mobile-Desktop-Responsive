@@ -84,7 +84,7 @@ function Header({ cartCount }) {
                 <div className="box d-flex gap-1">
                   <div className="col-lg-1">
                     <div className="logo">
-                      <Link to='/home'> <img src="https://unibank.az/assets/images/orange.png" alt="" /> </Link>
+                      <Link   to='/home'> <img src="https://unibank.az/assets/images/orange.png" alt="" /> </Link>
                     </div>
                   </div>
                   <div className="col-lg-11">
@@ -225,7 +225,7 @@ function Header({ cartCount }) {
           <div className="d-flex  align-items-center gap-2">
             <div className="col-lg-3">
               <div className="theme-drop">
-                <a href="/#"><i className="fa-brands fa-affiliatetheme" ></i></a>
+                <DarkMode />
 
               </div>
             </div>
@@ -238,7 +238,7 @@ function Header({ cartCount }) {
 
             <div className="col-lg-3">
               <div className="search-drop">
-                <a onClick={toggleModal} href=""><i className="fa-solid fa-magnifying-glass fa-rotate-90"></i></a>
+                <a href="#"><i className="fa-solid fa-magnifying-glass fa-rotate-90"></i></a>
 
               </div>
             </div>

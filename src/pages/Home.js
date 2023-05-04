@@ -14,7 +14,7 @@ function Home() {
 
   const [amount, setAmount] = useState(0)
   const [selectCountry, setSelectCountry] = useState('USD')
-  const [fromCountry, setFromCountry] = useState('USD')
+  const [fromCountry, setFromCountry] = useState('AZN')
   const [result, setResult] = useState(0)
 
 
@@ -44,6 +44,7 @@ function Home() {
 
   function handleCountryChange(event) {
     setSelectCountry(event.target.value);
+    handleChangeAmount(event)
   }
   function handleChangeAmount(event) {
     setAmount(event.target.value);
@@ -436,11 +437,8 @@ function Home() {
                     <div className="exchange-to">
                       <input type="number" value={result} name="" id="" />
                       <select name="country" value={fromCountry} onChange={handleFromCountryChange} >
-                        <option value="USD"> <img src="https://unibank.az/assets/images/usd.png" alt="" /> <span>USD</span></option>
-                        <option value="RUB"> <img src="https://unibank.az/assets/images/usd.png" alt="" /> <span>RUB</span></option>
-                        <option value="GBP"> <img src="https://unibank.az/assets/images/usd.png" alt="" /> <span>GBP</span></option>
+
                         <option value="AZN"> <img src="https://unibank.az/assets/images/usd.png" alt="" /> <span>AZN</span></option>
-                        <option value="EUR"> <img src="https://unibank.az/assets/images/usd.png" alt="" /> <span>EUR</span></option>
 
                       </select>
                     </div>
