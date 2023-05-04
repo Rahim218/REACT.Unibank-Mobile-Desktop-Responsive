@@ -167,6 +167,26 @@
   width: 100%;
   padding: 15px 0;
 }
+#side-bar .basket {
+  position: relative;
+  padding: 8px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  background-color: var(--back);
+}
+#side-bar .basket i {
+  color: #ff6400;
+}
+#side-bar .basket span {
+  position: absolute;
+  background-color: #ff6400;
+  top: -6px;
+  right: -25px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 50%;
+}
 #side-bar .type .active {
   border: 1px solid #ff6400;
   color: #ff6400;
@@ -198,10 +218,11 @@
   text-decoration: none;
   text-transform: uppercase;
   color: var(--navigation-color);
-  padding: 6px 12px;
+  padding: 8px 12px;
   font-weight: 600;
   font-size: 12px;
   border-radius: 5px;
+  background-color: var(--back);
 }
 #side-bar .theme-drop a {
   padding: 4px 10px;
@@ -314,7 +335,7 @@
     text-align: center;
   }
   .top-header2 .top-header2-content .logo img {
-    width: 100%;
+    width: 35% !important;
   }
   .top-header2 .top-header2-content .contact {
     background: var(--back);
@@ -747,6 +768,10 @@ body.dark {
   font-weight: 400;
 }
 
+.cards {
+  padding-top: 5px;
+}
+
 .card {
   padding: 40px 50px;
   text-align: center;
@@ -866,6 +891,9 @@ body.dark {
   font-weight: 500;
 }
 
+.Ubank {
+  padding-top: 0 !important;
+}
 .Ubank .ubank-content {
   background-color: var(--background-card-color);
   border-radius: 10px;
@@ -999,7 +1027,7 @@ body.dark {
 
 .Information .news {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 .Information .news .all-news {
   padding: 15px 25px !important;
@@ -1113,7 +1141,7 @@ body.dark {
     margin: 0 auto;
   }
   .yourCard .yourCard-content {
-    margin: 40px 0 60px !important;
+    margin: 30px 0 20px !important;
     background-color: var(--background-card-color);
     height: 570px !important;
     border-radius: 10px;
@@ -1212,7 +1240,7 @@ body.dark {
   }
   .Ubank .ubank-content .ubank-image img {
     position: absolute;
-    top: 15px !important;
+    top: 42px !important;
     height: auto;
   }
   .Currency h1 {
@@ -1260,9 +1288,10 @@ body.dark {
     font-family: CocoSharp, Arial;
     font-weight: 700;
     font-size: 12px;
-    color: #a1a1a1;
+    color: var(--text-color);
     border-radius: 20px;
     border: 2px solid #a1a1a1;
+    background-color: var(--back);
   }
   .Currency .tab-title-active {
     display: inline-block;
@@ -1275,6 +1304,7 @@ body.dark {
     border-radius: 20px;
     border: 2px solid #FF6400;
     position: relative;
+    background-color: var(--back);
   }
   .Currency .tab-title-active::before {
     position: absolute;
@@ -1286,7 +1316,7 @@ body.dark {
     border-bottom: 2px solid #FF6400;
     content: "";
     left: 50%;
-    background: #fafafa;
+    background: var(--back);
   }
   .Currency .currencyMedia {
     display: block !important;
@@ -1309,7 +1339,7 @@ body.dark {
     display: none;
   }
   .ContactUs {
-    padding: 30px 0 20px;
+    padding: 30px 0 40px;
   }
   .ContactUs .contactUs-content {
     height: 450px !important;
@@ -2095,6 +2125,9 @@ hr {
   }
 }
 @media (max-width: 576px) {
+  .shopping-cart {
+    padding: 101px 0;
+  }
   .card-url {
     text-align: center !important;
     width: 70% !important;
@@ -2620,7 +2653,7 @@ hr {
   }
   .tab-links::-webkit-scrollbar {
     width: 0px;
-    height: 6px;
+    height: 1px;
   }
   .info-card {
     display: flex !important;
@@ -2639,12 +2672,13 @@ hr {
     margin: 0 0 5px 0 !important;
   }
   .info-card .info-card-content p {
-    font-size: 12px !important;
+    font-size: 11px !important;
     text-align: left !important;
     margin: 0 !important;
   }
   .personal-box {
     padding: 25px 30px !important;
+    height: 300px !important;
   }
   .personal-box h2 {
     line-height: 14px !important;
@@ -2679,7 +2713,7 @@ hr {
     line-height: normal !important;
   }
   .direction {
-    padding: 0 !important;
+    padding: 20px 0 !important;
   }
   .direction .direction-content .direction-box {
     display: flex !important;
@@ -2715,6 +2749,7 @@ hr {
     display: flex !important;
     flex-direction: column !important;
     align-items: flex-start !important;
+    height: 140px;
   }
   .vacany-box .left-info h1 {
     font-size: 14px !important;
@@ -2725,8 +2760,8 @@ hr {
     line-height: 10px;
     margin-bottom: 10px !important;
   }
-  .vacany-box .right-info a {
-    padding: 0px 0px !important;
+  .vacany-box .right-info {
+    margin-bottom: 10px !important;
   }
   .card-head {
     border-radius: 10px;
@@ -3083,7 +3118,7 @@ hr {
 
 @media (max-width: 576px) {
   .branches-card-box {
-    padding: 20px 40px !important;
+    padding: 20px 20px !important;
   }
   .branches-card-box:hover {
     background-color: #FF6400;
@@ -3118,6 +3153,7 @@ hr {
   .branches-card-box .branches-right-con .branch-clock span {
     font-size: 12px !important;
     font-weight: 400 !important;
+    width: 50% !important;
   }
   .branches-card-box .branches-right-con .branch-info {
     display: flex;

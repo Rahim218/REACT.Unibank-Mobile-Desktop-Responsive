@@ -570,7 +570,7 @@
 
         &::-webkit-scrollbar {
             width: 0px;
-            height: 6px;
+            height: 1px;
 
 
         }
@@ -599,7 +599,7 @@
                 
             }
             p{
-                font-size: 12px !important;
+                font-size: 11px !important;
                 text-align: left !important;
                 margin: 0 !important;
             }
@@ -608,6 +608,7 @@
 
     .personal-box {
         padding: 25px 30px !important;
+        height: 300px !important;
 
         h2 {
             line-height: 14px !important;
@@ -652,7 +653,7 @@
     }
 
     .direction {
-        padding: 0 !important;
+        padding: 20px 0 !important;
 
         .direction-content {
             .direction-box {
@@ -706,6 +707,7 @@
         display: flex !important;
         flex-direction: column !important;
         align-items: flex-start !important;
+        height: 140px;
 
 
         .left-info {
@@ -723,10 +725,8 @@
         }
 
         .right-info {
-            a {
-                padding: 0px 0px !important;
-            }
-
+            margin-bottom: 10px !important;
+           
         }
     }
 

@@ -218,6 +218,31 @@
     width: 100%;
     padding: 15px 0;
 
+       .basket {
+            position: relative;
+            padding: 8px 10px;
+            border: 1px solid rgba(0, 0, 0, .1);
+            border-radius: 15px;
+            background-color: var(--back);
+            i{
+                color: $orange;
+            }
+            span{
+                position: absolute;
+                background-color: $orange;
+                top: -6px;
+                right: -25px;
+                width: 20px;
+                height: 20px;
+                text-align: center;
+                border-radius: 50%;
+            }
+           
+            
+            
+            
+        }
+
 
 
     .type {
@@ -261,10 +286,11 @@
             text-decoration: none;
             text-transform: uppercase;
             color: var(--navigation-color);
-            padding: 6px 12px;
+            padding: 8px 12px;
             font-weight: 600;
             font-size: 12px;
             border-radius: 5px;
+            background-color: var(--back);
 
         }
     }
@@ -434,7 +460,7 @@
                 text-align: center;
 
                 img {
-                    width: 100%;
+                    width: 35% !important;
                 }
             }
 

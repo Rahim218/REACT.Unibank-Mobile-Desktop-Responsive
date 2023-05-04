@@ -41,7 +41,7 @@ function CommonInfo() {
                     <i onClick={autoVideo} id="play" class="fa-regular fa-circle-play"></i>
                 </div>
 
-                <div className="commoninfo-cards row align-items-center g-5">
+                <div className="commoninfo-cards row align-items-center g-4">
                     <CommonInfoCards photo={ph1} title="Vakansiya" description="Unibankda 50-dən çox karyera istiqaməti mövcuddur. Hazırda mövcud vakansiyalar barədə ətraflı məlumat əldə edin. " />
                     <CommonInfoCards photo={ph3} title="Unibankda çalışmaq" description="Ölkənin ən nüfuzlu şirkətlərindən birində çalışmaq, öz karyera arzularını reallaşdırmaq istəyirsənsə - Unibank məhz sənin bankındır! Gələcək inkişafını Unibankla başla! " />
                     <CommonInfoCards photo={ph4} title="İşə qəbul prosesi" description="Müraciət etdiyiniz vakansiyadan asılı olaraq işə qəbul prosesimiz fərqlənə bilər. Test mərhələsində sizi nələr gözlədiyini və müsahibələrdə hansı məqamlara diqqət yetirməli olduğunuzu öyrənin.  " />

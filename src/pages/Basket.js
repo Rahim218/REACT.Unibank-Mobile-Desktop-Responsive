@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
 
-function Basket({updateCartCount}) {
+import 'react-toastify/dist/ReactToastify.css';
+function Basket({ updateCartCount }) {
 
     const [basketItems, setBasketItems] = useState([]);
 
@@ -20,6 +22,17 @@ function Basket({updateCartCount}) {
     }
 
     const DeleteHandler = (event) => {
+        toast.info("Kart  səbətdən silindi...", {
+            position: "bottom-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+        });
+
         updateCartCount((prevCount) => prevCount - 1);
 
         let id = event.target.getAttribute('data-id');
@@ -78,12 +91,12 @@ function Basket({updateCartCount}) {
 
                                     basketItems.map((item) => {
                                         return (
-                                            <div  class="product">
+                                            <div class="product">
                                                 <div class="row align-items-center justify-content-center">
                                                     <div class="col-md-3 te">
-                                                       <div className="product-card-basket">
-                                                       <img class="card-url" src={item.card_url} />
-                                                       </div>
+                                                        <div className="product-card-basket">
+                                                            <img class="card-url" src={item.card_url} />
+                                                        </div>
                                                     </div>
                                                     <div class="col-md-8">
                                                         <div class="info">
@@ -104,7 +117,7 @@ function Basket({updateCartCount}) {
                                                                 </div>
                                                                 <div class="col-md-3 price">
 
-                                                                    <i data-id={item.id}  onClick={DeleteHandler} className="fa-solid fa-trash-can"></i>
+                                                                    <i data-id={item.id} onClick={DeleteHandler} className="fa-solid fa-trash-can"></i>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -125,6 +138,18 @@ function Basket({updateCartCount}) {
                     </div>
                 </div>
             </div>
+            <ToastContainer
+                position="bottom-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+            />
         </section>
     )
 }

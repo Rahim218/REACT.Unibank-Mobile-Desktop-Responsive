@@ -178,9 +178,13 @@
 		text-align: center;
 	}
 	
+	
 }
 
 @media (max-width: 576px) {
+	.shopping-cart{
+		padding: 101px 0;
+	}
 	.card-url{
 		text-align: center !important;
 		width: 70% !important;

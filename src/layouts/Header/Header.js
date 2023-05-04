@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import DarkMode from '../../components/DarkMode/DarkMode'
 
 
-function Header({cartCount}) {
+function Header({ cartCount }) {
 
   const [special, setSpecial] = useState(false);
   const [biznes, setBiznes] = useState(false);
@@ -222,14 +222,14 @@ function Header({cartCount}) {
               İnsan Resursları </Link></p>
             <p><a href="/#">Bankla əlaqə və təkliflər</a></p>
           </div>
-          <div className="d-flex  align-items-center">
+          <div className="d-flex  align-items-center gap-2">
             <div className="col-lg-3">
               <div className="theme-drop">
                 <a href="/#"><i className="fa-brands fa-affiliatetheme" ></i></a>
 
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-4">
               <div className="lang-drop d-flex gap-1">
                 <a href="/#">ENG</a>
                 <a href="/#">RUS</a>
@@ -241,6 +241,10 @@ function Header({cartCount}) {
                 <a onClick={toggleModal} href=""><i className="fa-solid fa-magnifying-glass fa-rotate-90"></i></a>
 
               </div>
+            </div>
+            <div className="col-lg-2">
+              <Link onClick={turnOffSideBar} className="basket" to="/wishlist"><i className="fa-solid fa-cart-shopping"></i> <span className="cart-count">{cartCount}</span></Link>
+
             </div>
           </div>
         </div>
