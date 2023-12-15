@@ -84,17 +84,17 @@ function Header({ cartCount }) {
                 <div className="box d-flex gap-1">
                   <div className="col-lg-1">
                     <div className="logo">
-                      <Link   to='/home'> <img src="https://unibank.az/assets/images/orange.png" alt="" /> </Link>
+                      <Link   to='/'> <img src="https://unibank.az/assets/images/orange.png" alt="" /> </Link>
                     </div>
                   </div>
                   <div className="col-lg-11">
                     <div className="nav d-flex align-items-center gap-4">
-                      <p ><Link to='/servicenetwork'>
+                      <p  ><Link className="active-link" to='/servicenetwork'>
                         Xidmət şəbəkəsi </Link></p>
                       <p><a href="/#">Bank Haqqında</a></p>
                       <p><a href="/#">Keşbek</a></p>
                       <p><a href="/#">Tariflər</a></p>
-                      <p><Link to='/humanresource'>
+                      <p><Link className="active-link" to='/humanresource'>
                         İnsan Resursları </Link></p>
                       <p><a href="/#">Bankla əlaqə və təkliflər</a></p>
                     </div>
@@ -176,7 +176,7 @@ function Header({ cartCount }) {
             <div className="d-flex align-items-center  justify-content-between">
 
               <nav className="d-flex align-items-center gap-4">
-                <p><Link to='/kartlar'>Kartlar</Link></p>
+                <p><Link to='/kartlar' className="active-link">Kartlar</Link></p>
                 <p><a href="/#">Kreditlər</a></p>
                 <p><a href="/#">Əmanətlər</a></p>
                 <p><a href="/#">Köçürmələr</a></p>

@@ -13,6 +13,8 @@
     display: none;
 }
 
+
+
 #top-header {
 
 
@@ -46,6 +48,12 @@
 
     .nav {
 
+        .active-link{
+            font-size: 12px;
+            font-weight: 400;
+            color: #ff6400;
+         }
+   
         a {
             color: var(--navigation-color);
             font-size: 12px;
@@ -146,6 +154,12 @@
 
     nav {
         p {
+            .active-link{
+                font-size: 18px;
+                text-decoration: none;
+                font-weight: 700;
+                color: #ff6400;
+             }
             a {
                 font-size: 18px;
                 color: var(--navigation-color);

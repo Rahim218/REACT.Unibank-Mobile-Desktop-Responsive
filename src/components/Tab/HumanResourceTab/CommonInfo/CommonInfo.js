@@ -18,6 +18,7 @@ function CommonInfo() {
     const [video, setVideo] = useState("video")
 
     const [display, setDisplay] = useState("d-none")
+    
     const autoVideo = () => {
         setVideoSrc("https://www.youtube.com/embed/ricGtmUDcLU?autoplay=1")
         setDisplay("")
